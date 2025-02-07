@@ -6,6 +6,7 @@
 \usepackage{amssymb}
 \usepackage{hyperref}
 \usepackage{graphicx}
+\usepackage{xcolor}
 
 \hypersetup{
     colorlinks,
@@ -17,6 +18,7 @@
 
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\Rext}{\widetilde{\mathbb{R}}}
+\newcommand{\DeltaEp}{\delta_{\varepsilon}}
 
 \newenvironment{mytheorem}[1]
 {\begin{theorem}[#1]\setlength{\leftskip}{2cm}}
@@ -85,6 +87,32 @@ $[a,b] \subset \R$, $a < b$. $f$ R-integrale su $[a,b]$.
 \subsection{Dimostrazione}
 \[ 0 \leq \left| \frac{F(x) - F(x_1)}{x - x_1} - f(x_1) \right|, \quad x \neq x_1 \]
 \[ = \left| \frac{\int_{x_0}^{x}f(t)dt-\int_{x_0}^{x_1}f(t)dt}{x - x_1} - f(x_1) \right|\]
+
+
+\textbf{Dim:}
+
+\begin{align*}
+    0 &\leq \left| \frac{F(x) - F(x_1)}{x - x_1} - f(x_1) \right|, \quad x \neq x_1 \\
+    &= \left| \frac{\int_{x_1}^{x} f(t) dt - \int_{x_1}^{x_1} f(t) dt}{x - x_1} - f(x_1) \right| \\
+    &= \left| \frac{\int_{x_1}^{x} f(t) dt + \int_{x_1}^{x_1} f(t) dt - \int_{x_1}^{x_1} f(t) dt}{x - x_1} - f(x_1) \right| \\
+    &= \left| \frac{\int_{x_1}^{x} f(t) dt - f(x_1)(x - x_1)}{x - x_1} \right| \\
+    &= \left| \frac{\int_{x_1}^{x} (f(t) - \textcolor{red}{f(x_1)}) dt}{x - x_1} \right| \\
+    &\textcolor{orange}{\leq} \frac{1}{x - x_1} \int_{x_1}^{x} |f(t) - f(x_1)| dt
+\end{align*}
+\textcolor{orange}{Dove abbiamo usato la \textbf{disuguaglianza integrale}.}\\
+\textcolor{red}{\textbf{Nota:} Nel passaggio evidenziato in giallo, $c$ è una costante.}
+\vspace{1em}
+\\Ma $f$ è continua in $x_1 \iff $
+\[\forall\epsilon>0\text{ }\exists \DeltaEp>0\text{ t.c. }\left|f(t) - f(x_1)\right|<\epsilon\text{ }\forall t / 0 < \left|t-x_1\right|<\DeltaEp\text{ }t\in[a,b]\]
+Osservo che $t\in[x_1, x]$ (oppure $t\in[x, x_1]$, dipende come abbiamo disposto $x$ e $x_1$)
+\\Implica che $\left|t-x_1\right| \leq \left|x - x_1\right|$
+\\Sia allora $x\in[a, b] / \left|x-x_1\right|<\DeltaEp$. \underline{Con questo forziamo le due varibli a stare vicine fra loro}
+\\Quindi $\left|t-x_1\right| \leq \left|x-x_1\right|<\DeltaEp$ e $\left|f(t) - f(x_1)\right|<\epsilon$
+\\Allora $0\leq\left|\frac{F(x)-F(x_1)}{x-x_1}-f(x_1)\right| < \frac{1}{\left|x-x_1\right|}\left|\int_{x_1}^{x}\epsilon dt\right| = \epsilon \frac{\left|x-x_1\right|}{\left|x-x_1\right|} = \epsilon$
+\\Ossia: $\forall \epsilon > 0$ $\exists \DeltaEp > 0$ t.c. $\left|\frac{F(x)-F(x_1)}{x-x_1}-f(x_1)\right|<\epsilon$ $\forall x$ t.c. $0<\left|x-x_1\right|<\DeltaEp$, $x\in[a,b]$
+\\Cioè:$\lim_{x_1}\frac{F(x)-F(x_1)}{x-x_1}$ esiste e vale $f(x_1)$.
+\\\centering \textbf{Quindi: $\mathbf{F'(x_1) = f(x_1)}$}
+
 
 
 \end{flushleft}
