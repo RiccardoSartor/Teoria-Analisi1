@@ -1,7 +1,7 @@
 # 📘 Raccolta di Teoria di Analisi 1 in LaTeX
 
 Benvenuto/a! Questo repository contiene una raccolta completa della teoria di **Analisi 1**, redatta in **LaTeX**.  
-L'obiettivo è fornire un riferimento chiaro e ben organizzato per studenti di **Ingegneria Informatica** (e non solo!). 🚀  
+L'obiettivo è fornire un riferimento chiaro e ben organizzato per studenti di **Ingegneria Informatica** a Padova (e non solo!). 🚀  
 
 ## 📖 Contenuti
 - ✅ Definizioni fondamentali  
