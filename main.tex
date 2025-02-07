@@ -66,19 +66,25 @@ Per contraddizione: $l_1 \neq l_2$
 \\Allora $\exists Vl_1, Vl_2$ intorni di $l_1$ e $l_2$ (rispettivamente) tali che: $Vl_1 \bigcup Vl_2 \neq \emptyset$
 \\$Wx_0 = \bigcup U'x_0$ è un intorno di $x_0$
 \\Sia $x \in(Wx_0 \bigcup A) - \{x_0\} \neq \emptyset$ (perché $x_0$ è di accumulazione)
-
-\begin{align*}
+\[
     \Rightarrow
     \begin{cases}
-        f(x) \in Vl_1 \\
-        z = x^2 - 3
+        f(x) \in Vl_1 \text{  (Per definizione di limite 1)}\\
+        f(x) \in Vl_2 \text{  (Per definizione di limite 2)}
     \end{cases}
-\end{align*}
-
+\]
+\[
+    \Rightarrow f(x) \in Vl_1 \bigcap Vl_2 \neq \emptyset \Rightarrow \mathbf{l_1 = l_2}. \mathbf{\textbf{ \underline{Contraddizione}}}
+\]
 
 \section{Teorema fondamentale del calcolo integrale (TFCI)}
- $[a,b] \subset \R$, $a < b$. $f$ R-integrale su $[a,b]$.
- $\exists x_1 \in [a,b]$ t.c. $f$ sia continua in $x_1$.
+\subsection{Enunciato}
+$[a,b] \subset \R$, $a < b$. $f$ R-integrale su $[a,b]$.
+\\$\exists x_1 \in [a,b]$ t.c. $f$ sia continua in $x_1$.
+\\Fissato $x_0 \in $[a,b] e presa $F(x) = \int_{x_0}^{x}f(t)dt$, si ha che $F$ è derivabile in $x_1$ e $F'(x_1)=f(x_1)$
+\subsection{Dimostrazione}
+\[ 0 \leq \left| \frac{F(x) - F(x_1)}{x - x_1} - f(x_1) \right|, \quad x \neq x_1 \]
+\[ = \left| \frac{\int_{x_0}^{x}f(t)dt-\int_{x_0}^{x_1}f(t)dt}{x - x_1} - f(x_1) \right|\]
 
 
 \end{flushleft}
