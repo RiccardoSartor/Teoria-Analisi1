@@ -10,7 +10,8 @@ L'obiettivo è fornire un riferimento chiaro e ben organizzato per studenti di *
 - ✅ Formattazione chiara e leggibile in LaTeX  
 
 ## 🛠 Come Usarlo
-**Scarica** direttamente il file .PDF
+   **Scarica** direttamente il file .PDF
+   OPPURE
 1. **Clona** la repository:
    ```sh
    git clone https://github.com/RiccardoSartor/Teoria-Analisi1
