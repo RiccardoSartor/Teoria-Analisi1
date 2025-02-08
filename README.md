@@ -12,7 +12,7 @@ L'obiettivo è fornire un riferimento chiaro e ben organizzato per studenti di *
 ## 🛠 Come Usarlo
 1. **Clona** la repository:
    ```sh
-   git clone https://github.com/tuo-username/nome-repo.git
+   git clone https://github.com/RiccardoSartor/Teoria-Analisi1
 2. **Compila** il file principale con:
    pdflatex main.tex
    (o usa un editor come Overleaf.com)
