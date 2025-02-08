@@ -9,6 +9,8 @@
 \usepackage{xcolor}
 \usepackage{cancel}
 \usepackage{enumitem}
+\usepackage{placeins}
+
 
 
 \hypersetup{
@@ -21,6 +23,7 @@
 
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\Rext}{\widetilde{\mathbb{R}}}
+\newcommand{\N}{\mathbb{N}}
 \newcommand{\DeltaEp}{\delta_{\varepsilon}}
 \newcommand{\Space}{\vspace{1em}}
 
@@ -205,16 +208,16 @@ Cosa accade se si suppone $f(x) < g(x) \overset{?}{\Rightarrow} l_1 < l_2$
     \includegraphics[width=35em]{./images/Teoriaconfronto2.jpeg}
 \end{figure}
 
-\section{Teorema del confronto dei limiti}
-\section{Teorema media integrale}
-\section{Condizione necessaria del primo ordine per punti estremali interni}
+\section{! Teorema del confronto dei limiti}
+\section{! Teorema media integrale}
+\section{! Condizione necessaria del primo ordine per punti estremali interni}
 \section{Criterio integrale convergenza delle serie numeriche}
 \subsection{Enunciato}
 $f: [1, + \infty ) \rightarrow \R,$ $f(x) \geq 0$ $\forall x \in [1, + \infty$.
 \\Sia $f$. debolmente crescente in $[\, + \infty )$.
 \\Allora ($\sum\limits_{k=1}^{\infty} f(k)$ converge $\iff$ $\int_{1}^{+ \infty} f(x) dx$ converge.)
 
-\section{Teorema del valore medio integale}
+\section{! Teorema del valore medio integale}
 
 \section{Teorema delle 3 funzioni (Carabinieri)}
 \includegraphics[width = 5em]{./images/carabinieri.png}
@@ -247,7 +250,7 @@ Sia $\epsilon > 0$: $\exists U' x_0$, $U'' x_0$ intorni di $x_0 / \left|f(x) - l
 \]
 \\Che è esattamente la definizione di: $\lim\limits_{x \to x_0} h(x) = l$
 
-\section{Condizione estremalità locale con le derivate successive}
+\section{! Condizione estremalità locale con le derivate successive}
 
 
 \section{Teorema di Rolle} \label{Rolle}
@@ -286,8 +289,39 @@ $f:[a,b] \rightarrow \R$, $f$ continua in $[a,b]$, $f$ derivabile in $(a,b)$.
     \centering
     \includegraphics[width=25em]{./images/lagrange.jpeg}
 \end{figure}
+\FloatBarrier
 
+\section{Teorema condizione necessaria di convergenza delle serie}
+\subsection{Enunciato}
+\[
+\text{Se } \sum a_k \text{ converge, allora } \lim\limits_{x \to + \infty}a_k = 0
+\]
 
+\subsection{Dimostrazione}
+Sia $A_n = \sum\limits_{k = 0}^{n}a_n$, $n \in \N$.\\
+Per ipotesi $\exists A \in \R \lim\limits_{n \to + \infty} An = A$. \\
+Inoltre si ha che $A_n - A_{n-1} = \sum\limits_{k = 0}^{n}a_n - \sum\limits_{h = 0}^{n-1}a_n = a_n$
+\\Ma $\lim\limits_{n \to + \infty}(A_n - A_{n-1}) = (\lim\limits_{n \to + \infty}A_n) - (\lim\limits_{n \to + \infty}A_{n-1}) = A - A = 0$
+\[
+\Rightarrow \lim\limits_{n \to + \infty}a_n = 0\text{.}
+\]
+
+\section{Teorema Disuguaglianza di Bernoulli}
+\subsection{Enunciato}
+$x \in \R$, $x > - 1$. Allora $(1+x)^m \geq 1 + nx$ $\forall n \in \N$
+
+\subsection{Dimostrazione}
+\textbf{Passo base:}\\
+È vero che: $(1+x)^0 \leq 1 + 0 * x?$, si $\Rightarrow$ passo base \underline{verificato!}
+\\\Space
+\textbf{Passo induttivo:}\\
+Ipotesi induttiva: $(1+x)^m \geq 1 + mx$ \hspace*{1em} con $m \in \N$\\
+Tesi induttiva: $(1+x)^{m+1} \geq \textcolor{red}{1 + (m+1)x}$
+\\\Space
+$(1+x)^{m + 1} = (1+x)(1+x)^m \geq (1 + mx)(1+x)$\\
+$1 + x + mx + mx^2 = x(1+m)+ 1 + mx^2 = (m+1)x + 1 + mx^2 \geq \textcolor{red}{(m+1)x + 1}$ \hspace*{1em}Posso anche ingnorare $mx^2$ perche è sempre positivo
+\\\Space
+\textbf{Quindi il passo induttivo è verificato per il principio di induzione $\forall x > -1$}
 
 
 \end{flushleft}
