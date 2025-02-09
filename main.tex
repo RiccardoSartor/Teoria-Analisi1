@@ -361,6 +361,71 @@ $1 + x + mx + mx^2 = x(1+m)+ 1 + mx^2 = (m+1)x + 1 + mx^2 \geq \textcolor{red}{(
 \\\Space
 \textbf{Quindi il passo induttivo è verificato per il principio di induzione $\forall x > -1$}
 
+\newpage
+\section{Integrale di Riemann}
+\subsection{Integrali Definiti}
+Vogliamo dare un significato al concetto (per $f(x) \geq$ 0) di "area sottesa al grafico di $f$".
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=20em]{./images/riemann.png}
+\end{figure}
+\FloatBarrier
+
+\subsection{Estensione dell'integrale di Riemann}
+A casi cui $a \geq b$.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=20em]{./images/riemann_extension.jpeg}
+\end{figure}
+\FloatBarrier
+
+\subsubsection{Definizione}
+$f$ Riemann-integrale in $[a,b]$, $a < b$, $a, b \in \R$.\\
+\[
+    \text{Definiamo }\int_{a}^{b}f(x)dx = 0\text{ e }\int_{b}^{a}f(x)dx = \mathbf{ - \int_{a}^{b}f(x)dx}
+\]
+
+\subsection{Teorema Integrazione di Riemann per parti}
+$f, g: [a,b] \rightarrow \R $, $f, g \in C^1([a,b])$\\
+\[
+    \text{Allora: } \int_{a}^{b}f(x)g'(x)dx =\textcolor{orange}{ f(b)g(b) - f(a)g(a)} - \int_{a}^{b}f'(x)g(x)dx
+\]
+
+$\textcolor{orange}{ f(b)g(b) - f(a)g(a)} = f(x)g(x)|_{a}^{b}$
+
+\subsubsection{Dimostrazione}
+$f'g$ e $fg'$ sono continue in $[a,b]$ e quindi sono R-int$^\text{le}$ in $[a,b]$.\\
+Inoltre $\int_{a}^{b}(fg)'(x)dx = \int_{a}^{b}f'(x)g(x)dx + \int_{a}^{b}f(x)g'(x)dx$\\
+Ma  f*g è primitiva di  $(fg)'$ e quindi
+\[
+    \int_{a}^{b}(fg)'(x)dx = f(b)g(b) - f(a)g(a) \text{ la tesi segue}
+\]
+
+
+\section{Teorema di Bolzano - Weierstr\ss}
+\subsection{Enunciato}
+Sia ${a_n}$ una successione LIMITATA (Quindi superiormente e inferiormente limitata).\\
+Allora $\exists \{ a_{n_k} \}$ successione di $a_n$ t.c. 
+\[\lim\limits_{k \to + \infty } a_{n_k} = l \in \R\]
+
+\subsection{Esempio 1}
+\[
+    a_n  =
+    \begin{cases}
+        0 $ se $ n $ pari$\\
+        n $ se $ n $ dispari$
+    \end{cases}
+\]
+Sup\{$a_n$\} = $+ \infty \Rightarrow$ non posso applicare il teorema di Bolzano-Weistra\ss.
+
+\subsection{Esempio 2}
+\[
+    a_n = (-1)^n \Rightarrow \left|a_n\right| \leq \text{ } \forall n \in \N
+\]
+Per il teorema di Bolzano-Weistra\ss $ \text{ } \exists a_{n_k}$ sottosuccessione di $a_n$ t.c. $\exists \lim\limits_{k \to + \infty} a_{n_k} \in \R$
+
 
 \end{flushleft}
 \end{document}
