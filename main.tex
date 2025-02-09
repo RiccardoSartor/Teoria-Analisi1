@@ -61,13 +61,13 @@ Allora: $\mathbf{l_1 = l_2}$
 \subsection{Dimostrazione}
 
 \begin{enumerate}
-    \item[ip1)] $\forall V l_1 $ intorno di $l_1 \exists U x_0$ intorno di $x_0$ t.c. $f(x)\in\forall l_1 $ per ogni $x\in (U x_0 \bigcap A) - \{0\}$
-    \item[ip2)] $\forall V l_2 $ intorno di $l_2 \exists U' x_0$ intorno di $x_0$ t.c. $f(x)\in\forall l_2 $ per ogni $x\in (U' x_0 \bigcap A) - \{0\}$
+    \item[ip1)] $\forall V l_1 $ intorno di $l_1 \exists U x_0$ intorno di $x_0$ t.c. $f(x)\in\forall l_1 $ per ogni $x\in (U x_0 \cap A) - \{0\}$
+    \item[ip2)] $\forall V l_2 $ intorno di $l_2 \exists U' x_0$ intorno di $x_0$ t.c. $f(x)\in\forall l_2 $ per ogni $x\in (U' x_0 \cap A) - \{0\}$
 \end{enumerate}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=10em]{./images/unicitaLimite.PNG}
+    \includegraphics[width=18em]{./images/unicitaLimite.PNG}
 \end{figure}
 
 Per contraddizione: $l_1 \neq l_2$
@@ -82,9 +82,9 @@ Per contraddizione: $l_1 \neq l_2$
     \end{cases}
 \]
 \[
-    \Rightarrow f(x) \in Vl_1 \bigcap Vl_2 \neq \emptyset \Rightarrow \mathbf{l_1 = l_2}. \mathbf{\textbf{ \underline{Contraddizione}}}
+    \Rightarrow f(x) \in Vl_1 \cap Vl_2 \neq \emptyset \Rightarrow \mathbf{l_1 = l_2}. \mathbf{\textbf{ \underline{Contraddizione}}}
 \]
-
+\newpage
 \section{Teorema fondamentale del calcolo integrale (TFCI)} \label{TFCI}
 \subsection{Enunciato}
 $[a,b] \subset \R$, $a < b$. $f$ R-integrale su $[a,b]$.
@@ -112,6 +112,7 @@ Osservo che $t\in[x_1, x]$ (oppure $t\in[x, x_1]$, dipende come abbiamo disposto
 \\Cioè:$\lim_{x_1}\frac{F(x)-F(x_1)}{x-x_1}$ esiste e vale $f(x_1)$.
 \\\begin{center} \textbf{Quindi: $\mathbf{F'(x_1) = f(x_1)}$}\end{center}
 
+\newpage
 \section{Formula fondamentale del calcolo integrale}
 \subsection{Enunciato}
 $f \in C^0[a,b]$ e sia $G : [a,b] \rightarrow {\R}$ una primitiva di $f$ in $[a,b]$
@@ -172,9 +173,8 @@ $f, g: A \subset \R \rightarrow \R, x_0 \in \Rext$ punto di accumulazione per $A
     \[f(x) < l_1 + \epsilon = l_1 + \frac{l_2 - l_1}{2} = \frac{l_1 + l_2}{2}\]
 \end{enumerate}
 
-\vspace{5em}
 
-\section{teorema del confronto II}
+\section{Teorema del confronto II}
 \subsection{Enunciato}
 $f, g: A \subset \R \rightarrow \R$ $A \neq \emptyset$ $x \in \Rext$ punto di accumulazione per $A$ Allora:
 \begin{enumerate}
@@ -205,21 +205,11 @@ Cosa accade se si suppone $f(x) < g(x) \overset{?}{\Rightarrow} l_1 < l_2$
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=35em]{./images/Teoriaconfronto2.jpeg}
+    \includegraphics[width=22em]{./images/Teoriaconfronto2.jpeg}
 \end{figure}
 
-\section{! Teorema del confronto dei limiti}
-\section{! Teorema media integrale}
-\section{! Condizione necessaria del primo ordine per punti estremali interni}
-\section{Criterio integrale convergenza delle serie numeriche}
-\subsection{Enunciato}
-$f: [1, + \infty ) \rightarrow \R,$ $f(x) \geq 0$ $\forall x \in [1, + \infty$.
-\\Sia $f$. debolmente crescente in $[\, + \infty )$.
-\\Allora ($\sum\limits_{k=1}^{\infty} f(k)$ converge $\iff$ $\int_{1}^{+ \infty} f(x) dx$ converge.)
-
-\section{! Teorema del valore medio integale}
-
-\section{Teorema delle 3 funzioni (Carabinieri)}
+\newpage
+\section{Teorema del confronto III - delle 3 funzioni - Carabinieri}
 \includegraphics[width = 5em]{./images/carabinieri.png}
 \subsection{Enunciato}
 $f, g, h:$ $A \subset \R \rightarrow \R,$ $A \neq \emptyset,$ $x_0 \in \Rext$ punto di accumulazione per $A$.
@@ -231,7 +221,6 @@ $f, g, h:$ $A \subset \R \rightarrow \R,$ $A \neq \emptyset,$ $x_0 \in \Rext$ pu
 \end{enumerate}
 \[ \Rightarrow \exists \lim\limits_{x \to x_0} h(x) = l \]
 
-\vspace{50em}
 
 \subsection{Dimostrazione}
 Sia $\epsilon > 0$: $\exists U' x_0$, $U'' x_0$ intorni di $x_0 / \left|f(x) - l\right| < \epsilon$  $\forall x \in (U' x_0 \cap A) \setminus \{x_0\}$
@@ -250,7 +239,53 @@ Sia $\epsilon > 0$: $\exists U' x_0$, $U'' x_0$ intorni di $x_0 / \left|f(x) - l
 \]
 \\Che è esattamente la definizione di: $\lim\limits_{x \to x_0} h(x) = l$
 
-\section{! Condizione estremalità locale con le derivate successive}
+\newpage
+\section{Teorema del valore medio integrale}
+\subsection{Enunciato}
+$f: [a,b] \rightarrow \R$, $f, g R-integrale in [a,b]$.\\
+Sia $m = inf{f(x) / x \in [a,b]}$, $(\in \R)$\\
+\hspace*{1.15em} $M = sup{f(x) / x \in [a,b]}$, $(\in \R)$\\
+\Space
+\[
+    \Rightarrow
+    \begin{cases}
+        $1) $m(b-a) \leq \int_{a}^{b} f(x) dx \leq M(b-a)\\
+        $2) $\exists \mu \in [m,M] / \int_{a}^{b}f(x)dx = \mu (b-a)\\
+        $3) Se $f$ continua in $[a,b]$, allora $\exists x_0 \in [a,b] / \int_{a}^{b}f(x)dx = f(x_0)(b-a).
+    \end{cases}
+\]
+\subsection{Dimostrazione}
+1) $m \leq f(x) \leq M$ $x \in [a,b]$\\
+\hspace*{1.2em}$P = {a,b} \Rightarrow D(P, f) = m (b-a) \in G$\\
+\hspace*{1.2em}\hspace*{5em}$S'(P, f) = M(b-a) \in H$.\\
+\hspace*{1.2em}Allora: $m(b-a) \ leq sup(G) = \int_{a}^{b}f(x)dx = inf(H) \leq M(b-a)$\\
+\Space
+2) Dal punto 1): $m \leq \frac{\int_{a}^{b}f(x)dx}{b-a} \leq M.$ Sia $\mu = \frac{\int_{a}^{b}f(x)dx}{b-a}$,\\
+\hspace*{1.2em}allora $\mu \in [m,M]$ e ovviamenete, $\int_{a}^{b}f(x)dx = \mu (b-a)$
+\\\Space
+3) $f \in C^0[a,b]: $ per il teorema dei valori intermedi $f([a,b])$ è intervallo; per il teorema di Weistrass $f$ ha max e min \textbf{GLOBALE}\\
+\hspace*{1.2em}Quindi $f([a,b]) = [m, M]$\\
+\hspace*{1.2em}Per il punto 2), $\exists \mu \in [m,M] / \mu (b-a) = \int_{a}^{b}f(x)dx$;\\
+\hspace*{1.2em}ma $[m,M] = Im(f) \Rightarrow \exists x_0 \in [a,b] / f(x_0) = \mu$ 
+
+\section{Criterio integrale convergenza delle serie numeriche}
+\subsection{Enunciato}
+$f: [1, + \infty ) \rightarrow \R,$ $f(x) \geq 0$ $\forall x \in [1, + \infty$.
+\\Sia $f$. debolmente crescente in $[\, + \infty )$.
+\\Allora ($\sum\limits_{k=1}^{\infty} f(k)$ converge $\iff$ $\int_{1}^{+ \infty} f(x) dx$ converge.)
+
+\section{Teorema delle derivate successive}
+\subsection{Enunciato}
+Sia $n \in \N$, $n \geq \$$, $f \in C^{n-1}(I)$, $I$ intervallo, $x_0 \in I$, $x_0$ interno ad $I$.\\
+Suppongo che $\exists f^n(x_0)$ e che $f^{(k)}(x_0)=0$ per $k = 1, 2, 3, ..., n-1$.\\
+\hspace*{12.7em}$f^{(n)} > 0$ $(<0)$.\\
+\[
+    \Rightarrow
+    \begin{cases}
+        $se $n$ è \textbf{PARI}, si ha che $x_0$ è punto di minimo (massmimo) locale forte.$\\
+        $se $n$ è \textbf{DISPARI}, allora $x_0$nè pto di massimo nè pto di minimo locale.$
+    \end{cases}
+\]
 
 
 \section{Teorema di Rolle} \label{Rolle}
@@ -291,6 +326,7 @@ $f:[a,b] \rightarrow \R$, $f$ continua in $[a,b]$, $f$ derivabile in $(a,b)$.
 \end{figure}
 \FloatBarrier
 
+\newpage
 \section{Teorema condizione necessaria di convergenza delle serie}
 \subsection{Enunciato}
 \[
