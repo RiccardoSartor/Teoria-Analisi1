@@ -22,9 +22,13 @@
 }
 
 \newcommand{\R}{\mathbb{R}}
-\newcommand{\Rext}{\widetilde{\mathbb{R}}}
 \newcommand{\N}{\mathbb{N}}
-\newcommand{\DeltaEp}{\delta_{\varepsilon}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Rext}{\widetilde{\mathbb{R}}}
+
+\newcommand{\DeltaEp}{\delta_{\varepsilon}} %delta_epsilon
+
 \newcommand{\Space}{\vspace{1em}}
 
 \author{A. Languasco}
@@ -426,6 +430,75 @@ Sup\{$a_n$\} = $+ \infty \Rightarrow$ non posso applicare il teorema di Bolzano-
 \]
 Per il teorema di Bolzano-Weistra\ss $ \text{ } \exists a_{n_k}$ sottosuccessione di $a_n$ t.c. $\exists \lim\limits_{k \to + \infty} a_{n_k} \in \R$
 
+\section{Proprietà di Archimede} \label{Archimede}
+\subsection{Enunciato}
+\[ \forall x \in \R \text{ } \exists n \in \N / n < x \]
+"Esiste sempre un numero intero più grande di qualsiasi numero reale".
+\subsection{Dimostrazione}
+Sia $x>0 \rightarrow A:=\{n \in \N / n \leq x\}\subseteq \N$\\
+Tesi: $\iff A \neq \N$\\
+
+\Space
+Suppongo che $A = \N \neq \emptyset$\\
+Sia $B := \{y \in \R / y \geq n$ $ \forall n \in \N\}$\\
+dal fatto che $A = \N$ segue che $x \in B \Rightarrow B \neq \emptyset$\\
+Notiamo che $\forall y \in B$ si ha che $y \geq n$ $\forall n \in A (= \N)$. Quindi $A$ e $B$ sono separati per l'assioma di separazione\\
+$\exists \alpha \in \R / n \leq \alpha \leq y$ $\forall n \in A$ $\forall y \in B$ \vspace*{1em} $(A = \N)$\\
+Quindi è anche vero che $\N \ni n+1 \leq \alpha \leq y \Rightarrow n \leq \alpha - 1$ $\forall n \in A \Rightarrow \alpha - 1 \in B$\\
+Ma $\alpha$ è elemento separatore  di $A$ e $B$: $(n \leq ) \alpha \leq y $ $\forall y \in B$ $\forall n \in A$\\
+\[\text{Quindi }\alpha \leq \alpha - 1 \Rightarrow 1 \leq 0 \rightarrow \text{\textbf{Contraddizione}}\]
+Abbiamo provato l'applicazione contronominale; quindi il teorema è dimostrato.\\
+$A = \N$ FALSO $\Rightarrow a \subsetneq \N$
+
+\section{Teorema Bernoulli - de l'Hopital}
+\subsection{$\frac{0}{0}$; limiti al finito}
+$a, b \in \R$, $f, g:(a,b) \rightarrow \R$, $f,g $ derivabili in $(a,b)$\\
+\underline{$g'(x) \neq 0$} $\forall x \in (a,b)$. Siano $\lim\limits_{x \to a^+}g(x)$ e sia $\lim\limits_{x \to a^+}\frac{f'(x)}{g'(x)} = l \in \Rext$.\\
+\[ \Rightarrow \lim\limits_{x \to a^+}\frac{f(x)}{g(x)} = l\]
+\underline{Nota} vale anche per: $x \rightarrow b^-$, $Df = Dg = (a,b) \setminus \{x_0\}$
+
+\subsubsection{Errori comuni}
+1) \underline{\textbf{Errore:}} uguagliare $\frac{f(x)}{g(x)}$ con $\frac{f'(x)}{g'(x)}$ \underline{senza aver verificato che l'ultimo limte esiste.}\\
+2) Non si può usare il teorema di Bernoulli - de l'Hopital per studiare $\lim\limits_{x \to 0}\frac{\text{sin}x}{x}$
+
+\subsection{$\frac{0}{0}$; limiti all'infinito}
+Sia $a \in \R$, $f,g: (a, + \infty)$*$ \rightarrow \R$, $f, g$ derivabili in $(a, + \infty)$* e $g'(x) \neq 0$ $\forall x \in (a, + \infty)$*\\
+\textit{*$(a, +\infty)$ al contrario vale anche: $(- \infty, a)$.}\\
+Inoltre $\lim\limits_{x \to + \infty}f(x) = 0 = \lim\limits_{x \to + \infty}g(x)$ e $\lim\limits_{x \to +\infty}\frac{f'(x)}{g'(x)} =l \in \Rext$.\\
+\[ \Rightarrow \lim\limits_{x \to +\infty}\frac{f(x)}{g(x)} = l\]
+
+\subsection{$\frac{\infty}{\infty}$; limiti al finito}
+$a, b \in \R$, $f, g:(a,b) \rightarrow \R$, $f,g $ derivabili in $(a,b)$\\
+$g'(x) \neq 0$ $\forall x \in (a,b)$. Inoltre\\
+$\lim\limits_{x \to a^+}g(x) = +\infty$*; $\lim\limits_{x \to a^+}\frac{f'(x)}{g'(x)} = l \in \Rext$.\\
+\textit{*$+\infty$ al contrario vale anche: $-\infty$}\\
+\[ \Rightarrow \lim\limits_{x \to a^+}\frac{f(x)}{g(x)} = l\]
+
+\subsection{$\frac{\infty}{\infty}$; limiti al'infinito}
+Sia $a \in \R$, $f,g: (a, + \infty) \rightarrow \R$, $f, g$ derivabili in $(a, + \infty)$ e $g'(x) \neq 0$ $\forall x \in (a, + \infty)$.\\
+Inoltre $\lim\limits_{x \to + \infty}g(x) = +\infty$*; $\lim\limits_{x \to +\infty}\frac{f'(x)}{g'(x)} = l \in \Rext$.\\
+\textit{*$+\infty$ al contrario vale anche: $-\infty$}\\
+\[ \Rightarrow \lim\limits_{x \to +\infty}\frac{f(x)}{g(x)} = l\]
+
+\newpage
+\section{Teorema Densità di $\Q$ in $\R$}
+\subsection{Enunciato}
+Per ogni $x \in \R$ e $\forall \epsilon > 0 $, $\exists z \in \Q / z \leq x < z + \epsilon$ 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=25em]{./images/densityQinR.jpeg}
+\end{figure}
+\FloatBarrier
+
+\subsection{Dimostrazione}
+$x \in \R$, $\epsilon > 0 \Rightarrow \frac{1}{\epsilon}> 0$\\
+Uso la \hyperref[Archimede]{Proprietà di Archimede}: $\exists q \in \N / q > \frac{1}{\epsilon} > 0$\\
+Considero $qx \in \R$\\
+Per le prorietà delle parti intrere $\exists p \in \Z / p \leq qz < p + 1$\\
+Divido per $q > 0 \Rightarrow \frac{p}{q} \leq x < \textcolor{orange}{\frac{p + 1}{q}}$ \hspace*{1em} con
+$\textcolor{orange}{\frac{p + 1}{q}} = \frac{p}{q} + \frac{1}{p}$\\
+Ma $q > \frac{1}{\epsilon} = \epsilon q > 1 \Rightarrow \epsilon < \frac{1}{q}$\\
+\[ \text{Segue che }\frac{p}{q}\leq x < \frac{p}{q} + \epsilon\]
 
 \end{flushleft}
 \end{document}
