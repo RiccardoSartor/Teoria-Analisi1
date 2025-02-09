@@ -39,7 +39,7 @@
 
 \section{Teorema del differenziale (Lagrange - Rolle generalizzato)}
 \subsection{Enunciato}
-{2.2em}$f: I \subset \R, I$ intervallo, $x_0 \in I$, $x_0$ interno ad $I$, $f$ derivabile in $x_0$.
+$f: I \subset \R, I$ intervallo, $x_0 \in I$, $x_0$ interno ad $I$, $f$ derivabile in $x_0$.
 \\Allora: $\exists$ w: I $\rightarrow \R$ t.c. w è continua in $x_0$, w($x_0$) = 0 e
 \[
     f(x_0) + f'(x_0)(x-x_0)+w(x)(x-x_0)
@@ -53,8 +53,8 @@
 $f: A \subset \R \rightarrow \R$, $x_0 \in \Rext$ punto di accumulazione per $A$
 Se:
 \begin{enumerate}
-    \item $\lim_{x \to x_0} f(x) = l_1 \in \Rext$
-    \item $\lim_{x \to x_0} f(x) = l_2 \in \Rext$
+    \item $\lim\limits_{x \to x_0} f(x) = l_1 \in \Rext$
+    \item $\lim\limits_{x \to x_0} f(x) = l_2 \in \Rext$
 \end{enumerate}
 Allora: $\mathbf{l_1 = l_2}$
 
@@ -71,9 +71,9 @@ Allora: $\mathbf{l_1 = l_2}$
 \end{figure}
 
 Per contraddizione: $l_1 \neq l_2$
-\\Allora $\exists Vl_1, Vl_2$ intorni di $l_1$ e $l_2$ (rispettivamente) tali che: $Vl_1 \bigcup Vl_2 \neq \emptyset$
-\\$Wx_0 = \bigcup U'x_0$ è un intorno di $x_0$
-\\Sia $x \in(Wx_0 \bigcup A) - \{x_0\} \neq \emptyset$ (perché $x_0$ è di accumulazione)
+\\Allora $\exists Vl_1, Vl_2$ intorni di $l_1$ e $l_2$ (rispettivamente) tali che: $Vl_1 \cup Vl_2 \neq \emptyset$
+\\$Wx_0 = \cup U'x_0$ è un intorno di $x_0$
+\\Sia $x \in(Wx_0 \cup A) - \{x_0\} \neq \emptyset$ (perché $x_0$ è di accumulazione)
 \[
     \Rightarrow
     \begin{cases}
@@ -101,8 +101,10 @@ $[a,b] \subset \R$, $a < b$. $f$ R-integrale su $[a,b]$.
     &\leq \frac{1}{x - x_1} \int_{x_1}^{x} |f(t) - f(x_1)| dt
 \end{align*}
 \Space
-\\Ma $f$ è continua in $x_1 \iff $
-\[\forall\epsilon>0\text{ }\exists \DeltaEp>0\text{ t.c. }\left|f(t) - f(x_1)\right|<\epsilon\text{ }\forall t / 0 < \left|t-x_1\right|<\DeltaEp\text{ }t\in[a,b]\]
+\[ 
+  \text{Ma } f \text{ è continua in }x_1 \iff \forall\epsilon>0\text{ }\exists \DeltaEp>0\text{ t.c. }\left|f(t) - f(x_1)\right|<\epsilon\text{ }\forall t / 0 < \left|t-x_1\right|<\DeltaEp\text{ }t\in[a,b]
+\]
+
 Osservo che $t\in[x_1, x]$ (oppure $t\in[x, x_1]$, dipende come abbiamo disposto $x$ e $x_1$)
 \\Implica che $\left|t-x_1\right| \leq \left|x - x_1\right|$
 \\Sia allora $x\in[a, b] / \left|x-x_1\right|<\DeltaEp$. \underline{Con questo forziamo le due varibli a stare vicine fra loro}
@@ -116,7 +118,7 @@ Osservo che $t\in[x_1, x]$ (oppure $t\in[x, x_1]$, dipende come abbiamo disposto
 \section{Formula fondamentale del calcolo integrale}
 \subsection{Enunciato}
 $f \in C^0[a,b]$ e sia $G : [a,b] \rightarrow {\R}$ una primitiva di $f$ in $[a,b]$
-\\\begin{center}Allora $\int_{a}^{b}f(t)dt = G(b) - G(a)$\end{center}
+\\\begin{center}$\Rightarrow \int_{a}^{b}f(t)dt = G(b) - G(a)$\end{center}
 
 \subsection{Dimostrazione}
 Sia $x \in [a,b]$ e $F(x)= \int_{x_0}^{x}f(t)dt$. Per il TFCI* è derivabile in $[a,b]$ e $F'(x)=f(x) \forall x \in [a,b]$.
@@ -189,7 +191,7 @@ $f, g: A \subset \R \rightarrow \R$ $A \neq \emptyset$ $x \in \Rext$ punto di ac
         \[ \Rightarrow \exists \lim\limits_{x \to x_0} g(x) = + \infty \]
 
         \item[c)]
-        Se $\lim_limits_{x \to x_0} f(x) = + \infty$ e $\exists U x_0$ intorno di $x_0 / f(x) \leq g(x)$ $\forall x \in (U x_0 \cap A) \setminus \{x_0\}$
+        Se $\lim\limits_{x \to x_0} f(x) = + \infty$ e $\exists U x_0$ intorno di $x_0 / f(x) \leq g(x)$ $\forall x \in (U x_0 \cap A) \setminus \{x_0\}$
         \[ \Rightarrow \exists \lim\limits_{x \to x_0} g(x) = + \infty \]
 \end{enumerate}
 \subsection{Osservazione}
@@ -243,8 +245,8 @@ Sia $\epsilon > 0$: $\exists U' x_0$, $U'' x_0$ intorni di $x_0 / \left|f(x) - l
 \section{Teorema del valore medio integrale}
 \subsection{Enunciato}
 $f: [a,b] \rightarrow \R$, $f, g R-integrale in [a,b]$.\\
-Sia $m = inf{f(x) / x \in [a,b]}$, $(\in \R)$\\
-\hspace*{1.15em} $M = sup{f(x) / x \in [a,b]}$, $(\in \R)$\\
+Sia $m = $inf${f(x) / x \in [a,b]}$, $(\in \R)$\\
+\hspace*{1.15em} $M = $sup${f(x) / x \in [a,b]}$, $(\in \R)$\\
 \Space
 \[
     \Rightarrow
@@ -258,7 +260,7 @@ Sia $m = inf{f(x) / x \in [a,b]}$, $(\in \R)$\\
 1) $m \leq f(x) \leq M$ $x \in [a,b]$\\
 \hspace*{1.2em}$P = {a,b} \Rightarrow D(P, f) = m (b-a) \in G$\\
 \hspace*{1.2em}\hspace*{5em}$S'(P, f) = M(b-a) \in H$.\\
-\hspace*{1.2em}Allora: $m(b-a) \ leq sup(G) = \int_{a}^{b}f(x)dx = inf(H) \leq M(b-a)$\\
+\hspace*{1.2em}Allora: $m(b-a) \leq sup(G) = \int_{a}^{b}f(x)dx = inf(H) \leq M(b-a)$\\
 \Space
 2) Dal punto 1): $m \leq \frac{\int_{a}^{b}f(x)dx}{b-a} \leq M.$ Sia $\mu = \frac{\int_{a}^{b}f(x)dx}{b-a}$,\\
 \hspace*{1.2em}allora $\mu \in [m,M]$ e ovviamenete, $\int_{a}^{b}f(x)dx = \mu (b-a)$
@@ -270,13 +272,13 @@ Sia $m = inf{f(x) / x \in [a,b]}$, $(\in \R)$\\
 
 \section{Criterio integrale convergenza delle serie numeriche}
 \subsection{Enunciato}
-$f: [1, + \infty ) \rightarrow \R,$ $f(x) \geq 0$ $\forall x \in [1, + \infty$.
+$f: [1, + \infty ) \rightarrow \R,$ $f(x) \geq 0$ $\forall x \in [1, + \infty)$.
 \\Sia $f$. debolmente crescente in $[\, + \infty )$.
 \\Allora ($\sum\limits_{k=1}^{\infty} f(k)$ converge $\iff$ $\int_{1}^{+ \infty} f(x) dx$ converge.)
 
 \section{Teorema delle derivate successive}
 \subsection{Enunciato}
-Sia $n \in \N$, $n \geq \$$, $f \in C^{n-1}(I)$, $I$ intervallo, $x_0 \in I$, $x_0$ interno ad $I$.\\
+Sia $n \in \N$, $n \geq 1$, $f \in C^{n-1}(I)$, $I$ intervallo, $x_0 \in I$, $x_0$ interno ad $I$.\\
 Suppongo che $\exists f^n(x_0)$ e che $f^{(k)}(x_0)=0$ per $k = 1, 2, 3, ..., n-1$.\\
 \hspace*{12.7em}$f^{(n)} > 0$ $(<0)$.\\
 \[
