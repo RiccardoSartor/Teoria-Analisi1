@@ -29,7 +29,8 @@
 
 \newcommand{\DeltaEp}{\delta_{\varepsilon}} %delta_epsilon
 
-\newcommand{\Space}{\vspace{1em}}
+\newcommand{\vSpace}{\vspace{1em}}
+\newcommand{\hSpace}{\hspace{1em}}
 
 \author{A. Languasco}
 
@@ -42,6 +43,8 @@
 \begin{flushleft}
 
 \section{Teorema del differenziale (Lagrange - Rolle generalizzato)}
+Se una funzione è derivabile in un punto, allora il suo comportamento vicino a quel punto può essere descritto da una retta tangente (approssimazione lineare). Il termine 
+$o(x - x_0)$ indica che il resto dell'approssimazione tende a zero più velocemente di $x - x_0$.\\
 \subsection{Enunciato}
 $f: I \subset \R, I$ intervallo, $x_0 \in I$, $x_0$ interno ad $I$, $f$ derivabile in $x_0$.
 \\Allora: $\exists$ w: I $\rightarrow \R$ t.c. w è continua in $x_0$, w($x_0$) = 0 e
@@ -51,6 +54,7 @@ $f: I \subset \R, I$ intervallo, $x_0 \in I$, $x_0$ interno ad $I$, $f$ derivabi
 \\dove: $f(x_0) + f'(x_0)(x-x_0)$ è la tangente
 \\\hspace{2.3em} $w(x)(x-x_0)$ è l'errore causato da alcuni fattori, \underline{lo possiamo trascurare.}
 
+\section{! Dimostrazione}
 
 \section{Teorema dell'unicità del limite}
 \subsection{Enunciato}
@@ -104,7 +108,7 @@ $[a,b] \subset \R$, $a < b$. $f$ R-integrale su $[a,b]$.
     &= \left| \frac{\int_{x_1}^{x} (f(t) - f(x_1)) dt}{x - x_1} \right| \\
     &\leq \frac{1}{x - x_1} \int_{x_1}^{x} |f(t) - f(x_1)| dt
 \end{align*}
-\Space
+\vSpace
 \[ 
   \text{Ma } f \text{ è continua in }x_1 \iff \forall\epsilon>0\text{ }\exists \DeltaEp>0\text{ t.c. }\left|f(t) - f(x_1)\right|<\epsilon\text{ }\forall t / 0 < \left|t-x_1\right|<\DeltaEp\text{ }t\in[a,b]
 \]
@@ -133,7 +137,7 @@ Sia $x \in [a,b]$ e $F(x)= \int_{x_0}^{x}f(t)dt$. Per il TFCI* è derivabile in 
     \\$= \cancel{\int_{x_0}^{a}f(t)dt} + \int_{x_0}^{b}f(t)dt - \cancel{\int_{x_0}^{a}f(t)dt} = \int_{x_0}^{b}f(t)dt$.
 \end{center}
 *TFCI: \hyperref[TFCI]{Teorema Fondamentale Calcolo Integrale}
-\Space
+\vSpace
 \\\underline{\textbf{Osservazione:}} $f \in C^0 ([a,b])$ e sia
 \\$H(x) = \int_{\alpha(x)}^{\beta(x)}f(t)dt$ dove $\alpha,\beta:[a,b]\rightarrow \R$ derivabili in $[a,b]$.
 \\Si ha che $H(x)$ è derivabile perché $H(x)=F(\beta(x))-F(\alpha(x))$ dove $F(u)=\int_{x_0}^{u}f(t)dt$ \textit{(Composizione di $f$ derivabili)}
@@ -172,7 +176,7 @@ $f, g: A \subset \R \rightarrow \R, x_0 \in \Rext$ punto di accumulazione per $A
     $l_1 < l_2 (l_1,l_2 \in \R)$. Fisso $\epsilon>0$\\
     $\lim\limits_{x \to x_0} f(x)=l_1 \Rightarrow \exists U' x_0$ intervallo di $x_0$ tale che $\forall x \in (U' x_0 \cap A)\setminus \{x_0\}$
     \\$\lim\limits_{x \to x_0} g(x) = l_2 \Rightarrow \exists U'' x_0$ intorno di $x_0 / l_2 - \epsilon < g(x) < l_2 + \epsilon$ $\forall x \in (U'' x_0 \cap A) \setminus \{x_0\}$
-    \Space
+    \vSpace
     \\Se $x \in (U' x_0 \cap U'' x_0 \cap A) \setminus \{x_0\}$ \textit{idea: scelgo $\epsilon>0 / l_1 + \epsilon \leq l_2 - \epsilon$}
     \\Scelgo in quanto sopra $\epsilon = \frac{l_2 - l_1}{2}$
     \\Per $x \in (U' x_0 \cap U'' x_0 \ cap A) \setminus \{x_0\}$ si ha allora 
@@ -231,13 +235,13 @@ $f, g, h:$ $A \subset \R \rightarrow \R,$ $A \neq \emptyset,$ $x_0 \in \Rext$ pu
 \subsection{Dimostrazione}
 Sia $\epsilon > 0$: $\exists U' x_0$, $U'' x_0$ intorni di $x_0 / \left|f(x) - l\right| < \epsilon$  $\forall x \in (U' x_0 \cap A) \setminus \{x_0\}$
 \\\hspace*{16.32em} $\left|g(x) - l\right| < \epsilon$  $\forall x \in (U'' x_0 \cap A) \setminus \{x_0\}$
-\\\Space Sia $W x_0 = U' x_0 \cap U'' x_0$ è un intorno di $x_0$.
+\\\vSpace Sia $W x_0 = U' x_0 \cap U'' x_0$ è un intorno di $x_0$.
 \\Se $x \in W x_0 \cap A \setminus \{x_0\}$
-\Space
+\vSpace
 \\\hspace*{18em}$l - \epsilon < f(x)$ \underline{definizione $\lim f$ (per ipotesi)}
 \\\hspace*{18em}\hspace*{3.3em}$f(x) \leq h(x) \leq g(x)$
 \\\hspace*{18em}\hspace*{9.8em}$g(x) < l + \epsilon$
-\Space
+\vSpace
 \\Quindi $l - \epsilon < h(x) < l + \epsilon$ cioè $\left|h(x) - l\right| < \epsilon$
 \\Ho fatto vedere che:
 \[
@@ -251,7 +255,7 @@ Sia $\epsilon > 0$: $\exists U' x_0$, $U'' x_0$ intorni di $x_0 / \left|f(x) - l
 $f: [a,b] \rightarrow \R$, $f, g R-integrale in [a,b]$.\\
 Sia $m = $inf${f(x) / x \in [a,b]}$, $(\in \R)$\\
 \hspace*{1.15em} $M = $sup${f(x) / x \in [a,b]}$, $(\in \R)$\\
-\Space
+\vSpace
 \[
     \Rightarrow
     \begin{cases}
@@ -265,10 +269,10 @@ Sia $m = $inf${f(x) / x \in [a,b]}$, $(\in \R)$\\
 \hspace*{1.2em}$P = {a,b} \Rightarrow D(P, f) = m (b-a) \in G$\\
 \hspace*{1.2em}\hspace*{5em}$S'(P, f) = M(b-a) \in H$.\\
 \hspace*{1.2em}Allora: $m(b-a) \leq sup(G) = \int_{a}^{b}f(x)dx = inf(H) \leq M(b-a)$\\
-\Space
+\vSpace
 2) Dal punto 1): $m \leq \frac{\int_{a}^{b}f(x)dx}{b-a} \leq M.$ Sia $\mu = \frac{\int_{a}^{b}f(x)dx}{b-a}$,\\
 \hspace*{1.2em}allora $\mu \in [m,M]$ e ovviamenete, $\int_{a}^{b}f(x)dx = \mu (b-a)$
-\\\Space
+\\\vSpace
 3) $f \in C^0[a,b]: $ per il teorema dei valori intermedi $f([a,b])$ è intervallo; per il teorema di Weistrass $f$ ha max e min \textbf{GLOBALE}\\
 \hspace*{1.2em}Quindi $f([a,b]) = [m, M]$\\
 \hspace*{1.2em}Per il punto 2), $\exists \mu \in [m,M] / \mu (b-a) = \int_{a}^{b}f(x)dx$;\\
@@ -313,8 +317,10 @@ Se almeno uno tra $x_1$ e $x_2$ non è in un estremo di $[a,b]$
 \section{Teorema di Lagrange}
 \subsection{Enunciato}
 $f:[a,b] \rightarrow \R$, $f$ continua in $[a,b]$, $f$ derivabile in $(a,b)$.
-\\Allora $\exists \overline{x} \in (a,b) / f(b) - f(a) = f'(\overline{x}) (b-a)$
-\\Sia $\varphi (x) = (f(x)- f(a))(b - a) - (f(b) - f(a))(x-a)$, $f$ è continua in $[a,b]$;
+\[ \Rightarrow \exists \overline{x} \in (a,b) / f(b) - f(a) = f'(\overline{x}) (b-a)\]
+
+\subsection{Dimostrazione}
+Sia $\varphi (x) = (f(x)- f(a))(b - a) - (f(b) - f(a))(x-a)$, $f$ è continua in $[a,b]$;
 \\$\varphi$ è derivabile in $(a,b)$, $\varphi (a) = 0 - 0 = 0$; $\varphi (b) = 0 - 0 = 0$.
 \\Per il teorema di \hyperref[Rolle]{Rolle}: $\exists \overline{x} \in (a,b)$ \hspace*{2em} $\varphi (\overline{x}) \rightarrow$ punto che azzera la derivata prima.
 \\Ma $\varphi ' (x) = (f'(x)(b-a)) - (f(b)-f(a))$ $\forall x \in (a,b)$
@@ -332,7 +338,7 @@ $f:[a,b] \rightarrow \R$, $f$ continua in $[a,b]$, $f$ derivabile in $(a,b)$.
 \end{figure}
 \FloatBarrier
 
-\newpage
+
 \section{Teorema condizione necessaria di convergenza delle serie}
 \subsection{Enunciato}
 \[
@@ -355,14 +361,14 @@ $x \in \R$, $x > - 1$. Allora $(1+x)^m \geq 1 + nx$ $\forall n \in \N$
 \subsection{Dimostrazione}
 \textbf{Passo base:}\\
 È vero che: $(1+x)^0 \leq 1 + 0 * x?$, si $\Rightarrow$ passo base \underline{verificato!}
-\\\Space
+\\\vSpace
 \textbf{Passo induttivo:}\\
 Ipotesi induttiva: $(1+x)^m \geq 1 + mx$ \hspace*{1em} con $m \in \N$\\
 Tesi induttiva: $(1+x)^{m+1} \geq \textcolor{red}{1 + (m+1)x}$
-\\\Space
+\\\vSpace
 $(1+x)^{m + 1} = (1+x)(1+x)^m \geq (1 + mx)(1+x)$\\
 $1 + x + mx + mx^2 = x(1+m)+ 1 + mx^2 = (m+1)x + 1 + mx^2 \geq \textcolor{red}{(m+1)x + 1}$ \hspace*{1em}Posso anche ingnorare $mx^2$ perche è sempre positivo
-\\\Space
+\\\vSpace
 \textbf{Quindi il passo induttivo è verificato per il principio di induzione $\forall x > -1$}
 
 \newpage
@@ -438,7 +444,7 @@ Per il teorema di Bolzano-Weistra\ss $ \text{ } \exists a_{n_k}$ sottosuccession
 Sia $x>0 \rightarrow A:=\{n \in \N / n \leq x\}\subseteq \N$\\
 Tesi: $\iff A \neq \N$\\
 
-\Space
+\vSpace
 Suppongo che $A = \N \neq \emptyset$\\
 Sia $B := \{y \in \R / y \geq n$ $ \forall n \in \N\}$\\
 dal fatto che $A = \N$ segue che $x \in B \Rightarrow B \neq \emptyset$\\
@@ -500,5 +506,60 @@ $\textcolor{orange}{\frac{p + 1}{q}} = \frac{p}{q} + \frac{1}{p}$\\
 Ma $q > \frac{1}{\epsilon} = \epsilon q > 1 \Rightarrow \epsilon < \frac{1}{q}$\\
 \[ \text{Segue che }\frac{p}{q}\leq x < \frac{p}{q} + \epsilon\]
 
+\section{Definizione di Limite}
+$f:A \subset \R \rightarrow \R$, $A \neq \emptyset$. Sia $x_0 \in \Rext$ un punto di accumulazione per $A$.\\
+Diremo che $f$ ammette limite $l \in \Rext$ per $x$ che tende a $x_0$ [scriviamo $\lim\limits_{x \to x_0}f(x) = l$] se e solo se per ogni
+intorno $Vl$ di $l$ esiste un intorno $Ux_0$, intorno di $x_0$, tale che $f(x) \in Vl$ per ogni $x \in (Ux_0 \cap A) \setminus \{x_0\}$.\\
+\vSpace
+\textbf{N.B.} Se $x_0 \in \{- \infty, + \infty\}$, l'ultima parte sopra è da leggere come: $(Ux_0 \cap A)$, senza togliere $x_0$.
+
+\[
+\forall \epsilon > 0 \hSpace \exists \DeltaEp / \left|f(x)-l\right| < \epsilon \text{ } \forall x \in A \text{, } f(x) \in Vl
+\]
+$0 < \left|x - x_o\right| < \DeltaEp$: Vuol dire prendere i valori del disco di raggio $\DeltaEp$ e togliere il punto centrale in $x_0$ (quindi togliere $x_0$), si dice in questo caso: "disco bucato".
+
+\section{Teorema formula di Taylor con resto di Peano}
+\subsection{Enunciato}
+Sia $n \in \N$, $n \geq 1$, $f:I \subset \R \rightarrow \R$, $I$ intervallo, sia derivabile $n-1$ volte in $I$ e tali funzioni derivate siano continue in $i$.\\
+Sia inoltre $x_0 \in I$, $x_0$ interno ed $\exists f^{(n)}(x_0)$\\
+Allora $\exists w: I \subset \R \rightarrow \R$ t.c. $w$ continua in $x_0$, $w(x_0)=0$ ed inoltre
+\[
+    f(x) = \sum_{k = 0}^{n} \frac{f^{(n)}(x_0)}{k!}(x - x_0 )^k + w(x)(x - x_0)^n \hSpace \forall x \in I
+\]
+
+Dove: $\sum_{k = 0}^{n} \frac{f^{(n)}(x_0)}{k!}(x - x_0 )^k$ \hSpace $\rightarrow$ \hSpace è la formula di Taylor.\\
+\hspace*{2.55em} $w(x)(x - x_0)^n$ \hSpace $\rightarrow$ \hSpace è il resto di Peano.
+
+\section{Criterio di Von Leibniz (Serie segni alterni)}
+\subsection{Enunciato}
+Sia $a_k \neq 0, a_{k+1} \neq a_k$ e $\lim\limits_{x \to + \infty}a_k = 0$.
+\[
+\Rightarrow \sum_{k = 1}^{\infty}(-1)^{k-1}a_k \text{ converge}
+\]
+
+\section{Criterio della radice (CAUCHY)}
+$a_k \in \R $ $\forall k \in \N$. Se $\lim\limits_{k \to + \infty} \sqrt[k]{\left| a_k \right|} = l < 1$
+\[
+\Rightarrow \sum a_k \text{ è ASSOLUTAMENTE CONVERGENTE}
+\]
+\textbf{N.B.} se $l=1$ non si può concludere.
+
+\section{Criterio del rapporto (D'Alembert)}
+$a_k \in \R \setminus \{0\}$, $\forall k \in \N$. Se $\lim\limits_{k \to + \infty} \left|\frac{a_k+1}{a_k}\right| = l < 1$
+\[
+\Rightarrow \sum a_k \text{ è ASSOLUTAMENTE CONVERGENTE}
+\]
+\textbf{N.B.} se $l=1$ non si può concludere.
+
+\section{Criterio integrale}
+$f:[1, +\infty) \rightarrow \R$, $f(x) \geq 0$, $\forall x \in [1, +\infty)$.\\
+Sia $f$. debolmente crescente in $[1, + \infty)$.
+\[
+\Rightarrow (\sum_{k = 1}^{+ \infty}f(k) \text{ converge} \iff \int_{1}^{+ \infty}f(x)dx \text{ converge})
+\]
+
+\section{Serie a termini di segno qualunque}
+Sia $a_n \in \R$, $\forall k \in \N$ una successione.\\
+Diremo che $\sum \frac{(-1)^k}{k}$ è ASSOLUTAMENTE CONVERGENTE $\iff \sum \left|a_k\right| converge$.
 \end{flushleft}
 \end{document}
