@@ -625,5 +625,18 @@ Ricordiamo ora che $f(a_n) < 0 < f(b_n)$ e quindi che: $f(a_n) < f(l) < f(b_n)$\
 D'altra parte per il teorema del confronto, da $f(a_n) < 0$ segue $\lim\limits_{n \to + \infty}f(a_n) \leq 0 \Rightarrow f(l) \leq 0$\\
 Infine, per il teorema del confronto, da $f(b_n) > 0 $ segue $\lim\limits_{n \to + \infty}f(b_n) \geq 0 \Rightarrow f(l) \geq 0$.\\
 Pertanto $0 \leq f(l) \leq 0 \Rightarrow f(l) = 0$ e la tesi segue $(\overline{x} = l)$
+
+\section{Principio di sostituzione degli infiniti di ordine inferiore}
+\subsection{Enunciato}
+$f, g, f_1, g_1,$ sono infinite per $ x \to x_0$.\\
+$f_1$ è infinito di ordine inferiore a $f$,\\
+$g_1$ è infinito di ordine inderiore a $g$ per $x \to x_0$.
+\[
+\Rightarrow (\lim\limits_{x \to x_0}\frac{f(x)+f_1(x)}{g(x)+g_1(x)} \text{esiste } \iff \lim\limits_{x \to x_0}\frac{f(x)}{g(x)} \text{esiste})\text{ ed in tal caso sono uguali fra loro.}
+\]
+\subsection{Dimostrazione (Traccia)}
+\[\frac{f(x)+f_1(x)}{g(x)+g_1(x)} = \frac{f(x)(1 + \frac{f_1(x)}{f(x)})}{g(x)(g(x) + \frac{g_1(x)}{g(x)})}\]
+
+\section{! Condizione necessaria del primo ordine per punti estremali interni}
 \end{flushleft}
 \end{document}
