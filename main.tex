@@ -561,5 +561,69 @@ Sia $f$. debolmente crescente in $[1, + \infty)$.
 \section{Serie a termini di segno qualunque}
 Sia $a_n \in \R$, $\forall k \in \N$ una successione.\\
 Diremo che $\sum \frac{(-1)^k}{k}$ è ASSOLUTAMENTE CONVERGENTE $\iff \sum \left|a_k\right| converge$.
+
+\section{! Criterio dell'ordine di infinitesimo (Integrali impropri)}
+\section{Teorema dei valori intermedi}
+\subsection{Enunciato}
+$f: I \subset \R \rightarrow \R$, $I$ intervallo, $f$ continua in $I$.
+\[
+\Rightarrow Im(f) \text{ è un intervallo.}
+\]
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=10em]{./images/valori_intermedi.jpg}
+\end{figure}
+\FloatBarrier
+
+\section{Proprietà della parte intera}
+\subsection{Enunciato}
+$\forall x \in \R$ $\exists !$ $ n \in \Z$ t.c. $ n \leq x < n + 1$\\
+\textbf{N.B.} $n$ è detto parte intera di $x$ $\rightarrow$ $n = \lfloor x \rfloor$
+
+\section{Teorema "Ponte" o limiti mediante successioni}
+\subsection{Enunciato}
+$f:A \subset \R \rightarrow \R$, $x_0 \in \Rext$ di accumulazione per $A$.\\
+\[
+\Rightarrow \lim\limits_{x \to x_0}f(x) = l(\in \Rext) \iff \forall \text{successione } a_n \in A \setminus \{x_0\}/\lim\limits_{n \to + \infty}a_n = x_0 \text{, si ha che } \lim\limits_{n \to + \infty} f(a_n)=l
+\]
+\subsection{Dimostrazione}
+"$\Rightarrow$" segue dal teorema di sostituzione dei limiti\\
+"$\Leftarrow$" va dimostrato direttamente.
+
+\section{Teorema degli Zeri}
+\subsection{Enunciato}
+$f:[a, b] \rightarrow \R$, $f$ continua su $[a, b]$ e $f(a)f(b) <0$.
+\[
+\Rightarrow \exists \overline{x} \in (a,b) / f(\overline{x}) = 0
+\]
+\subsection{Dimostrazione (metodo dicotomico)}
+Suppongo $f(a) < 0 < f(b)$\\
+Sia $c=\frac{a+b}{2}$. Calcolo $f(c)$:\\
+\begin{enumerate}
+    \item[1)] Se $f(c) = 0 \Rightarrow$ la tesi è vera con $\overline{x} = c$ \\
+    \item[2)] Se $f(c) < 0 \Rightarrow$ pongo $a_1 = c$, $b_1 = b$ e ho $f(a_1) < 0 < f(b_1)$ \\
+    \item[3)] Se $f(c) > 0 \Rightarrow$ pongo $a_1 = a$, $b_1 = c$ e ho $f(a_1) < 0 < f(b_1)$ 
+\end{enumerate}
+
+Nei casi 2) e 3): possiamo ripetere il procedimento su $[a_1, b_1]$:\\
+Calcolo $c_1 = \frac{a_1 + b_1}{2};$ Valuto $f(c_1)$\\
+\begin{enumerate}
+    \item[1)] Se $f(c_1) = 0 \Rightarrow$ la tesi è vera con $\overline{x} = c_1$\\
+    \item[2)] e 3) come sopra. 
+\end{enumerate}
+
+Procedo in tal modo, per induzione, definendo $a_n$, $b_n$, $a \leq a_n < b_n \leq b$ e $f(a_n) < 0 < f(b_n)$.\\
+Osservo che $b_1 - a_1 = \frac{b-a}{2}; b_2-a_2 = \frac{b_1-a_1}{2} = \frac{b-a}{4}...=b_n - a_n = \frac{b-a}{2^n}, n \geq 1$\\
+Inoltre per costruzione, $a_n < a_n+1$(deb. crescente) $b_{n+1} \leq b_n$(deb. crescente).\\
+Per il teorema sui limiti delle funzione monotone:\\
+\hSpace $\lim\limits_{n \to + \infty}a_n = l \in [a,b] (a_n \leq a_n \leq b)$\\
+\hSpace $\lim\limits_{n \to + \infty}b_n = m \in [a,b] (a \leq b_n \leq b)$\\
+D'altra parte, $\lim\limits_{n \to + \infty}(b_n - a_n) = \lim\limits_{n \to + \infty}\frac{b-a}{2^n} = 0$\\
+Ma $\lim\limits_{n \to + \infty} (b_n - a_n) = m - l \Rightarrow l = m$.\\
+Ricordiamo ora che $f(a_n) < 0 < f(b_n)$ e quindi che: $f(a_n) < f(l) < f(b_n)$\\
+\vSpace
+D'altra parte per il teorema del confronto, da $f(a_n) < 0$ segue $\lim\limits_{n \to + \infty}f(a_n) \leq 0 \Rightarrow f(l) \leq 0$\\
+Infine, per il teorema del confronto, da $f(b_n) > 0 $ segue $\lim\limits_{n \to + \infty}f(b_n) \geq 0 \Rightarrow f(l) \geq 0$.\\
+Pertanto $0 \leq f(l) \leq 0 \Rightarrow f(l) = 0$ e la tesi segue $(\overline{x} = l)$
 \end{flushleft}
 \end{document}
