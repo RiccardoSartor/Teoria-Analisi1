@@ -667,5 +667,27 @@ Se
 \[
 \Rightarrow f'(x_0)=0
 \]
+\underline{Una retta è sempre derivabile.}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=20em]{./images/condizione_necessaria_di_estremalita.jpeg}
+\end{figure}
+\FloatBarrier
+\subsection{Dimostrazione}
+Sia $x_0$ un punto di minimo locale $\Rightarrow \exists \delta_1 > 0$ t.c. $f(x_0) \leq f(x)$ $\forall x \in (x_0 - \delta_1, x_0 + \delta_1)\cap A$.\\
+So che $x_0$ è interno ad $A$; quindi $\exists \delta_2 > 0 / (x_0 - \delta_2, x_0 + \delta_2) \subset A$.\\
+Sia $\delta$* $=$ min($\delta_1, \delta_2$)$>0$. \hSpace *(il minimo fra i 2)\\
+Considero $x \in (x_0, x_0 + \delta)$ e $f'(x_0) = \lim\limits_{x \to x_0}\frac{f(x) - f(x_0)}{x - x_0} = \lim\limits_{x \to x_0^+}\frac{f(x) - f(x_0)}{x - x_0} \geq 0$\\
+Sia $x \in (x_0 - \delta, x_0)$; ho che $f'(x_0) = \lim\limits_{x \to x_0}\frac{f(x) - f(x_0)}{x - x_0} = \lim\limits_{x \to x_0^-}\frac{f(x) - f(x_0)}{x - x_0} \leq 0$
+\[
+\Rightarrow 0 \geq f(x) \geq 0 \Rightarrow f'(x_0)=0
+\]
+
+\section{Classificazione delle discontinuità}
+$A \subset \R$, $f: A \rightarrow \R$, $x_0$ di accumulazione per $A$.
+
+\subsection{Discontinuità eliminabile}
+Se $\lim\limits_{x \to x_0^+} f(x) = l_1 \in \R, \lim\limits_{x \to x_0^-} = l_2 \in \R$\\
+$l_1 = l_2$, Ma $f(x_0) \neq l$, diremo che $x_0$ è punto di \textbf{discontinuità eliminabile} di $f$
 \end{flushleft}
 \end{document}
