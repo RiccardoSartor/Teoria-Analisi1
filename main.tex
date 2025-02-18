@@ -54,7 +54,25 @@ $f: I \subset \R, I$ intervallo, $x_0 \in I$, $x_0$ interno ad $I$, $f$ derivabi
 \\dove: $f(x_0) + f'(x_0)(x-x_0)$ è la tangente
 \\\hspace{2.3em} $w(x)(x-x_0)$ è l'errore causato da alcuni fattori, \underline{lo possiamo trascurare.}
 
-\subsection{! Dimostrazione}
+\subsection{Dimostrazione}
+\[
+    \text{Sia }w(x) := 
+    \begin{cases}
+        \frac{f(x)-f(x_0)}{x - x_0} - f'(x_0) \text{ Se } x \neq x_0\\
+        0 \text{ Se } x = x_0 
+    \end{cases}
+\]
+
+$\lim\limits_{x \to x_0}w(x_0) = \lim\limits_{x \to x_0} [\frac{f(x)-f(x_0)}{x - x_0} - f'(x_0)] = f'(x_0) - f'(x_0) = 0$\\
+Sia $ x \neq 0$: $w(x_0)=\frac{f(x)-f(x_0)}{x-x_0}-f'(x_0) \Rightarrow (w(x) - f'(x_0))(x - x_0) = f(x)-f(x_0)$
+\[
+\Rightarrow f(x)=f(x_0)+f'(x_0)(x-x_0) + w(x)(x - x_0) \text{ } \forall x \in I \text{ } x \neq x_0
+\]
+Sia $x = x_0$: $f(x_0) \stackrel{?}{=} f(x_0) + f'(x_0)(x_0-x_0)+ w(x_0)(x_0-x_0)$ \textbf{\underline{Si!}}
+\vSpace
+\[
+\text{Pertanto la tesi è verificata } \forall x \in I
+\]
 
 \section{Teorema dell'unicità del limite}
 \subsection{Enunciato}
@@ -637,6 +655,17 @@ $g_1$ è infinito di ordine inferiore a $g$ per $x \to x_0$.
 \subsection{Dimostrazione (Traccia)}
 \[\frac{f(x)+f_1(x)}{g(x)+g_1(x)} = \frac{f(x)(1 + \frac{f_1(x)}{f(x)})}{g(x)(g(x) + \frac{g_1(x)}{g(x)})}\]
 
-\section{! Condizione necessaria del primo ordine per punti estremali interni}
+\section{Condizione necessaria del primo ordine per punti estremali interni}
+\subsection{Enunciato}
+Se
+\begin{enumerate}
+    \item[1)] $f: A \subset \R \rightarrow \R$
+    \item[2)] $x_0 \in A$, $x_0$ interno ad $A$
+    \item[3)] $x_0$ punto di minimo (massimo) locale
+    \item[4)] $f$ derivabile in $x_0$   
+\end{enumerate}
+\[
+\Rightarrow f'(x_0)=0
+\]
 \end{flushleft}
 \end{document}
