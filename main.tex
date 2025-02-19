@@ -580,7 +580,46 @@ Sia $f$. debolmente crescente in $[1, + \infty)$.
 Sia $a_n \in \R$, $\forall k \in \N$ una successione.\\
 Diremo che $\sum \frac{(-1)^k}{k}$ è ASSOLUTAMENTE CONVERGENTE $\iff \sum \left|a_k\right| converge$.
 
-\section{! Criterio dell'ordine di infinitesimo (Integrali impropri)}
+\section{Criterio asintotico in (a,b]}
+\subsection{Enunciato}
+$f, g$: $(a,b] \rightarrow (0, +\infty)$, $f, g$ R-integrali in $[x,b]$ $\forall x > a$.\\
+Siano $f, g$ INFINITE per $t \to a^+$.\\
+Allora:
+\begin{enumerate}
+\item[1)] Se $\lim\limits_{t \to a^+}\frac{f(t)}{g(t)} = l \in \R \setminus \{0\} \Rightarrow (\int_{a}^{b}f(t)dt$ \textbf{CONVERGE} $ \iff \int_{a}^{b}g(t)dt$ \textbf{CONVERGE} $)$\\
+\item[2)] Se $\lim\limits_{t \to a^+}\frac{f(t)}{g(t)} = 0 \Rightarrow $\hspace*{1em}$ \int_{a}^{b}g(t)dt $ \textbf{CONVERGE} $ \Rightarrow \int_{a}^{b}f(t)dt$ \textbf{CONVERGE}\\
+\hspace*{8.15em} e $\int_{a}^{b}f(t)dt$ \textbf{DIVERGE} $ \Rightarrow \int_{a}^{b}g(t)dt$ \textbf{DIVERGE}\\
+\item[3)] Se $\lim\limits_{t \to a^+}\frac{f(t)}{g(t)} = + \infty \Rightarrow$ \hspace*{1em}$ \int_{a}^{b}f(t)dt$ \textbf{CONVERGE} $\Rightarrow \int_{a}^{b}g(t)dt$ \textbf{CONVERGE}\\
+\hspace*{9.93em} e $\int_{a}^{b}g(t)dt$ \textbf{DIVERGE} $\Rightarrow \int_{a}^{b}f(t)dt$ \textbf{DIVERGE}
+\end{enumerate}
+
+\subsection{Dimostrazione}
+Le ipotesi significano che:
+\begin{enumerate}
+    \item[1)] $f, g$ hanno lo stesso ordine di infinito.\\
+    \item[2)] $f$ ha ordine di infinito inferiore a $g$.\\
+    \item[3)] $f$ ha ordine di infinito superiore a $g$.
+\end{enumerate}
+Basta scrivere la corrispondente Definizione di limite per ottenere delle disuguaglianze su cui usare il criterio del confronto.
+
+\section{Criterio asintotico in [a, $+\infty$)}
+\subsection{Enunciato}
+$f, g:$ $[a. +\infty) \rightarrow (0, +\infty),$ $f,g$ R-integrali in $[a,x]$ $\forall x > a$.\\
+$f,g$ infinitesime per $t \to + \infty$.\\
+Allora:
+\begin{enumerate}
+    \item[1)] Se $\lim\limits_{t \to +\infty}\frac{f(t)}{g(t)} = l \in \R \setminus \{0\} \Rightarrow (\int_{a}^{+\infty}f(t)dt$ \textbf{CONVERGE} $ \iff \int_{a}^{+\infty}g(t)dt$ \textbf{CONVERGE} $)$\\
+    \item[2)] Se $\lim\limits_{t \to +\infty}\frac{f(t)}{g(t)} = 0 \Rightarrow $\hspace*{1em}$ \int_{a}^{+\infty}g(t)dt $ \textbf{CONVERGE} $ \Rightarrow \int_{a}^{+\infty}f(t)dt$ \textbf{CONVERGE}\\
+    \hspace*{8.65em} e $\int_{a}^{+\infty}f(t)dt$ \textbf{DIVERGE} $ \Rightarrow \int_{a}^{+\infty}g(t)dt$ \textbf{DIVERGE}\\
+    \item[3)] Se $\lim\limits_{t \to +\infty}\frac{f(t)}{g(t)} = + \infty \Rightarrow$ \hspace*{1em}$ \int_{a}^{+\infty}f(t)dt$ \textbf{CONVERGE} $\Rightarrow \int_{a}^{+\infty}g(t)dt$ \textbf{CONVERGE}\\
+    \hspace*{10.26em} e $\int_{a}^{+\infty}g(t)dt$ \textbf{DIVERGE} $\Rightarrow \int_{a}^{+\infty}f(t)dt$ \textbf{DIVERGE}
+\end{enumerate}
+
+\subsection{Dimostrazione}
+Basta scrivere la corrispondente Definizione di limite per ottenere delle disuguaglianze su cui usare il Criterio del confronto.\\
+\vSpace
+Anche in questo caso dobbiamo capire il comportamento di funzioni prive di ordine di infinitesimo a $+\infty$.
+
 \section{Teorema dei valori intermedi}
 \subsection{Enunciato}
 $f: I \subset \R \rightarrow \R$, $I$ intervallo, $f$ continua in $I$.
@@ -703,6 +742,10 @@ Se $\lim\limits_{x \to x_0^+}f(x)= l_1 \in \R$, $\lim\limits_{x \to x_0^-}f(x)=l
 \FloatBarrier
 \subsection{Seconda Specie}
 In ogni altro possibile caso in cui $f$ è discontinua in $x_0$, è detto di \textbf{Seconda Specie}.
-
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=25em]{./images/seconda_specie.jpeg}
+\end{figure}
+\FloatBarrier
 \end{flushleft}
 \end{document}
