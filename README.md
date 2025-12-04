@@ -1,21 +1,18 @@
-# 📘 Manuale di sopravvivenza agli esercizi di Analisi 1 @ UniPD
+# 📘 Raccolta di Teoria di Analisi 1 in LaTeX
 
-Benvenuto/a! Questo repository contiene una raccolta completa della teoria di **Analisi 1**, redatta in **LyX - LaTeX**.  
-L'obiettivo è fornire un riferimento chiaro e ben organizzato per studenti di **Ingegneria Informatica**  
+Questo repository contiene una raccolta completa per la risoluzione di esercizi di **Analisi 1**, redatta in **LyX**.  
+L'obiettivo è fornire un riferimento ben organizzato per **Ingegneria Informatica** a Padova.
+
+## 📖 Contenuti
+- ✅ Risoluzione di esercizi
 
 ## 🛠 Come Usarlo
    **Scarica** direttamente il file .PDF
    OPPURE
-1. **Clona** la repository:
-   ```sh
-   git clone https://github.com/RiccardoSartor/Manuale-Analisi-1
+1. **Clona** la repository
 2. **Compila** il file principale con:
    pdflatex main.tex
    (o usa un editor come Overleaf.com)
-
-## 📝 Contributi
-
-Se vuoi contribuire con correzioni o miglioramenti, sentiti libero di aprire una **Pull Request** o segnalare un problema nella sezione **Issues**!
 
 ## 📜 Licenza
 
