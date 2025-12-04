@@ -1971,11 +1971,7 @@ Definizione di funzione invertibile
 \end_layout
 
 \begin_layout Standard
-Una funzione 
-\begin_inset Formula $f:A\to B$
-\end_inset
 
- è invertibile se e solo se è iniettiva e suriettiva (biettiva).
 \end_layout
 
 \end_body

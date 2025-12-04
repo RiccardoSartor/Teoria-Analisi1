@@ -110,41 +110,6 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Subsection
-(18) Usando la definizione di limite fornire il significato della scrittura:
- 
-\begin_inset Formula $\underset{x\to-1}{lim}f(x)=5$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Significa che 
-\begin_inset Formula $\forall\epsilon>0$
-\end_inset
-
- esiste un 
-\begin_inset Formula $\delta>0$
-\end_inset
-
- tale che 
-\begin_inset Formula $\forall x\in D_{f}$
-\end_inset
-
-,
- se 
-\begin_inset Formula $0<|x+1|<\delta$
-\end_inset
-
-,
- allora 
-\begin_inset Formula $|f(x)-5|<\epsilon$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsection
 (13) Enunciare TFCI
 \end_layout
 
@@ -200,53 +165,6 @@ Sia
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Subsection
-(10) Dimostrare il teorema del differenziale (Lagrange)
-\end_layout
-
-\begin_layout Standard
-Definiamo 
-\begin_inset Formula $\omega(x)=\frac{f(x)-f(x_{0})}{x-x_{0}}-f'(x_{0})$
-\end_inset
-
- se 
-\begin_inset Formula $x\neq x_{0}$
-\end_inset
-
-.
- Dato che 
-\begin_inset Formula $f$
-\end_inset
-
- è derivabile in 
-\begin_inset Formula $x_{0}$
-\end_inset
-
- abbiamo che 
-\begin_inset Formula $\underset{x\to x_{0}}{lim}\omega(x)=0$
-\end_inset
-
-.
- Prolunghiamo allora la funzione 
-\begin_inset Formula $\omega(x)$
-\end_inset
-
- definendo 
-\begin_inset Formula $\omega(x)=0$
-\end_inset
-
-.
- Allora per ogni 
-\begin_inset Formula $x\in I$
-\end_inset
-
- abbiamo che 
-\begin_inset Formula $\omega(x)(x-x_{0})=f(x)-f(x_{0})+f'(x)(x-x_{0})$
-\end_inset
-
- da cui segue la tesi.
 \end_layout
 
 \begin_layout Subsection
@@ -424,7 +342,11 @@ Se
 \end_layout
 
 \begin_layout Subsection
-(7) Enuncia il teorema del differenziale (Lagrange)
+Teorema del differenziale (Lagrange)
+\end_layout
+
+\begin_layout Subsubsection
+(7) Enunciato
 \end_layout
 
 \begin_layout Standard
@@ -485,6 +407,143 @@ Siano
 .
 \end_layout
 
+\begin_layout Subsubsection
+(10) Dimostrazione
+\end_layout
+
+\begin_layout Standard
+Definiamo 
+\begin_inset Formula $\omega(x)=\frac{f(x)-f(x_{0})}{x-x_{0}}-f'(x_{0})$
+\end_inset
+
+ se 
+\begin_inset Formula $x\neq x_{0}$
+\end_inset
+
+.
+ Dato che 
+\begin_inset Formula $f$
+\end_inset
+
+ è derivabile in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ abbiamo che 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}\omega(x)=0$
+\end_inset
+
+.
+ Prolunghiamo allora la funzione 
+\begin_inset Formula $\omega(x)$
+\end_inset
+
+ definendo 
+\begin_inset Formula $\omega(x)=0$
+\end_inset
+
+.
+ Allora per ogni 
+\begin_inset Formula $x\in I$
+\end_inset
+
+ abbiamo che 
+\begin_inset Formula $\omega(x)(x-x_{0})=f(x)-f(x_{0})+f'(x)(x-x_{0})$
+\end_inset
+
+ da cui segue la tesi.
+\end_layout
+
+\begin_layout Subsection
+Teorema di Lagrange (
+\begin_inset Formula $\neq$
+\end_inset
+
+Teorema differenziale)
+\end_layout
+
+\begin_layout Subsubsection
+Enunciato
+\end_layout
+
+\begin_layout Standard
+Siano 
+\begin_inset Formula $f:[a,b]\subseteq\mathbb{R\to\mathbb{R}}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ continua in 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ e 
+\begin_inset Formula $f$
+\end_inset
+
+ derivabile in 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+.
+ Allora 
+\begin_inset Formula $\exists\xi\in(a,b)$
+\end_inset
+
+ tale che 
+\begin_inset Formula $f(b)-f(a)=f'(\xi)*(b-a)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Dimostrazione
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $\varphi(x)=(f(x)-f(a))(b-a)-(f(b)-f(a))(x-a)$
+\end_inset
+
+.
+ Si osservi che 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ è continua in 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ e derivabile in 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ grazie ai teoremi di derivabilità e continuità di somma e rapporto.
+ Inolte 
+\begin_inset Formula $\varphi(a)=\varphi(b)=0$
+\end_inset
+
+.
+ Il teorema di Rolle implica che esiste 
+\begin_inset Formula $\xi\in(a,b)$
+\end_inset
+
+ tale che 
+\begin_inset Formula $\varphi'(\xi)=0$
+\end_inset
+
+.
+ Osservando che 
+\begin_inset Formula $\varphi(\xi)=f'(\xi)*(b-a)-(f(b)-f(a))$
+\end_inset
+
+ si ottiene la tesi.
+\end_layout
+
 \begin_layout Subsection
 (6) Enuncia la condizione necessaria di convergenza per le serie numeriche
 \end_layout
@@ -500,56 +559,6 @@ Sia
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsection
-(5) Enuncia il teorema di Bolzano-Weistrass
-\end_layout
-
-\begin_layout Standard
-Sia 
-\begin_inset Formula $a_{n}$
-\end_inset
-
-,
- 
-\begin_inset Formula $n\in\mathbb{N}$
-\end_inset
-
-,
- una successione.
- Diremo che la successione 
-\begin_inset Formula $b_{k}$
-\end_inset
-
-,
- 
-\begin_inset Formula $k\in\mathbb{N}$
-\end_inset
-
-,
- data la composizione della funzione strettamente crescente 
-\begin_inset Formula $\varphi:\mathbb{N}\to\mathbb{N},$
-\end_inset
-
- 
-\begin_inset Formula $k\mapsto\varphi(k)$
-\end_inset
-
-,
- con la successione 
-\begin_inset Formula $a:\mathbb{N}\mapsto\mathbb{R},$
-\end_inset
-
- 
-\begin_inset Formula $n\mapsto a_{n}$
-\end_inset
-
- è una sottosuccessione di 
-\begin_inset Formula $a_{n}$
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Subsection
@@ -954,6 +963,785 @@ Sappiamo che per ogni
 
  e inoltre 
 \begin_inset Formula $b=\text{min }M_{A}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Definizione di punto di accumulazione di un sottoinsieme di 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ Definizione di limite di una funzione per 
+\begin_inset Formula $x\to x_{0}$
+\end_inset
+
+,
+ dove 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+,
+ è un punto di accumulazione per il dominio della funzione.
+ Dimostrare almeno un teorema significativo sui limiti.
+\end_layout
+
+\begin_layout Subsubsection
+Definizione punto accumulazione di un sottoinsieme di 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $A\subseteq\mathbb{R}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $x_{0}\in\mathbb{R}$
+\end_inset
+
+.
+ Diremo che 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ è pto di accumulazione per 
+\begin_inset Formula $A$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $\forall\delta>0$
+\end_inset
+
+ si ha 
+\begin_inset Formula $D^{0}(x_{0},\delta)\cap A\neq\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+(18) Definizione di limite
+\end_layout
+
+\begin_layout Standard
+Scrivere 
+\begin_inset Formula $\underset{x\to-1}{lim}f(x)=5$
+\end_inset
+
+ significa che 
+\begin_inset Formula $\forall\epsilon>0$
+\end_inset
+
+ esiste un 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ tale che 
+\begin_inset Formula $\forall x\in D_{f}$
+\end_inset
+
+,
+ se 
+\begin_inset Formula $0<|x+1|<\delta$
+\end_inset
+
+,
+ allora 
+\begin_inset Formula $|f(x)-5|<\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Dimostrazione (Teorema permanenza del segno)
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $l=+\infty$
+\end_inset
+
+.
+ Per la definizione del teorema della permanenza del segno sappiamo che per ogni 
+\begin_inset Formula $k\in\mathbb{R}$
+\end_inset
+
+ esiste 
+\begin_inset Formula $U_{x_{0}},$
+\end_inset
+
+ intorno di 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+,
+ tale che 
+\begin_inset Formula $f(x)>k$
+\end_inset
+
+ per ogni 
+\begin_inset Formula $x\in(U_{x_{0}}\cap A)\backslash\{x_{0}\}$
+\end_inset
+
+.
+ Pertanto è sufficiente scegliere 
+\begin_inset Formula $k>0$
+\end_inset
+
+ per ottenere la tesi
+\end_layout
+
+\begin_layout Subsection
+Formula di Taylor derivabile 
+\begin_inset Formula $n$
+\end_inset
+
+ volte
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+,
+ 
+\begin_inset Formula $f:I\subset\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $I$
+\end_inset
+
+ intervallo,
+ sia derivabile 
+\begin_inset Formula $n-1$
+\end_inset
+
+ volte in 
+\begin_inset Formula $I$
+\end_inset
+
+ e tali funzioni derivate siano continue in 
+\begin_inset Formula $I$
+\end_inset
+
+.
+ Sia inoltre 
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+,
+ 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ interno ed 
+\begin_inset Formula $\exists f^{(n)}(x_{0})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Allora 
+\begin_inset Formula $\exists w:I\subset\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ tale che 
+\begin_inset Formula $w$
+\end_inset
+
+ continua in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $w(x_{0})=0$
+\end_inset
+
+ ed inoltre 
+\begin_inset Formula $f(x)=\stackrel[k=0]{n}{\sum}\frac{f^{(k)}(x_{0})}{k!}(x-x_{0})^{k}+w(x)(x-x_{0})^{n}$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Definizione 
+\begin_inset Formula $f$
+\end_inset
+
+ continua
+\end_layout
+
+\begin_layout Standard
+Siano 
+\begin_inset Formula $f:A\subseteq\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ e 
+\begin_inset Formula $x_{0}\in A$
+\end_inset
+
+.
+ Diremo che 
+\begin_inset Formula $f$
+\end_inset
+
+ è continua in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=f(x_{0})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Definizione 
+\begin_inset Formula $f$
+\end_inset
+
+ derivabile
+\end_layout
+
+\begin_layout Standard
+Siano 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $I$
+\end_inset
+
+ intervallo e 
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+,
+ 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ interno a 
+\begin_inset Formula $I$
+\end_inset
+
+.
+ Diremo che 
+\begin_inset Formula $f$
+\end_inset
+
+ è derivabile in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}\frac{f(x)-f(x_{0})}{x-x_{0}}=l\in\mathbb{R}$
+\end_inset
+
+.
+ In tal caso chiameremo derivata prima di 
+\begin_inset Formula $f$
+\end_inset
+
+ in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ il valore 
+\begin_inset Formula $l$
+\end_inset
+
+ di tale limite che indicheremo anche con la notazione 
+\begin_inset Formula $f'(x_{0})$
+\end_inset
+
+.
+ Diremo inolter che 
+\begin_inset Formula $f$
+\end_inset
+
+ è derivabile in un insieme 
+\begin_inset Formula $J\subseteq I$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $f$
+\end_inset
+
+ è derivabile in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+,
+ per ogni 
+\begin_inset Formula $x_{0}\in J$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Teorema di Weistrass per le funzioni continue
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $f:[a,b]\subseteq\mathbb{R}→\mathbb{R}$
+\end_inset
+
+ e 
+\begin_inset Formula $f$
+\end_inset
+
+ sia continua in 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ Allora 
+\begin_inset Formula $f$
+\end_inset
+
+ ammette estremi globali.
+\end_layout
+
+\begin_layout Subsection
+Definizione di massimo e minimo relativo (o locale) e assoluto
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $f:A\subseteq\mathbb{R}→\mathbb{R}$
+\end_inset
+
+.
+ Diremo che 
+\begin_inset Formula $x_{0}\in A$
+\end_inset
+
+ è punto di minimo (massimo) locale per 
+\begin_inset Formula $f$
+\end_inset
+
+ in 
+\begin_inset Formula $A$
+\end_inset
+
+ se e solo se esiste un intorno 
+\begin_inset Formula $U$
+\end_inset
+
+ di 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ tale che 
+\begin_inset Formula $f(x)\geq(\leq)f(x_{0})$
+\end_inset
+
+ per ogni 
+\begin_inset Formula $x\in U\cap A$
+\end_inset
+
+.
+ In tal caso il valore 
+\begin_inset Formula $f(x_{0})$
+\end_inset
+
+ viene detto mimino (massimo) locale per 
+\begin_inset Formula $f$
+\end_inset
+
+ in 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Inoltre diremo che 
+\begin_inset Formula $x_{0}\in A$
+\end_inset
+
+ è punto di minimo (massimo) globale per 
+\begin_inset Formula $f$
+\end_inset
+
+ in 
+\begin_inset Formula $A$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $f(x)\geq(\leq)f(x_{0})$
+\end_inset
+
+ per ogni 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+ In tal caso il valore 
+\begin_inset Formula $f(x_{0})$
+\end_inset
+
+ viene detto mimino (massimo) globale per 
+\begin_inset Formula $f$
+\end_inset
+
+ in 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Enunciato teorema di Fermat (condizione necessaria del 1° ordine per estremi interni)
+\end_layout
+
+\begin_layout Standard
+Se una funzione 
+\begin_inset Formula $f$
+\end_inset
+
+ ha un punto di massimo (minimo) locale in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ e 
+\begin_inset Formula $f$
+\end_inset
+
+ è derivabile in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ allora la derivata in quel punto è nulla.
+ (
+\begin_inset Formula $f'(x_{0})=0$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsection
+Monotonia (+ legame con derivata prima)
+\end_layout
+
+\begin_layout Subsubsection
+Enunciato
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $f:A\subseteq\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ una funzione e 
+\begin_inset Formula $I\subseteq A$
+\end_inset
+
+ un intervallo.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Diremo che 
+\begin_inset Formula $f$
+\end_inset
+
+ è strettamente (debolmente) crescente in 
+\begin_inset Formula $I$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $\forall x_{1},x_{2}\in I,$
+\end_inset
+
+ 
+\begin_inset Formula $x_{1}<x_{2}$
+\end_inset
+
+,
+ si ha che 
+\begin_inset Formula $f(x_{1})<(\leq)f(x_{2})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Diremo che 
+\begin_inset Formula $f$
+\end_inset
+
+ è strettamente (debolmente) decrescente in 
+\begin_inset Formula $I$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $\forall x_{1},x_{2}\in I,$
+\end_inset
+
+ 
+\begin_inset Formula $x_{1}<x_{2}$
+\end_inset
+
+,
+ si ha che 
+\begin_inset Formula $f(x_{1})>(\geq)f(x_{2})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Diremo che 
+\begin_inset Formula $f$
+\end_inset
+
+ è debolmente monotona in 
+\begin_inset Formula $I$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $f$
+\end_inset
+
+ è debolmente crescente o debolmente descrescente in 
+\begin_inset Formula $I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Diremo che 
+\begin_inset Formula $f$
+\end_inset
+
+ è strettamente monotona in 
+\begin_inset Formula $I$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $f$
+\end_inset
+
+ è strettamente crescente o strettamente descrescente in 
+\begin_inset Formula $I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Legame con derivata prima
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $f:(a,b)\to\mathbb{R}$
+\end_inset
+
+ derivabile.
+\end_layout
+
+\begin_layout Itemize
+Se 
+\begin_inset Formula $f'(x)>0$
+\end_inset
+
+ in 
+\begin_inset Formula $(a,b)\Rightarrow f$
+\end_inset
+
+ è strettamente crescente.
+\end_layout
+
+\begin_layout Itemize
+Se 
+\begin_inset Formula $f'(x)<0$
+\end_inset
+
+ in 
+\begin_inset Formula $(a,b)\Rightarrow f$
+\end_inset
+
+ è strettamente decrescente.
+\end_layout
+
+\begin_layout Itemize
+Se 
+\begin_inset Formula $f'(x)\geq0$
+\end_inset
+
+ in 
+\begin_inset Formula $(a,b)\Rightarrow f$
+\end_inset
+
+ è crescente.
+\end_layout
+
+\begin_layout Itemize
+Se 
+\begin_inset Formula $f'(x)\leq0$
+\end_inset
+
+ in 
+\begin_inset Formula $(a,b)\Rightarrow f$
+\end_inset
+
+ è decrescente.
+\end_layout
+
+\begin_layout Itemize
+Se 
+\begin_inset Formula $f'(x)=0$
+\end_inset
+
+ in 
+\begin_inset Formula $(a,b)\Rightarrow f$
+\end_inset
+
+ è costante.
+\end_layout
+
+\begin_layout Subsection
+Definizione di 
+\begin_inset Formula $o$
+\end_inset
+
+-piccolo
+\end_layout
+
+\begin_layout Standard
+Siano 
+\begin_inset Formula $f,g:A\subseteq\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ e 
+\begin_inset Formula $x_{0}\in\mathbb{R}$
+\end_inset
+
+ e un punto di accumulazione per A.
+ Diremo che 
+\begin_inset Formula $f$
+\end_inset
+
+ è o-piccolo di 
+\begin_inset Formula $g$
+\end_inset
+
+ per 
+\begin_inset Formula $x\to x_{0}$
+\end_inset
+
+,
+ e lo scriveremo come 
+\begin_inset Formula $f(x)=o(g(x))$
+\end_inset
+
+ per 
+\begin_inset Formula $x\to x_{0}$
+\end_inset
+
+,
+ se esiste una funzione 
+\begin_inset Formula $ω:A\subseteq\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ infinitesima in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ e esiste un intorno 
+\begin_inset Formula $U_{x_{0}}$
+\end_inset
+
+ di 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ per cui 
+\begin_inset Formula $f(x)=ω(x)g(x)$
+\end_inset
+
+ per 
+\begin_inset Formula $x\in(U_{x_{0}}\cap A)\backslash\{x_{0}\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Definizione derivata seconda (+convessità)
+\end_layout
+
+\begin_layout Standard
+La derivata seconda di 
+\begin_inset Formula $f$
+\end_inset
+
+ in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ è definita come:
+ 
+\begin_inset Formula $f''(x_{0})=\underset{h\to0}{lim}\frac{f'(x_{0}+h)-f'(x_{0})}{h}$
+\end_inset
+
+ se questo limite esiste.
+\begin_inset Newline newline
+\end_inset
+
+Siano 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ derivabile due volte in 
+\begin_inset Formula $I$
+\end_inset
+
+ (intervallo).
+ Allora 
+\begin_inset Formula $f$
+\end_inset
+
+ è convessa (concava) in 
+\begin_inset Formula $I$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $f''(x)\geq(\leq)0$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in I$
 \end_inset
 
 .
