@@ -1,4 +1,4 @@
-# 📘 Raccolta di Teoria di Analisi 1 in LaTeX
+# 📘 Raccolta di Teoria di Analisi 1 in LyX
 
 Questo repository contiene una raccolta parziale di domande possibili all'esame orale di **Analisi 1**, redatta in **LyX**.  
 L'obiettivo è fornire un riferimento ben organizzato per **Ingegneria Informatica** a Padova.
