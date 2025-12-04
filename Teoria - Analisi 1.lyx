@@ -429,7 +429,7 @@ Teorema di Lagrange (
 Teorema differenziale)
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Enunciato
 \end_layout
 
@@ -467,7 +467,7 @@ Siano
 .
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Dimostrazione
 \end_layout
 
@@ -709,7 +709,7 @@ Equazioni differenziali lineari del primo ordine.
  sono due funzioni continue assegnate 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Definizione
 \end_layout
 
@@ -734,7 +734,7 @@ Siano
 .
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Teorema (soluzione generale)
 \end_layout
 
@@ -820,7 +820,7 @@ Definizione di sup e inf per sottoinsiemi di
  superiormente limitato ammette il sup.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Definizione
 \end_layout
 
@@ -901,7 +901,7 @@ Se
 ).
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Dimostrazione (superiormente limitato)
 \end_layout
 
@@ -990,7 +990,7 @@ Definizione di punto di accumulazione di un sottoinsieme di
  Dimostrare almeno un teorema significativo sui limiti.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Definizione punto accumulazione di un sottoinsieme di 
 \begin_inset Formula $\mathbb{R}$
 \end_inset
@@ -1062,7 +1062,7 @@ Scrivere
 .
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Dimostrazione (Teorema permanenza del segno)
 \end_layout
 
@@ -1482,7 +1482,7 @@ Se una funzione
 Monotonia (+ legame con derivata prima)
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Enunciato
 \end_layout
 
@@ -1589,7 +1589,7 @@ Diremo che
 .
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Legame con derivata prima
 \end_layout
 
@@ -1976,6 +1976,202 @@ Una funzione
 \end_inset
 
  è invertibile se e solo se è iniettiva e suriettiva (biettiva).
+\end_layout
+
+\begin_layout Subsection
+Enunciare il principio d'induzione (+esempio)
+\end_layout
+
+\begin_layout Subsubsection*
+Enunciato
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $A\subseteq\mathbb{N}$
+\end_inset
+
+ e sia 
+\begin_inset Formula $p\in\mathbb{N}$
+\end_inset
+
+.
+ Assumiamo che siano valide le seguenti ipotesi:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Se 
+\begin_inset Formula $n\in A$
+\end_inset
+
+ allora 
+\begin_inset Formula $n+1\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Allora 
+\begin_inset Formula $A=\{n\in\mathbb{N}$
+\end_inset
+
+ tali che 
+\begin_inset Formula $n\geq p\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Esempio
+\end_layout
+
+\begin_layout Standard
+Dimostriamo per induzione che 
+\begin_inset Formula $n\geq0$
+\end_inset
+
+ 
+\begin_inset Formula $\forall n\in\mathbb{N}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\noun on
+Passo base:
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $0\geq0$
+\end_inset
+
+ (Vero).
+\begin_inset Newline newline
+\end_inset
+
+
+\noun on
+Passo induttivo:
+\end_layout
+
+\begin_layout Standard
+Supponiamo che 
+\begin_inset Formula $k\geq0$
+\end_inset
+
+,
+ vogliamo dimostrare che 
+\begin_inset Formula $k+1\geq0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Il che è vero perche 
+\begin_inset Formula $k+1>k\geq0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Definizione di punto di flesso
+\end_layout
+
+\begin_layout Standard
+Siano 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $I$
+\end_inset
+
+ intervallo.
+ Diciamo che 
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+ è punto di flesso per 
+\begin_inset Formula $f$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $\exists\delta>0$
+\end_inset
+
+ tale che 
+\begin_inset Formula $f$
+\end_inset
+
+ sia convessa in 
+\begin_inset Formula $(x_{0}-\delta,x_{0})$
+\end_inset
+
+ e 
+\begin_inset Formula $f$
+\end_inset
+
+ sia concava in 
+\begin_inset Formula $(x_{0},x_{0}+\delta)$
+\end_inset
+
+ o viceversa.
+ 
+\end_layout
+
+\begin_layout Subsection
+È vero che ogni successione limitata in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ è convergente?
+\end_layout
+
+\begin_layout Standard
+No,
+ ad esempio 
+\begin_inset Formula $a_{n}=(-1)^{n}$
+\end_inset
+
+,
+ è limitata perche ogni termine è compreso in 
+\begin_inset Formula $[-1,1]$
+\end_inset
+
+ ma non converge.
+\begin_inset Newline newline
+\end_inset
+
+Perche ogni successione limitata in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ converga serve aggiungere all'ipotesi che la successione sia monotona.
 \end_layout
 
 \end_body

@@ -110,39 +110,6 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Subsection
-(13) Enunciare TFCI
-\end_layout
-
-\begin_layout Standard
-Se 
-\begin_inset Formula $f(x)$
-\end_inset
-
- è continua su 
-\begin_inset Formula $[a,b]$
-\end_inset
-
- e 
-\begin_inset Formula $F$
-\end_inset
-
- è una funzione tale che 
-\begin_inset Formula $F'(x)=f(x)$
-\end_inset
-
- per ogni 
-\begin_inset Formula $x\in[a,b]$
-\end_inset
-
-,
- allora 
-\begin_inset Formula $\int_{a}^{b}f(x)dx=F(b)-F(a)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsection
 (12) Enunciare il teorema della media integrale
 \end_layout
 
@@ -462,7 +429,7 @@ Teorema di Lagrange (
 Teorema differenziale)
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Enunciato
 \end_layout
 
@@ -500,7 +467,7 @@ Siano
 .
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Dimostrazione
 \end_layout
 
@@ -742,7 +709,7 @@ Equazioni differenziali lineari del primo ordine.
  sono due funzioni continue assegnate 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Definizione
 \end_layout
 
@@ -767,7 +734,7 @@ Siano
 .
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Teorema (soluzione generale)
 \end_layout
 
@@ -806,6 +773,41 @@ Siano
 \end_layout
 
 \begin_layout Subsection
+Equazioni differenziali lineari del secondo ordine a coefficienti costanti.
+ 
+\end_layout
+
+\begin_layout Standard
+Siano 
+\begin_inset Formula $I\subseteq\mathbb{R}$
+\end_inset
+
+ un intervallo,
+ 
+\begin_inset Formula $f:I\to\mathbb{R}$
+\end_inset
+
+ una funzione continua su 
+\begin_inset Formula $I$
+\end_inset
+
+ e 
+\begin_inset Formula $a,b\in\mathbb{R}$
+\end_inset
+
+.
+ Diremo equazione differenziale del secondo ordine a coefficienete costante il problema 
+\begin_inset Formula $y''(x)+ay'(x)+by(x)=f(x)$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in I$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Definizione di sup e inf per sottoinsiemi di 
 \begin_inset Formula $\mathbb{R}$
 \end_inset
@@ -818,7 +820,7 @@ Definizione di sup e inf per sottoinsiemi di
  superiormente limitato ammette il sup.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Definizione
 \end_layout
 
@@ -899,7 +901,7 @@ Se
 ).
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Dimostrazione (superiormente limitato)
 \end_layout
 
@@ -988,7 +990,7 @@ Definizione di punto di accumulazione di un sottoinsieme di
  Dimostrare almeno un teorema significativo sui limiti.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Definizione punto accumulazione di un sottoinsieme di 
 \begin_inset Formula $\mathbb{R}$
 \end_inset
@@ -1060,7 +1062,7 @@ Scrivere
 .
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Dimostrazione (Teorema permanenza del segno)
 \end_layout
 
@@ -1306,7 +1308,7 @@ Siano
 \end_layout
 
 \begin_layout Subsection
-Teorema di Weistrass per le funzioni continue
+Teorema di Weierstrass per le funzioni continue
 \end_layout
 
 \begin_layout Standard
@@ -1328,6 +1330,35 @@ Sia
 \end_inset
 
  ammette estremi globali.
+\end_layout
+
+\begin_layout Subsection
+Enuncia il teorema di Bolzano-Weierstrass in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ una successione limitata.
+ Allora esiste una sottosuccessione 
+\begin_inset Formula $a_{n_{k}}$
+\end_inset
+
+ di 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ tale che 
+\begin_inset Formula $a_{n_{k}}$
+\end_inset
+
+è convergente.
 \end_layout
 
 \begin_layout Subsection
@@ -1451,7 +1482,7 @@ Se una funzione
 Monotonia (+ legame con derivata prima)
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Enunciato
 \end_layout
 
@@ -1558,7 +1589,7 @@ Diremo che
 .
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Legame con derivata prima
 \end_layout
 
@@ -1745,6 +1776,262 @@ Siano
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Subsection
+(13) Enunciare TFCI
+\end_layout
+
+\begin_layout Standard
+Se 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ è continua su 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ e 
+\begin_inset Formula $F$
+\end_inset
+
+ è una funzione tale che 
+\begin_inset Formula $F'(x)=f(x)$
+\end_inset
+
+ per ogni 
+\begin_inset Formula $x\in[a,b]$
+\end_inset
+
+,
+ allora 
+\begin_inset Formula $\int_{a}^{b}f(x)dx=F(b)-F(a)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Dimostrare che se 
+\begin_inset Formula $f$
+\end_inset
+
+ è una funzione dispari e continua in 
+\begin_inset Formula $0$
+\end_inset
+
+ allora 
+\begin_inset Formula $f(0)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $f:A\to\mathbb{R}$
+\end_inset
+
+ una funzione dispari e sia 
+\begin_inset Formula $0\in A$
+\end_inset
+
+.
+ Per definizione di funzione dispari:
+ 
+\begin_inset Formula $\forall x\in A,f(-x)=-f(x)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Poiché 
+\begin_inset Formula $−0=0$
+\end_inset
+
+,
+ otteniamo:
+ 
+\begin_inset Formula $f(0)=−f(0)$
+\end_inset
+
+ Sommiamo 
+\begin_inset Formula $f(0)$
+\end_inset
+
+ ad entrambi i membri:
+ 
+\begin_inset Formula $f(0)+f(0)=0$
+\end_inset
+
+ e quindi:
+ 
+\begin_inset Formula $2f(0)=0\Rightarrow f(0)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Definizione di sottosuccessione.
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+,
+ una successione.
+ Diremo che la successione 
+\begin_inset Formula $b_{k},$
+\end_inset
+
+ 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+,
+ data dalla composizione della funzione strettamente crescente 
+\begin_inset Formula $\varphi:\mathbb{N}\to\mathbb{N}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $k\to\varphi(k)$
+\end_inset
+
+,
+ con la successione 
+\begin_inset Formula $a:\mathbb{N}\to\mathbb{R}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $n\to a_{n}$
+\end_inset
+
+ è una sottosuccessione di 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Enunciare il teorema Ponte in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $f:A\subseteq\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $x_{0}\in\tilde{\mathbb{R}}$
+\end_inset
+
+ un punto di accumulazione per 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Allora 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=l\in\tilde{\mathbb{R}}$
+\end_inset
+
+ se e solo se per ogni successione 
+\begin_inset Formula $\{x_{n}:n\in\mathbb{N}\}\subseteq(A\backslash\{x_{0}\})$
+\end_inset
+
+ si ha che 
+\begin_inset Formula $\underset{n\to+\infty}{lim}x_{n}=x_{0}$
+\end_inset
+
+ e 
+\begin_inset Formula $\underset{n\to+\infty}{lim}f(x_{n})=l$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Definizione di funzione invertibile
+\end_layout
+
+\begin_layout Standard
+Una funzione 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ è invertibile se e solo se è iniettiva e suriettiva (biettiva).
+\end_layout
+
+\begin_layout Subsection
+Enunciare il principio d'induzione (+esempio)
+\end_layout
+
+\begin_layout Subsubsection*
+Enunciato
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $A\subseteq\mathbb{N}$
+\end_inset
+
+ e sia 
+\begin_inset Formula $p\in\mathbb{N}$
+\end_inset
+
+.
+ Assumiamo che siano valide le seguenti ipotesi:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Se 
+\begin_inset Formula $n\in A$
+\end_inset
+
+ allora 
+\begin_inset Formula $n+1\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Allora 
+\begin_inset Formula $A=\{n\in\mathbb{N}$
+\end_inset
+
+ tali che 
+\begin_inset Formula $n\geq p\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Esempio
 \end_layout
 
 \end_body
