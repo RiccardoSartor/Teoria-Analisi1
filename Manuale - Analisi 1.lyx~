@@ -5301,7 +5301,7 @@ Vicino a
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int_{0}^{a}x^{p}\,dx$
+\begin_inset Formula $\int_{0}^{a}\frac{1}{x^{p}}\,dx$
 \end_inset
 
 
@@ -5313,7 +5313,7 @@ Vicino a
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $p>-1$
+\begin_inset Formula $p<1$
 \end_inset
 
 
@@ -5325,7 +5325,7 @@ Vicino a
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $p\leq-1$
+\begin_inset Formula $p\geq1$
 \end_inset
 
 
