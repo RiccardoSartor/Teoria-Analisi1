@@ -103,7 +103,7 @@ Teoria di sopravvivenza
 \begin_layout Subsection*
 (18) Usando la definizione di limite fornire il significato della scrittura:
  
-\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=l$
+\begin_inset Formula $\underset{x\to-1}{lim}f(x)=5$
 \end_inset
 
 
@@ -124,12 +124,12 @@ Significa che
 
 ,
  se 
-\begin_inset Formula $0<|x-x_{0}|<\delta$
+\begin_inset Formula $0<|x+1|<\delta$
 \end_inset
 
 ,
  allora 
-\begin_inset Formula $|f(x)-l|<\epsilon$
+\begin_inset Formula $|f(x)-5|<\epsilon$
 \end_inset
 
 .
