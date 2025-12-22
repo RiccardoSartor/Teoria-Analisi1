@@ -361,14 +361,14 @@ Indefiniti
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\int\frac{1}{\sqrt{1-x^{2}}}dx=arcsin\,x+c$
+\begin_inset Formula $\int\frac{1}{\sqrt{1-x^{2}}}dx=arcsin\,x+c,\ -arccos\,x+c$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\int\frac{1}{\sqrt{1+x^{2}}}dx=arctan\,x+c$
+\begin_inset Formula $\int\frac{1}{1+x^{2}}dx=arctan\,x+c$
 \end_inset
 
 
@@ -431,7 +431,7 @@ Indefiniti
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\int\frac{f'(x)}{\sqrt{1-f(x)^{2}}}dx=arcsin\,f(x)+c$
+\begin_inset Formula $\int\frac{f'(x)}{\sqrt{1-f(x)^{2}}}dx=arcsin\,f(x)+c,\ -arccos\,f(x)+c$
 \end_inset
 
 
@@ -2050,7 +2050,7 @@ Sviluppo in forma compatta
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $u-\frac{u^{2}}{2}+\frac{u^{3}}{3}-\frac{u^{4}}{4}+\frac{u^{5}}{5}+o(x^{5})$
+\begin_inset Formula $u-\frac{u^{2}}{2}+\frac{u^{3}}{3}-\frac{u^{4}}{4}+\frac{u^{5}}{5}+o(n^{5})$
 \end_inset
 
 
