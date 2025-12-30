@@ -2050,7 +2050,7 @@ Sviluppo in forma compatta
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $u-\frac{u^{2}}{2}+\frac{u^{3}}{3}-\frac{u^{4}}{4}+\frac{u^{5}}{5}+o(x^{5})$
+\begin_inset Formula $u-\frac{u^{2}}{2}+\frac{u^{3}}{3}-\frac{u^{4}}{4}+\frac{u^{5}}{5}+o(n^{5})$
 \end_inset
 
 
