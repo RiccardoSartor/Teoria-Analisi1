@@ -968,6 +968,21 @@ F.
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\noun on
+Limite notevole importante:
+ 
+\begin_inset Formula $\underset{x\to\pm\infty}{lim}(1+\frac{A}{x})^{Bx}=e^{AB}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -3045,1424 +3060,6 @@ Esempio:
 \end_inset
 
  quindi la curva è sempre convessa verso l'alto e quindi non essendoci nessun cambio di concavità in quel punto non c'è un flesso.
-\end_layout
-
-\begin_layout Subsection
-Grafico qualitativo di 
-\begin_inset Formula $f(x)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Alla fine dei calcoli svolti fino ad ora dovrebbe esser possibile tracciare un grafico qualitativo della funzione,
- di seguito si trovano le funzioni fondamentali.
-\end_layout
-
-\begin_layout Subsubsection
-\begin_inset Formula $f(x)=x$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-begin{axis}[
-\end_layout
-
-\begin_layout Plain Layout
-
-    axis lines=middle,
-\end_layout
-
-\begin_layout Plain Layout
-
-    grid=none,
-\end_layout
-
-\begin_layout Plain Layout
-
-    xlabel={$x$},
- ylabel={$y$},
-\end_layout
-
-\begin_layout Plain Layout
-
-    width=15cm,
- height=6cm
-\end_layout
-
-\begin_layout Plain Layout
-
-  ]
-\end_layout
-
-\begin_layout Plain Layout
-
-    
-\backslash
-addplot[blue,
- thick,
- samples=200,
- domain=-3:3] {x};
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-end{axis}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-\begin_inset Formula $f(x)=x^{2}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-begin{axis}[
-\end_layout
-
-\begin_layout Plain Layout
-
-    axis lines=middle,
-\end_layout
-
-\begin_layout Plain Layout
-
-    grid=none,
-\end_layout
-
-\begin_layout Plain Layout
-
-    xlabel={$x$},
- ylabel={$y$},
-\end_layout
-
-\begin_layout Plain Layout
-
-    width=15cm,
- height=6cm
-\end_layout
-
-\begin_layout Plain Layout
-
-  ]
-\end_layout
-
-\begin_layout Plain Layout
-
-    
-\backslash
-addplot[blue,
- thick,
- samples=200,
- domain=-3:3] {x^2};
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-end{axis}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-\begin_inset Formula $f(x)=x^{3}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-begin{axis}[
-\end_layout
-
-\begin_layout Plain Layout
-
-    axis lines=middle,
-\end_layout
-
-\begin_layout Plain Layout
-
-    grid=none,
-\end_layout
-
-\begin_layout Plain Layout
-
-    xlabel={$x$},
- ylabel={$y$},
-\end_layout
-
-\begin_layout Plain Layout
-
-    width=15cm,
- height=6cm
-\end_layout
-
-\begin_layout Plain Layout
-
-  ]
-\end_layout
-
-\begin_layout Plain Layout
-
-    
-\backslash
-addplot[blue,
- thick,
- samples=200,
- domain=-3:3] {x^3};
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-end{axis}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-\begin_inset Formula $f(x)=|x|$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-begin{axis}[
-\end_layout
-
-\begin_layout Plain Layout
-
-    axis lines=middle,
-\end_layout
-
-\begin_layout Plain Layout
-
-    grid=none,
-\end_layout
-
-\begin_layout Plain Layout
-
-    xlabel={$x$},
- ylabel={$y$},
-\end_layout
-
-\begin_layout Plain Layout
-
-    width=15cm,
- height=6cm
-\end_layout
-
-\begin_layout Plain Layout
-
-  ]
-\end_layout
-
-\begin_layout Plain Layout
-
-    
-\backslash
-addplot[blue,
- thick,
- samples=200,
- domain=-3:3] {abs(x)};
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-end{axis}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-\begin_inset Formula $f(x)=ln\,x$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-begin{axis}[
-\end_layout
-
-\begin_layout Plain Layout
-
-    axis lines=middle,
-\end_layout
-
-\begin_layout Plain Layout
-
-    grid=none,
-\end_layout
-
-\begin_layout Plain Layout
-
-    xlabel={$x$},
- ylabel={$y$},
-\end_layout
-
-\begin_layout Plain Layout
-
-    width=15cm,
- height=6cm
-\end_layout
-
-\begin_layout Plain Layout
-
-  ]
-\end_layout
-
-\begin_layout Plain Layout
-
-    
-\backslash
-addplot[blue,
- thick,
- samples=200,
- domain=-3:10] {ln(x)};
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-end{axis}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-\begin_inset Formula $f(x)=\frac{1}{ln|x|}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-begin{axis}[
-\end_layout
-
-\begin_layout Plain Layout
-
-    axis lines=middle,
-\end_layout
-
-\begin_layout Plain Layout
-
-    grid=none,
-\end_layout
-
-\begin_layout Plain Layout
-
-    xlabel={$x$},
- ylabel={$y$},
-\end_layout
-
-\begin_layout Plain Layout
-
-    width=15cm,
- height=6cm,
-\end_layout
-
-\begin_layout Plain Layout
-
-    xmin=-6,
- xmax=6,
- ymin=-10,
- ymax=10,
-\end_layout
-
-\begin_layout Plain Layout
-
-    samples=500,
-\end_layout
-
-\begin_layout Plain Layout
-
-    unbounded coords=jump  % non unire sui verticali
-\end_layout
-
-\begin_layout Plain Layout
-
-  ]
-\end_layout
-
-\begin_layout Plain Layout
-
-    % f(x) = 1/ln|x|  (scrivere ln(abs(x)) in PGFPlots)
-\end_layout
-
-\begin_layout Plain Layout
-
-    
-\backslash
-addplot[blue,
- thick,
- domain=-6:-1.01]  {1/ln(abs(x))};
-\end_layout
-
-\begin_layout Plain Layout
-
-    
-\backslash
-addplot[blue,
- thick,
- domain=-0.99:-0.001]{1/ln(abs(x))};
-\end_layout
-
-\begin_layout Plain Layout
-
-    
-\backslash
-addplot[blue,
- thick,
- domain= 0.001:0.99]{1/ln(abs(x))};
-\end_layout
-
-\begin_layout Plain Layout
-
-    
-\backslash
-addplot[blue,
- thick,
- domain= 1.01:6]   {1/ln(abs(x))};
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-end{axis}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-\begin_inset Formula $f(x)=\sqrt{x}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-begin{axis}[
-\end_layout
-
-\begin_layout Plain Layout
-
-    axis lines=middle,
-\end_layout
-
-\begin_layout Plain Layout
-
-    grid=none,
-\end_layout
-
-\begin_layout Plain Layout
-
-    xlabel={$x$},
- ylabel={$y$},
-\end_layout
-
-\begin_layout Plain Layout
-
-    width=15cm,
- height=6cm
-\end_layout
-
-\begin_layout Plain Layout
-
-  ]
-\end_layout
-
-\begin_layout Plain Layout
-
-    
-\backslash
-addplot[blue,
- thick,
- samples=200,
- domain=0:10] {sqrt(x)};
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-end{axis}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-\begin_inset Formula $f(x)=sin\,x$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-begin{axis}[
-\end_layout
-
-\begin_layout Plain Layout
-
-    axis lines=middle,
-\end_layout
-
-\begin_layout Plain Layout
-
-    grid=none,
-\end_layout
-
-\begin_layout Plain Layout
-
-    xlabel={$x$},
- ylabel={$y$},
-\end_layout
-
-\begin_layout Plain Layout
-
-    width=15cm,
- height=6cm
-\end_layout
-
-\begin_layout Plain Layout
-
-  ]
-\end_layout
-
-\begin_layout Plain Layout
-
-    
-\backslash
-addplot[blue,
- thick,
- trig format=rad,
- samples=200,
- domain=-6:6] {sin(x)};
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-end{axis}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-\begin_inset Formula $f(x)=cos\,x$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-begin{axis}[
-\end_layout
-
-\begin_layout Plain Layout
-
-    axis lines=middle,
-\end_layout
-
-\begin_layout Plain Layout
-
-    grid=none,
-\end_layout
-
-\begin_layout Plain Layout
-
-    xlabel={$x$},
- ylabel={$y$},
-\end_layout
-
-\begin_layout Plain Layout
-
-    width=15cm,
- height=6cm
-\end_layout
-
-\begin_layout Plain Layout
-
-  ]
-\end_layout
-
-\begin_layout Plain Layout
-
-    
-\backslash
-addplot[blue,
- thick,
- trig format=rad,
- samples=200,
- domain=-6:6] {cos(x)};
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-end{axis}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-\begin_inset Formula $f(x)=tan\,x$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-begin{axis}[
-\end_layout
-
-\begin_layout Plain Layout
-
-    axis lines=middle,
-\end_layout
-
-\begin_layout Plain Layout
-
-    grid=none,
-\end_layout
-
-\begin_layout Plain Layout
-
-    xlabel={$x$},
- ylabel={$y$},
-\end_layout
-
-\begin_layout Plain Layout
-
-    width=15cm,
- height=6cm,
-\end_layout
-
-\begin_layout Plain Layout
-
-    domain=-1.45:1.45,
- samples=400,
- trig format=rad,
-\end_layout
-
-\begin_layout Plain Layout
-
-    unbounded coords=jump,
- ymin=-10,
- ymax=10
-\end_layout
-
-\begin_layout Plain Layout
-
-  ]
-\end_layout
-
-\begin_layout Plain Layout
-
-    
-\backslash
-addplot[blue,
- thick] {tan(x)};
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-end{axis}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-\begin_inset Formula $f(x)=arcsin\,x$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-begin{axis}[
-\end_layout
-
-\begin_layout Plain Layout
-
-    axis lines=middle,
-\end_layout
-
-\begin_layout Plain Layout
-
-    grid=none,
-\end_layout
-
-\begin_layout Plain Layout
-
-    xlabel={$x$},
- ylabel={$y$},
-\end_layout
-
-\begin_layout Plain Layout
-
-    width=15cm,
- height=6cm,
-\end_layout
-
-\begin_layout Plain Layout
-
-    domain=-1:1,
- samples=400,
- ymin=-2,
- ymax=2
-\end_layout
-
-\begin_layout Plain Layout
-
-  ]
-\end_layout
-
-\begin_layout Plain Layout
-
-    
-\backslash
-addplot[blue,
- thick] {rad(asin(x))};
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-end{axis}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-\begin_inset Formula $f(x)=arccos\,x$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-begin{axis}[
-\end_layout
-
-\begin_layout Plain Layout
-
-    axis lines=middle,
-\end_layout
-
-\begin_layout Plain Layout
-
-    grid=none,
-\end_layout
-
-\begin_layout Plain Layout
-
-    xlabel={$x$},
- ylabel={$y$},
-\end_layout
-
-\begin_layout Plain Layout
-
-    width=15cm,
- height=6cm,
-\end_layout
-
-\begin_layout Plain Layout
-
-    domain=-1:1,
- samples=400,
- ymin=0,
- ymax=3.5
-\end_layout
-
-\begin_layout Plain Layout
-
-  ]
-\end_layout
-
-\begin_layout Plain Layout
-
-    
-\backslash
-addplot[blue,
- thick] {rad(acos(x))};
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-end{axis}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-\begin_inset Formula $f(x)=arctan\,x$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-begin{axis}[
-\end_layout
-
-\begin_layout Plain Layout
-
-    axis lines=middle,
-\end_layout
-
-\begin_layout Plain Layout
-
-    grid=none,
-\end_layout
-
-\begin_layout Plain Layout
-
-    xlabel={$x$},
- ylabel={$y$},
-\end_layout
-
-\begin_layout Plain Layout
-
-    width=15cm,
- height=6cm
-\end_layout
-
-\begin_layout Plain Layout
-
-  ]
-\end_layout
-
-\begin_layout Plain Layout
-
-    
-\backslash
-addplot[blue,
- thick,
- samples=200,
- domain=-10:10] {atan(x)};
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-end{axis}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-\begin_inset Formula $f(x)=e^{x}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-begin{axis}[
-\end_layout
-
-\begin_layout Plain Layout
-
-    axis lines=middle,
-\end_layout
-
-\begin_layout Plain Layout
-
-    xlabel={$x$},
- ylabel={$y$},
-\end_layout
-
-\begin_layout Plain Layout
-
-    width=15cm,
- height=6cm
-\end_layout
-
-\begin_layout Plain Layout
-
-  ]
-\end_layout
-
-\begin_layout Plain Layout
-
-    % esponenziale
-\end_layout
-
-\begin_layout Plain Layout
-
-    
-\backslash
-addplot[blue,
- thick,
- samples=200,
- domain=90:100] {exp(x)};
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-end{axis}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Part
@@ -6810,6 +5407,874 @@ Soluzione particolare:
 \end_inset
 
  E' la soluzione generale.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Teoria di Sopravvivenza
+\end_layout
+
+\begin_layout Subsection*
+(18) Usando la definizione di limite fornire il significato della scrittura:
+ 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=l$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Significa che 
+\begin_inset Formula $\forall\epsilon>0$
+\end_inset
+
+ esiste un 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ tale che 
+\begin_inset Formula $\forall x\in D_{f}$
+\end_inset
+
+,
+ se 
+\begin_inset Formula $0<|x-x_{0}|<\delta$
+\end_inset
+
+,
+ allora 
+\begin_inset Formula $|f(x)-l|<\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+(13) Enunciare TFCI
+\end_layout
+
+\begin_layout Standard
+Se 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ è continua su 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ e 
+\begin_inset Formula $F$
+\end_inset
+
+ è una funzione tale che 
+\begin_inset Formula $F'(x)=f(x)$
+\end_inset
+
+ per ogni 
+\begin_inset Formula $x\in[a,b]$
+\end_inset
+
+,
+ allora 
+\begin_inset Formula $\int_{a}^{b}f(x)dx=F(b)-F(a)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+(12) Enunciare il teorema della media integrale
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $f$
+\end_inset
+
+ continua in 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ Esiste 
+\begin_inset Formula $c\in[a,b]$
+\end_inset
+
+ tale che 
+\begin_inset Formula $\int_{a}^{b}f(x)=f(c)(b-a)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+(10) Dimostra la condizione necessaria del 1° ordine per punti estremali interni
+\end_layout
+
+\begin_layout Standard
+Supponiamo che 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ sia punto di minimo locale.
+ Allora esiste 
+\begin_inset Formula $\delta_{1}>0$
+\end_inset
+
+ tale che 
+\begin_inset Formula $f(x_{0})\leq f(x)$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in(x_{0}-\delta_{1},x_{0}+\delta_{1})\cap A$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Siccome 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ è interno,
+ allora esiste 
+\begin_inset Formula $\delta_{2}>0$
+\end_inset
+
+ tale che 
+\begin_inset Formula $(x_{0}-\delta_{2},\,x_{0}+\delta_{2})\subseteq A$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Sia 
+\begin_inset Formula $\delta=min(\delta_{1},\delta_{2})$
+\end_inset
+
+.
+ Consideriamo il rapporto incrementale 
+\noun on
+(derivata).
+ 
+\noun default
+Esso è 
+\begin_inset Formula $\geq0$
+\end_inset
+
+ per ogni 
+\begin_inset Formula $x\in(x_{0},\,x_{0}+\delta)$
+\end_inset
+
+ e quindi,
+ per il teorema di permanenza del segno si ha 
+\begin_inset Formula $f_{+}'(x_{0})=\underset{x\to x_{0}^{+}}{lim}\frac{f(x)-f(x_{0})}{x-x_{0}}\geq0$
+\end_inset
+
+.
+ D'altra parte il rapporto incrementale stesso è 
+\begin_inset Formula $\leq0$
+\end_inset
+
+ per ogni 
+\begin_inset Formula $x\in(x_{0}-\delta,\,x_{0})$
+\end_inset
+
+ e quindi per il teorema di permanenza del segno si ha 
+\begin_inset Formula $f_{-}'(x_{0})=\underset{x\to x_{o}^{-}}{lim}\frac{f(x)-f(x_{0})}{x-x_{0}}\leq0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Siccome 
+\begin_inset Formula $f$
+\end_inset
+
+ è derivabile in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ abbiamo che 
+\begin_inset Formula $f'(x_{0})=f_{-}'(x_{0})=f_{+}'(x_{0})$
+\end_inset
+
+,
+ combinando le 2 disuguaglianze precedenti concludiamo che 
+\begin_inset Formula $f'(x_{0})=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+(Il caso in cui 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ sia punto di massimo locale si mostra analogamente)
+\end_layout
+
+\begin_layout Subsection*
+(10) Dimostrare il teorema del differenziale (Lagrange)
+\end_layout
+
+\begin_layout Standard
+Definiamo 
+\begin_inset Formula $\omega(x)=\frac{f(x)-f(x_{0})}{x-x_{0}}-f'(x_{0})$
+\end_inset
+
+ se 
+\begin_inset Formula $x\neq x_{0}$
+\end_inset
+
+.
+ Dato che 
+\begin_inset Formula $f$
+\end_inset
+
+ è derivabile in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ abbiamo che 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}\omega(x)=0$
+\end_inset
+
+.
+ Prolunghiamo allora la funzione 
+\begin_inset Formula $\omega(x)$
+\end_inset
+
+ definendo 
+\begin_inset Formula $\omega(x)=0$
+\end_inset
+
+.
+ Allora per ogni 
+\begin_inset Formula $x\in I$
+\end_inset
+
+ abbiamo che 
+\begin_inset Formula $\omega(x)(x-x_{0})=f(x)-f(x_{0})+f'(x)(x-x_{0})$
+\end_inset
+
+ da cui segue la tesi.
+\end_layout
+
+\begin_layout Subsection*
+(8) Enunciare il criterio integrale per le serie numeriche
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $f:[1,+\infty)\to\mathbb{R}$
+\end_inset
+
+ una funzione debolmente crescente e non negativa.
+ Allora 
+\begin_inset Formula $\stackrel[k=1]{+\infty}{\sum}f(k)$
+\end_inset
+
+ converge se e solo se 
+\begin_inset Formula $\int_{1}^{+\infty}f(t)dt$
+\end_inset
+
+ converge.
+ Se inoltre,
+ in caso di convergenza,
+ si indica con 
+\begin_inset Formula $s=\stackrel[k=1]{+\infty}{\sum}f(k)$
+\end_inset
+
+ la somma della serie e con 
+\begin_inset Formula $s_{n}$
+\end_inset
+
+ la sua somma parziale n-esima,
+ abbiamo che:
+ 
+\begin_inset Formula $\int_{n+1}^{+\infty}f(t)dt\leq s-s_{n}\leq\int_{n}^{+\infty}f(t)dt$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+(8) Dimostra che 
+\begin_inset Formula $f$
+\end_inset
+
+ è strettamente crescente (decrescente)
+\end_layout
+
+\begin_layout Standard
+Supponiamo che 
+\begin_inset Formula $f$
+\end_inset
+
+ sia strettamente crescente.
+ Siano 
+\begin_inset Formula $x_{1},x_{2}\in I$
+\end_inset
+
+,
+ 
+\begin_inset Formula $x_{1}\neq x_{2}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Se 
+\begin_inset Formula $x_{1}<x_{2}$
+\end_inset
+
+ allora 
+\begin_inset Formula $f(x_{1})<f(x_{2})$
+\end_inset
+
+ e se 
+\begin_inset Formula $x_{1}>x_{2}$
+\end_inset
+
+ allora 
+\begin_inset Formula $f(x_{1})<f(x_{2})$
+\end_inset
+
+.
+ Pertanto in ogni caso,
+ 
+\begin_inset Formula $f(x_{1})\neq f(x_{2})$
+\end_inset
+
+,
+ ossia 
+\begin_inset Formula $f$
+\end_inset
+
+ è iniettiva.
+ Sappiamo inoltre che 
+\begin_inset Formula $f^{-1}:\mathcal{F}(f),$
+\end_inset
+
+ 
+\begin_inset Formula $y_{1}<y_{2}$
+\end_inset
+
+,
+ e siano 
+\begin_inset Formula $x_{1}=f^{-1}(y_{1})$
+\end_inset
+
+,
+ 
+\begin_inset Formula $x_{2}=f^{-1}(y_{2})$
+\end_inset
+
+.
+ Se si avesse che 
+\begin_inset Formula $x_{1}>x_{2}$
+\end_inset
+
+,
+ allora,
+ siccome 
+\begin_inset Formula $f$
+\end_inset
+
+ è strettamente crescente,
+ otterremmo che 
+\begin_inset Formula $f(x_{1})>f(x_{2})$
+\end_inset
+
+ cioè 
+\begin_inset Formula $f(f^{-1}(y_{1}))>f(f^{-1}(y_{2}))$
+\end_inset
+
+ da cui segue 
+\begin_inset Formula $y_{1}>y_{2}$
+\end_inset
+
+,
+ in contraddizione con l'ipotesi.
+ Quindi 
+\begin_inset Formula $x_{1}\leq x_{2}$
+\end_inset
+
+.
+ Se 
+\begin_inset Formula $x_{1}=x_{2}$
+\end_inset
+
+,
+ allora 
+\begin_inset Formula $y_{1}=f(x_{1})=f(x_{2})$
+\end_inset
+
+,
+ in contraddizione con l'ipotesi.
+ Segue che 
+\begin_inset Formula $x_{1}<x_{2}$
+\end_inset
+
+.
+ Pertanto 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+ è strettamente crescente.
+ 
+\begin_inset Newline newline
+\end_inset
+
+(Analogo per 
+\begin_inset Formula $f$
+\end_inset
+
+ decrescente) 
+\end_layout
+
+\begin_layout Subsection*
+(7) Enuncia il teorema del differenziale (Lagrange)
+\end_layout
+
+\begin_layout Standard
+Siano 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $I$
+\end_inset
+
+ intervallo,
+ 
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+,
+ 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ interno e 
+\begin_inset Formula $f$
+\end_inset
+
+ derivabile in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+ Allora esiste una funzione 
+\begin_inset Formula $\omega:I\to\mathbb{R}$
+\end_inset
+
+ tale che 
+\begin_inset Formula $\omega$
+\end_inset
+
+ è continua in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ e 
+\begin_inset Formula $\omega(x_{0})=0$
+\end_inset
+
+ per cui,
+ per ogni 
+\begin_inset Formula $x\in I$
+\end_inset
+
+,
+ si ha 
+\begin_inset Formula $f(x)=f(x_{0})+f'(x_{0})(x-x_{0})+\omega(x)(x-x_{0})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+(6) Enuncia la condizione necessaria di convergenza per le serie numeriche
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $\stackrel[k=0]{+\infty}{\sum}a_{k}$
+\end_inset
+
+ una serie convergente.
+ Allora 
+\begin_inset Formula $\underset{k\to+\infty}{lim}a_{k}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+(5) Enuncia il teorema di Bolzano-Weierstrass
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+,
+ una successione.
+ Diremo che la successione 
+\begin_inset Formula $b_{k}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+,
+ data la composizione della funzione strettamente crescente 
+\begin_inset Formula $\varphi:\mathbb{N}\to\mathbb{N},$
+\end_inset
+
+ 
+\begin_inset Formula $k\mapsto\varphi(k)$
+\end_inset
+
+,
+ con la successione 
+\begin_inset Formula $a:\mathbb{N}\mapsto\mathbb{R},$
+\end_inset
+
+ 
+\begin_inset Formula $n\mapsto a_{n}$
+\end_inset
+
+ è una sottosuccessione di 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+(4) Enuncia il teorema del confronto (3 carabinieri)
+\end_layout
+
+\begin_layout Standard
+Siano 
+\begin_inset Formula $f,g,h:A\subset\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $x_{0}\in\tilde{\mathbb{R}}$
+\end_inset
+
+,
+ pto di accumulazione di 
+\begin_inset Formula $A$
+\end_inset
+
+,
+ tali che 
+\begin_inset Formula $f(x)\leq g(x)\leq h(x)$
+\end_inset
+
+ definitivamente per 
+\begin_inset Formula $x\to x_{0}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Se esistono e sono uguali 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=\underset{x\to x_{0}}{lim}h(x)=l\in\tilde{\mathbb{R}}$
+\end_inset
+
+,
+ allora esiste anche 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}g(x)=l$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+(4) Enunciare criterio di Leibniz della serie a segni alterni
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $a_{k}\geq0$
+\end_inset
+
+,
+ 
+\begin_inset Formula $a_{k+1}\leq a_{k}$
+\end_inset
+
+ e 
+\begin_inset Formula $\underset{x\to+\infty}{lim}a_{k}=0$
+\end_inset
+
+.
+ Allora 
+\begin_inset Formula $\stackrel[k=1]{\infty}{\sum}(-1)^{k}a_{k}$
+\end_inset
+
+ converge.
+\end_layout
+
+\begin_layout Subsection*
+(4) Enunciare criterio della radice per la convergenza della serie
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $a_{k}\in\mathbb{R}$
+\end_inset
+
+ 
+\begin_inset Formula $\forall k\in\mathbb{N}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Se 
+\begin_inset Formula $\underset{k\to+\infty}{lim}\sqrt[k]{|a_{k}|}=l<1$
+\end_inset
+
+ allora 
+\begin_inset Formula $\sum a_{k}$
+\end_inset
+
+ è assolutamente convergente.
+\begin_inset Newline newline
+\end_inset
+
+Se 
+\begin_inset Formula $l=1$
+\end_inset
+
+ non posso concludere una convergenza o divergenza.
+\begin_inset Newline newline
+\end_inset
+
+Se 
+\begin_inset Formula $l>1$
+\end_inset
+
+ allora 
+\begin_inset Formula $\sum a_{k}$
+\end_inset
+
+ è divergente.
+\end_layout
+
+\begin_layout Subsection*
+(4) Enuncia il teorema dei valori intermedi
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:I\subset\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $I$
+\end_inset
+
+ intervallo,
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ continua in 
+\begin_inset Formula $I$
+\end_inset
+
+,
+ allora 
+\begin_inset Formula $Im_{(f)}$
+\end_inset
+
+ è intervallo
+\end_layout
+
+\begin_layout Subsection*
+(4) Si definisca la definizione di (un integrale) convergente
+\end_layout
+
+\begin_layout Standard
+Un integrale improprio si dice convergente quando il limite che lo definisce esiste ed è finito.
+ In caso contrario di dice divergente.
+\begin_inset Newline newline
+\end_inset
+
+Esempio:
+ 
+\begin_inset Formula $\int_{a}^{+\infty}f(x)dx$
+\end_inset
+
+ si dice convergente se esiste finito il limte 
+\begin_inset Formula $\underset{x\to+\infty}{lim}\int_{a}^{b}f(x)dx$
+\end_inset
+
+.
+ Se il limite non esiste o non è finito,
+ l'integrale si dice divergente.
+\end_layout
+
+\begin_layout Subsection*
+(4) Dimostrare che se 
+\begin_inset Formula $f$
+\end_inset
+
+ è derivabile nel dominio e la derivata è negativa allora 
+\begin_inset Formula $f$
+\end_inset
+
+ è strettamente decrescente
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $f:(a,b)\to\mathbb{R}$
+\end_inset
+
+ derivabile e 
+\begin_inset Formula $f'(x)<0$
+\end_inset
+
+ per ogni 
+\begin_inset Formula $x\in(a,b)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Prendo 
+\begin_inset Formula $x_{1}<x_{2}$
+\end_inset
+
+ in 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+.
+ Poiché 
+\begin_inset Formula $f$
+\end_inset
+
+ è continua su 
+\begin_inset Formula $[x_{1},x_{2}]$
+\end_inset
+
+ e derivabile su 
+\begin_inset Formula $(x_{1},x_{2})$
+\end_inset
+
+,
+ per il teorema di Lagrange esiste 
+\begin_inset Formula $c\in(x_{1},x_{2})$
+\end_inset
+
+ tale che 
+\begin_inset Formula $f'(c)=\frac{f(x_{2})-f(x_{1})}{x_{2}-x_{1}}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Per ipotesi 
+\begin_inset Formula $f'(c)<0$
+\end_inset
+
+ e siccome 
+\begin_inset Formula $x_{2}-x_{1}>0$
+\end_inset
+
+,
+ segue 
+\begin_inset Formula $f(x_{2})-f(x_{1})<0\Rightarrow f(x_{2})<f(x_{1})$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Quindi 
+\begin_inset Formula $f$
+\end_inset
+
+ è strettamente descrescente su 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Enuncia il teorema del differenziale (valor medio)
+\end_layout
+
+\begin_layout Standard
+Siano 
+\begin_inset Formula $f:[a,b]\subseteq\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ continua in 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ e 
+\begin_inset Formula $f$
+\end_inset
+
+ derivabile in 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+.
+ Allora esiste 
+\begin_inset Formula $c\in(a,b)$
+\end_inset
+
+ tale che 
+\begin_inset Formula $f'(c)=\frac{f(b)-f(a)}{b-a}$
+\end_inset
+
+.
 \end_layout
 
 \end_body
