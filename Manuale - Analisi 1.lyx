@@ -2596,10 +2596,14 @@ Per definizione una funzione è continua in un dato punto
 \end_inset
 
  se 
-\begin_inset Formula $lim_{x\to x_{0}}f(x)=f(x_{0})$
+\begin_inset Formula $lim_{x\to x_{0}^{\pm}}f(x)=l$
 \end_inset
 
+ e 
+\begin_inset Formula $f(x_{0})=l\in D_{f}$
+\end_inset
 
+.
 \begin_inset Newline newline
 \end_inset
 
@@ -2614,20 +2618,8 @@ Verifico punti critici del dominio di
 \begin_layout Itemize
 
 \series bold
-Eliminabile:
- 
-\series default
-limite esiste finito ma 
-\begin_inset Formula $f(x_{0})$
-\end_inset
-
- non è definito o è diverso.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Di salto:
+I specie,
+ Di salto:
 
 \series default
  i due limiti laterali esistono ma sono diversi.
@@ -2636,7 +2628,8 @@ Di salto:
 \begin_layout Itemize
 
 \series bold
-Infinita:
+II specie,
+ Infinita:
 
 \series default
  almeno un limite laterale tende a 
@@ -2644,6 +2637,33 @@ Infinita:
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+III specie,
+ Eliminabile:
+ 
+\series default
+i limiti esistono (
+\begin_inset Formula $\in\mathbb{R}$
+\end_inset
+
+) e coincidono ma 
+\begin_inset Formula $f(x_{0})$
+\end_inset
+
+ non appartiene al dominio o ha valore diverso dai limiti,
+ è possibile prolungare definendo 
+\begin_inset Formula $f(x_{0})=l$
+\end_inset
+
+ dove 
+\begin_inset Formula $l$
+\end_inset
+
+ è il risultato del limite
 \end_layout
 
 \begin_layout Standard
