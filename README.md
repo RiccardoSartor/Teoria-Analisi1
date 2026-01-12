@@ -5,6 +5,7 @@ L'obiettivo è fornire un riferimento ben organizzato per **Ingegneria Informati
 
 ## 📖 Contenuti
 - ✅ Risoluzione di esercizi
+- ✅ Teoria minima essenziale.
 
 ## 🛠 Come Usarlo
    **Scarica** direttamente il file .PDF
