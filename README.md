@@ -14,6 +14,4 @@ L'obiettivo è fornire un riferimento ben organizzato per **Ingegneria Informati
 
 ## 📜 Licenza
 
-Questo progetto è distribuito sotto la **licenza MIT**, quindi puoi utilizzarlo liberamente citando la fonte.
-
-💡 Se ti è utile, lascia una ⭐ alla repo!
+Questo progetto è distribuito sotto la **licenza MIT**.
