@@ -5952,11 +5952,11 @@ Sia
 
 ,
  una successione limitata.
- Allora una sottosuccessione 
-\begin_inset Formula $a_{n_{k}}$
+ Allora 
+\begin_inset Formula $\exists a_{n_{k}}$
 \end_inset
 
- di 
+ una sottosuccessione di 
 \begin_inset Formula $a_{n}$
 \end_inset
 

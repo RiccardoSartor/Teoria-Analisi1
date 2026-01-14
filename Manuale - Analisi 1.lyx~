@@ -5951,39 +5951,20 @@ Sia
 \end_inset
 
 ,
- una successione.
- Diremo che la successione 
-\begin_inset Formula $b_{k}$
+ una successione limitata.
+ Allora una sottosuccessione 
+\begin_inset Formula $a_{n_{k}}$
 \end_inset
 
-,
- 
-\begin_inset Formula $k\in\mathbb{N}$
-\end_inset
-
-,
- data la composizione della funzione strettamente crescente 
-\begin_inset Formula $\varphi:\mathbb{N}\to\mathbb{N},$
-\end_inset
-
- 
-\begin_inset Formula $k\mapsto\varphi(k)$
-\end_inset
-
-,
- con la successione 
-\begin_inset Formula $a:\mathbb{N}\mapsto\mathbb{R},$
-\end_inset
-
- 
-\begin_inset Formula $n\mapsto a_{n}$
-\end_inset
-
- è una sottosuccessione di 
+ di 
 \begin_inset Formula $a_{n}$
 \end_inset
 
-.
+ tale che 
+\begin_inset Formula $a_{n_{k}}$
+\end_inset
+
+è convergente.
 \end_layout
 
 \begin_layout Subsection*
