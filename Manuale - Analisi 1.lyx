@@ -6117,7 +6117,7 @@ Se
 \end_layout
 
 \begin_layout Subsection*
-(4) Si definisca la definizione di (un integrale) convergente
+(4) Enuncia la definizione di (un integrale) convergente
 \end_layout
 
 \begin_layout Standard
@@ -6132,7 +6132,7 @@ Esempio:
 \end_inset
 
  si dice convergente se esiste finito il limte 
-\begin_inset Formula $\underset{x\to+\infty}{lim}\int_{a}^{b}f(x)dx$
+\begin_inset Formula $\underset{t\to+\infty}{lim}\int_{a}^{t}f(x)dx$
 \end_inset
 
 .

@@ -6117,7 +6117,7 @@ Se
 \end_layout
 
 \begin_layout Subsection*
-(4) Si definisca la definizione di (un integrale) convergente
+(4) Si enunci la definizione di (un integrale) convergente
 \end_layout
 
 \begin_layout Standard
@@ -6132,7 +6132,7 @@ Esempio:
 \end_inset
 
  si dice convergente se esiste finito il limte 
-\begin_inset Formula $\underset{x\to+\infty}{lim}\int_{a}^{b}f(x)dx$
+\begin_inset Formula $\underset{t\to+\infty}{lim}\int_{a}^{t}f(x)dx$
 \end_inset
 
 .
@@ -6264,6 +6264,103 @@ Siano
 
  tale che 
 \begin_inset Formula $f'(c)=\frac{f(b)-f(a)}{b-a}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Enuncia il teorma di Weierstrass
+\end_layout
+
+\begin_layout Standard
+Siano 
+\begin_inset Formula $f:[a,b]\subseteq\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ continua in 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+,
+ allora 
+\begin_inset Formula $f$
+\end_inset
+
+ ammette minimo e massimo assoluto
+\end_layout
+
+\begin_layout Subsection*
+Teorema di Rolle
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $f:[a,b]\to\mathbb{R}$
+\end_inset
+
+.
+ Se 
+\begin_inset Formula $f$
+\end_inset
+
+ continua in 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+,
+ derivabile in 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ e se 
+\begin_inset Formula $f(a)=f(b)\Rightarrow\exists c\in(a,b)$
+\end_inset
+
+ tale che 
+\begin_inset Formula $f'(c)=0.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Teorma degli zeri (Bolzano)
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $f:[a,b]\subseteq\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ continua in 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ e sia 
+\begin_inset Formula $f(a)*f(b)<0$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\exists c\in(a,b)$
+\end_inset
+
+ tale che 
+\begin_inset Formula $f(c)=0$
 \end_inset
 
 .
