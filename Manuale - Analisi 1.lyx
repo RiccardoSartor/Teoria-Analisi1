@@ -5973,7 +5973,7 @@ Sia
 
 \begin_layout Standard
 Siano 
-\begin_inset Formula $f,g,h:A\subset\mathbb{R}\to\mathbb{R}$
+\begin_inset Formula $f,g,h:I\subset\mathbb{R}\to\mathbb{R}$
 \end_inset
 
 ,
@@ -5983,7 +5983,7 @@ Siano
 
 ,
  pto di accumulazione di 
-\begin_inset Formula $A$
+\begin_inset Formula $I$
 \end_inset
 
 ,
@@ -6026,7 +6026,7 @@ Sia
 \end_inset
 
  e 
-\begin_inset Formula $\underset{x\to+\infty}{lim}a_{k}=0$
+\begin_inset Formula $\underset{k\to+\infty}{lim}a_{k}=0$
 \end_inset
 
 .
