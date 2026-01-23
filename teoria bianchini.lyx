@@ -1,0 +1,2675 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children no
+\language italian
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Teoria completa Bianchini
+\end_layout
+
+\begin_layout Date
+Anno Accademico 2025-2026
+\end_layout
+
+\begin_layout Section
+Definizione di serie convergente divergente ed indeterminata
+\end_layout
+
+\begin_layout Standard
+Una serie 
+\begin_inset Formula $\stackrel[n=1]{\infty}{\sum}a_{n}$
+\end_inset
+
+ si dice convergente se la successione delle somme parziali 
+\begin_inset Formula $s_{n}=\stackrel[k=1]{n}{\sum}a_{k}$
+\end_inset
+
+ ammette limite finito,
+ cioè 
+\begin_inset Formula $\underset{n\to+\infty}{lim}s_{n}=s$
+\end_inset
+
+ con 
+\begin_inset Formula $s\in\mathbb{R}$
+\end_inset
+
+.
+ In tal caso scriviamo 
+\begin_inset Formula $\stackrel[n=1]{\infty}{\sum}a_{n}=s$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Una serie 
+\begin_inset Formula $\stackrel[n=1]{\infty}{\sum}a_{n}$
+\end_inset
+
+ si dice divergente se la successione delle somme parziali 
+\begin_inset Formula $s_{n}=\stackrel[k=1]{n}{\sum}a_{k}$
+\end_inset
+
+ non ammette limite finito,
+ cioè 
+\begin_inset Formula $\underset{n\to+\infty}{lim}a_{n}=\pm\infty$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Una serie 
+\begin_inset Formula $\stackrel[n=1]{\infty}{\sum}a_{n}$
+\end_inset
+
+ si dice divergente se la successione delle somme parziali 
+\begin_inset Formula $s_{n}=\stackrel[k=1]{n}{\sum}a_{k}$
+\end_inset
+
+ non ammette limite finito,
+ cioè 
+\begin_inset Formula $\nexists\underset{n\to+\infty}{lim}a_{n}=s\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Definizione di successione convergente,
+ divergente ed indeterminata
+\end_layout
+
+\begin_layout Subsection*
+Successione convergente
+\end_layout
+
+\begin_layout Standard
+Una successione si dice convergente se:
+ 
+\begin_inset Formula $\underset{n\to+\infty}{lim}a_{n}=l\in\mathbb{N}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Una successione si dice divergente se:
+ 
+\begin_inset Formula $\underset{n\to+\infty}{lim}a_{n}=\pm\infty$
+\end_inset
+
+ oppure 
+\begin_inset Formula $\nexists\underset{n\to+\infty}{lim}a_{n}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Una successione si dice indeterminata se il limite presenta una forma indeterminata come:
+ 
+\begin_inset Formula $\frac{0}{0};\frac{\infty}{\infty};0*\infty;+\infty-\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Definizione d’integrale di Riemann
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $f:[a,b]\to\mathbb{R},$
+\end_inset
+
+limitata.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f$
+\end_inset
+
+ si dice integrabile secondo Riemann se l'integrale superiore e l'integrale inferiore coincidono.
+ Il valore comune si chiama integrale di Riemann di 
+\begin_inset Formula $f$
+\end_inset
+
+ su 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Dimostrazione del teorema di esistenza degli zeri per una funzione continua in un intervallo chiuso e limitato
+\end_layout
+
+\begin_layout Standard
+Presi in considerazioni i tre teoremi:
+\end_layout
+
+\begin_layout Enumerate
+Teorema di Weierstrass 
+\begin_inset Formula $\to$
+\end_inset
+
+ Una funzione continua in un intervallo 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ ha un min e un max.
+\end_layout
+
+\begin_layout Enumerate
+Teorema dei valori intermedi 
+\begin_inset Formula $\to$
+\end_inset
+
+ Se una funzione è continua su 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ e 
+\begin_inset Formula $f(a)<k<f(b)$
+\end_inset
+
+ allora 
+\begin_inset Formula $\exists c\in(a,b)$
+\end_inset
+
+ tale che 
+\begin_inset Formula $f(c)=k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Teorema degli zeri 
+\begin_inset Formula $\to$
+\end_inset
+
+ Se 
+\begin_inset Formula $f$
+\end_inset
+
+ continua su 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+,
+ derivabile su 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ e 
+\begin_inset Formula $f(a)*f(b)<0$
+\end_inset
+
+,
+ allora 
+\begin_inset Formula $\exists c\in(a,b)$
+\end_inset
+
+ tale che 
+\begin_inset Formula $f'(c)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Quindi data 
+\begin_inset Formula $f:[a,b]\to\mathbb{R}$
+\end_inset
+
+ e 
+\begin_inset Formula $f$
+\end_inset
+
+ continua in 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+,
+ la funzione assume tutti i valori compresi tra inf
+\begin_inset Formula $f$
+\end_inset
+
+ e sup
+\begin_inset Formula $f$
+\end_inset
+
+ e se 0 è un valore compreso allora il teorema è dimostrato.
+\end_layout
+
+\begin_layout Section
+Equazioni differenziali lineari del primo ordine.
+ Definizioni e teoremi principali.
+ Trovare la soluzione generale dell’equazione:
+ 
+\begin_inset Formula $y'(x)+a(x)y(x)=b(x)$
+\end_inset
+
+ dove 
+\begin_inset Formula $a(x)$
+\end_inset
+
+ e 
+\begin_inset Formula $b(x)$
+\end_inset
+
+ sono due funzioni continue assegnate
+\end_layout
+
+\begin_layout Standard
+Un equazione differenziale è una funzione del tipo 
+\begin_inset Formula $y'(x)+a(x)y(x)=f(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dove:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $y(x)$
+\end_inset
+
+ è la funzione incognita
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $a(x),\ f(x)$
+\end_inset
+
+ sono funzioni note e continue su 
+\begin_inset Formula $I\subset\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Se 
+\begin_inset Formula $f(x)=0$
+\end_inset
+
+ l'eq.
+ differenziale è detta 
+\noun on
+omogenea
+\end_layout
+
+\begin_layout Standard
+Problema di Cauchy
+\end_layout
+
+\begin_layout Standard
+Dato 
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+ e 
+\begin_inset Formula $y_{0}\in\mathbb{R}$
+\end_inset
+
+,
+ il problema di Cauchy consiste nel trovare 
+\begin_inset Formula $y(x)$
+\end_inset
+
+ tale che:
+ 
+\begin_inset Formula $\begin{cases}
+y'(x)+a(x)y(x)=t(x)\\
+y(x_{0})=y_{0}
+\end{cases}$
+\end_inset
+
+,
+ si risolve prima trovando 
+\begin_inset Formula $y(x)$
+\end_inset
+
+ e poi ponendo 
+\begin_inset Formula $y(x_{0})=y_{0}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Teorema di esistenza e unicità
+\end_layout
+
+\begin_layout Standard
+Sia dato il problema di Cauchy 
+\begin_inset Formula $\begin{cases}
+y'(x)+a(x)y(x)=t(x)\\
+y(x_{0})=y_{0}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Allora 
+\begin_inset Formula $\exists!y(x)$
+\end_inset
+
+ su tutto l'intervallo 
+\begin_inset Formula $I$
+\end_inset
+
+ che soddisfa il problema di Cauchy.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Trovare la soluzione generale dell’equazione:
+ 
+\begin_inset Formula $y'(x)+a(x)y(x)=b(x)$
+\end_inset
+
+ dove 
+\begin_inset Formula $a(x)$
+\end_inset
+
+ e 
+\begin_inset Formula $b(x)$
+\end_inset
+
+ sono due funzioni continue assegnate:
+\end_layout
+
+\begin_layout Enumerate
+Trovo una primitiva 
+\begin_inset Formula $A(x)$
+\end_inset
+
+ di 
+\begin_inset Formula $a(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integro:
+ 
+\begin_inset Formula $y(x)=e^{-A(x)}*\int e^{A(x)}*f(x)dx\ +ce^{-A(x)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Ricavo la funzione cercata 
+\begin_inset Formula $y(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Equazioni differenziali del secondo ordine.
+ Definizioni e teoremi principali.
+ Soluzioni linearmente indipendenti.
+ Definizione
+\end_layout
+
+\begin_layout Standard
+Un eq differenziale lineare del II ordine ha la forma:
+ 
+\begin_inset Formula $y''(x)+a(x)y'(x)+b(x)y(x)=f(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dove:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $y(x)$
+\end_inset
+
+ è la funzione incognita
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $a(x),b(x),f(x)$
+\end_inset
+
+ sono funzioni continue definite su 
+\begin_inset Formula $I\subset\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Se 
+\begin_inset Formula $f(x)=0$
+\end_inset
+
+ l'eq differenziale si dice omogenea
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Problema di Cauchy:
+\end_layout
+
+\begin_layout Standard
+Dato 
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+ e 
+\begin_inset Formula $y_{0},y'_{0}\in\mathbb{R}$
+\end_inset
+
+,
+ devo trovare 
+\begin_inset Formula $y(x)$
+\end_inset
+
+ tale che:
+ 
+\begin_inset Formula $\begin{cases}
+y''(x)+a(x)y'(x)+b(x)y(x)=f(x)\\
+y(x_{0})=y_{0}\\
+y'(x_{0})=y'_{0}
+\end{cases}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Teorma di esistenza e unicità
+\end_layout
+
+\begin_layout Standard
+Se 
+\begin_inset Formula $a(x),b(x),f(x)$
+\end_inset
+
+ sono continue su 
+\begin_inset Formula $I$
+\end_inset
+
+,
+ allora 
+\begin_inset Formula $\forall x_{0}\in I$
+\end_inset
+
+ il problema di Cauchy ha un'unica soluzione 
+\begin_inset Formula $y(x)$
+\end_inset
+
+ su tutto 
+\begin_inset Formula $I$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Soluzioni linearmente indipendenti:
+\end_layout
+
+\begin_layout Standard
+Due funzioni 
+\begin_inset Formula $y_{1}(x)$
+\end_inset
+
+ e 
+\begin_inset Formula $y_{2}(x)$
+\end_inset
+
+ sono linearmente indipendenti su un intervallo 
+\begin_inset Formula $I$
+\end_inset
+
+ se nessuna può essere scritta come combinazione lineare dell'altra:
+ 
+\begin_inset Formula $\nexists c_{1},c_{2}\neq0$
+\end_inset
+
+ t.c.
+ 
+\begin_inset Formula $c_{1}*y_{1}(x)+c_{2}y_{2}(x)=0$
+\end_inset
+
+ (Possiamo dire che il Wronksiano di 
+\begin_inset Formula $y_{1}$
+\end_inset
+
+ e 
+\begin_inset Formula $y_{2}$
+\end_inset
+
+ è diverso da 
+\begin_inset Formula $0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Section
+Dimostrare che 
+\begin_inset Formula $sin(x)$
+\end_inset
+
+ e 
+\begin_inset Formula $cos(x)$
+\end_inset
+
+ sono linearmente indipendenti
+\end_layout
+
+\begin_layout Standard
+Consideriamo 
+\begin_inset Formula $f(x)=sinx$
+\end_inset
+
+,
+ 
+\begin_inset Formula $g(x)=cosx$
+\end_inset
+
+,
+ allora 
+\begin_inset Formula $f'(x)=cosx$
+\end_inset
+
+,
+ 
+\begin_inset Formula $g'(x)=-sinx$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Calcolo il Wronksiano:
+ 
+\begin_inset Formula $W(f,g)=\left|\begin{array}{cc}
+sinx & cosx\\
+cosx & -sinx
+\end{array}\right|=-sin^{2}x-cos^{2}x=-(sin^{2}x+cos^{2}x)=-1\neq0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Poichè il Wronksiano è diverso da 
+\begin_inset Formula $0$
+\end_inset
+
+ possiamo concludere che 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ e 
+\begin_inset Formula $g(x)$
+\end_inset
+
+ sono linearmente indipendenti.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Si può osservare che 
+\begin_inset Formula $\frac{sinx}{cosx}=tanx$
+\end_inset
+
+ dato che la funzione tangente non è costante 
+\begin_inset Formula $sinx$
+\end_inset
+
+ e 
+\begin_inset Formula $cosx$
+\end_inset
+
+ non sono multipli l'uno dell'altro e quindi non sono linearmente dipendenti.
+\end_layout
+
+\begin_layout Section
+Definire il Wronskiano tra due funzioni 
+\begin_inset Formula $y(x)$
+\end_inset
+
+ e 
+\begin_inset Formula $z(x)$
+\end_inset
+
+.
+ Dimostrare che se il wronskiano è diverso da zero in un punto allora è diverso da zero in ogni punto dell’intervallo di definizione
+\end_layout
+
+\begin_layout Standard
+Per due funzioni 
+\begin_inset Formula $y(x)$
+\end_inset
+
+ e 
+\begin_inset Formula $z(x)$
+\end_inset
+
+ di classe 
+\begin_inset Formula $\mathbb{C}^{1}$
+\end_inset
+
+ su 
+\begin_inset Formula $I$
+\end_inset
+
+ (funzioni con derivata prima continua su 
+\begin_inset Formula $I$
+\end_inset
+
+) soluzione dell'ODE,
+ il Wronksiano si definisce come:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W(y,z)(x)=\left|\begin{array}{cc}
+y(x) & z(x)\\
+y'(x) & z'(x)
+\end{array}\right|=y(x)z'(x)-z(x)y'(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Permette di definire se 
+\begin_inset Formula $y(x)$
+\end_inset
+
+ e 
+\begin_inset Formula $g(x)$
+\end_inset
+
+ sono linearmente indipendenti
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dimostrazione:
+\begin_inset Newline newline
+\end_inset
+
+Pongo 
+\begin_inset Formula $W(x)=yz'-y'z$
+\end_inset
+
+,
+ derivo:
+ 
+\begin_inset Formula $W'=y'z'+yz''-y'z'-y''z=yz''-y''z$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dato che 
+\begin_inset Formula $y$
+\end_inset
+
+ e 
+\begin_inset Formula $z$
+\end_inset
+
+ risolvono l'ODE:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y''=-p(x)y'-q(x)y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z''=-p(x)z'-q(x)z$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Sostituendo:
+ 
+\begin_inset Formula $W'=y(-pz'-qz)-z(-py'-qy)=-pyz'-qyz+py'z+qyz=-p(yz'-y'z)=-pW$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Svolgo l'eq differenziale 
+\begin_inset Formula $W'+p(x)W=0$
+\end_inset
+
+,
+ ottenendo 
+\begin_inset Formula $W=c*e^{-\int p(t)dt}$
+\end_inset
+
+ dove 
+\begin_inset Formula $c=W(x_{0})$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Allora:
+ 
+\begin_inset Formula $W=W(x_{0})*e^{-\int p(t)dt}$
+\end_inset
+
+,
+ dato che la funzione esponenziale è sempre strett.
+ positiva,
+ allora:
+\end_layout
+
+\begin_layout Standard
+se 
+\begin_inset Formula $W(x_{0})=0\Rightarrow W(x)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+se 
+\begin_inset Formula $W(x_{0})\neq0\Rightarrow W(x)\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Definizione di sup e inf per sottoinsiemi di 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ Dimostrare che ogni sottoinsieme di 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ superiormente limitato ammette il sup
+\end_layout
+
+\begin_layout Standard
+Considero l'insieme 
+\begin_inset Formula $I\subseteq\mathbb{R},$
+\end_inset
+
+
+\begin_inset Formula $I\neq\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Se 
+\begin_inset Formula $I$
+\end_inset
+
+ è inferiormente limitato
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $i=\text{inf}(I)\in\mathbb{R}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $i:\begin{cases}
+x\geq i\ \forall x\in I\\
+\forall\epsilon>0\ \exists x\in I:x<i+\epsilon
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Se 
+\begin_inset Formula $I$
+\end_inset
+
+ è superiormente limitato
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $s=\text{sup}(I)\in\mathbb{R}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $s:\begin{cases}
+x\leq s\ \forall x\in I\\
+\forall\epsilon>0\ \exists x\in I:x>s-\epsilon
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Se 
+\begin_inset Formula $I$
+\end_inset
+
+ è inferiormente illimitato
+\begin_inset Newline newline
+\end_inset
+
+inf
+\begin_inset Formula $(I)=-\infty$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall l\in\mathbb{R}$
+\end_inset
+
+ 
+\begin_inset Formula $\exists x\in I:x<l$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Se 
+\begin_inset Formula $I$
+\end_inset
+
+ è superiormente illimitato
+\begin_inset Newline newline
+\end_inset
+
+sup
+\begin_inset Formula $(I)=+\infty$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall l\in\mathbb{R}$
+\end_inset
+
+ 
+\begin_inset Formula $\exists x\in I:x>l$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dimostrazione estremo superiore:
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $I\subset\mathbb{R}$
+\end_inset
+
+ non vuoto e superiormente limitato.
+\end_layout
+
+\begin_layout Standard
+Consideriamo l'insieme dei maggioranti:
+ 
+\begin_inset Formula $U=\{M\in\mathbb{R}:x<M\ \forall x\in I\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L'insieme 
+\begin_inset Formula $U$
+\end_inset
+
+ è quindi non vuoto e inferiormente limitato.
+ Per l'assioma di completezza di 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ esiste 
+\begin_inset Formula $s=$
+\end_inset
+
+inf(
+\begin_inset Formula $U$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Si verifica quindi che 
+\begin_inset Formula $s$
+\end_inset
+
+ è il minimo dei maggioranti di 
+\begin_inset Formula $I$
+\end_inset
+
+ e quindi 
+\begin_inset Formula $s=$
+\end_inset
+
+sup(
+\begin_inset Formula $I$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Section
+Definizione di punto di accumulazione di un sottoinsieme di 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ Definizione di limite di una funzione per 
+\begin_inset Formula $x\to x_{0}$
+\end_inset
+
+.
+ Enunciare almeno un teorema significativo sui limiti
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $A\subseteq\mathbb{R}$
+\end_inset
+
+ e sia 
+\begin_inset Formula $x_{0}\in\mathbb{R}.$
+\end_inset
+
+ Si dice 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ pto di accumulazione per 
+\begin_inset Formula $A$
+\end_inset
+
+ se 
+\begin_inset Formula $\forall\epsilon>0$
+\end_inset
+
+ 
+\begin_inset Formula $((x_{0}-\epsilon,x_{0}+\epsilon)\cap A\backslash\{x_{0}\}\neq\emptyset)$
+\end_inset
+
+,
+ cioè ogni intorno di 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ contiene almeno un punto di 
+\begin_inset Formula $A$
+\end_inset
+
+ distinto da 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Definizione 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=l$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall\epsilon>0$
+\end_inset
+
+ 
+\begin_inset Formula $\exists\delta>0$
+\end_inset
+
+ tale che 
+\begin_inset Formula $\forall x\in D_{f}$
+\end_inset
+
+,
+ se 
+\begin_inset Formula $0<|x-x_{0}|<\delta$
+\end_inset
+
+,
+ allora 
+\begin_inset Formula $|f(x)-l|<\epsilon$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Teorma unicità del limite:
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $f:I\subseteq\mathbb{R}$
+\end_inset
+
+ e sia 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ un punto di accumulazione per 
+\begin_inset Formula $I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Se 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=l$
+\end_inset
+
+ e 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=m$
+\end_inset
+
+,
+ allora 
+\begin_inset Formula $l=m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Quindi se una funzione ammette limite,
+ questo è unico.
+\end_layout
+
+\begin_layout Section
+Dimostrare una forma (a piacere) del teorema di Hopital
+\end_layout
+
+\begin_layout Standard
+Siano 
+\begin_inset Formula $f,g:(a,b)\to\mathbb{R}$
+\end_inset
+
+ deriabili con 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=\underset{x\to x_{0}}{lim}g(x)=0$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}g'(x)\neq0$
+\end_inset
+
+.
+ Supponiamo che esista 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}\frac{f'(x)}{g'(x)}=l$
+\end_inset
+
+,
+ allora 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}\frac{f(x)}{g(x)}=l$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dimostrazione:
+\end_layout
+
+\begin_layout Standard
+Per il teorema di Cauchy,
+ per ogni 
+\begin_inset Formula $x\neq x_{0}$
+\end_inset
+
+ esiste 
+\begin_inset Formula $c$
+\end_inset
+
+ compreso tra 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ tale che 
+\begin_inset Formula $\frac{f(x)-f(x_{0})}{g(x)-g(x_{0})}=\frac{f'(c)}{g'(c)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Poiche 
+\begin_inset Formula $f(x_{0})=g(x_{0})=0$
+\end_inset
+
+,
+ si ha che 
+\begin_inset Formula $\frac{f(x)}{g(x)}=\frac{f'(c)}{g'(c)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Facendo 
+\begin_inset Formula $x\to x_{0}$
+\end_inset
+
+ segue che 
+\begin_inset Formula $c\to x_{0}$
+\end_inset
+
+ quindi 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}\frac{f(x)}{g(x)}=\underset{c\to x_{0}}{lim}\frac{f'(x)}{g'(x)}=l$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Sviluppi di Taylor o Mac-Laurin per una funzione reale derivabile con continuità 
+\begin_inset Formula $n$
+\end_inset
+
+ volte.
+ Scrivere le definizioni principali e dimostrare il teorema di Peano
+\end_layout
+
+\begin_layout Standard
+Considero il caso particolare dello sviluppo di Taylor centrato in 
+\begin_inset Formula $0$
+\end_inset
+
+,
+ detto sviluppo di Mac-Laurin.
+\begin_inset Newline newline
+\end_inset
+
+Sia 
+\begin_inset Formula $f$
+\end_inset
+
+ derivabile e continua fino all'ordine 
+\begin_inset Formula $n$
+\end_inset
+
+ in un intorno di 
+\begin_inset Formula $x_{0}.$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Polinomio di Mac-Laurin:
+ 
+\begin_inset Formula $f(x)=\stackrel[k=0]{n}{\sum}\frac{f^{(n)}(0)}{k!}x^{k}+o(x^{n})$
+\end_inset
+
+ per 
+\begin_inset Formula $x\to x_{0}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dimostrazione Teorema di Peano:
+\begin_inset Newline newline
+\end_inset
+
+Definiamo la funzione 
+\begin_inset Formula $\phi(x)=f(x)-\stackrel[k=0]{n}{\sum}\frac{f^{k}(0)}{k!}x^{k}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Per costruzione si ha:
+ 
+\begin_inset Formula $\phi(0)=\phi'(0)=...=\phi^{n}(0)=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Poichè 
+\begin_inset Formula $\phi^{(n)}$
+\end_inset
+
+ si annulla in 0,
+ si ha 
+\begin_inset Formula $\underset{x\to0}{lim}\frac{\phi(x)}{x^{n}}=0$
+\end_inset
+
+ e quindi 
+\begin_inset Formula $\phi(x)=o(x^{n})$
+\end_inset
+
+ per 
+\begin_inset Formula $x\to0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Pertanto 
+\begin_inset Formula $f(x)=\stackrel[k=0]{n}{\sum}\frac{f^{(n)}(0)}{k!}x^{k}+o(x^{n})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Definizione di funzione continua e derivabile.
+ Legame tra i due concetti
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ e sia 
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f$
+\end_inset
+
+ è continua in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ se 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=f(x_{0})$
+\end_inset
+
+,
+ se questo vale per ogni punto del dominio della funzione allora 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ è continua in 
+\begin_inset Formula $D_{f}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f$
+\end_inset
+
+ è derivabile in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ se 
+\begin_inset Formula $\exists f'(x_{0})=\underset{x\to x_{0}}{lim}\frac{f(x)-f(x_{0})}{x-x_{0}}=l\in\mathbb{R}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $f'(x)$
+\end_inset
+
+ si chiama derivata di 
+\begin_inset Formula $f$
+\end_inset
+
+ in 
+\begin_inset Formula $x_{0},$
+\end_inset
+
+se questo vale per tutti i punti del dominio di 
+\begin_inset Formula $f$
+\end_inset
+
+ si dice che 
+\begin_inset Formula $f$
+\end_inset
+
+ è derivabile in 
+\begin_inset Formula $D_{f}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Sia 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ e sia 
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+,
+ se 
+\begin_inset Formula $f$
+\end_inset
+
+ è derivabile in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ allora 
+\begin_inset Formula $f$
+\end_inset
+
+ è continua in 
+\begin_inset Formula $x_{0}.$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Nota bene:
+ Una funzione derivabile è anche continua,
+ il viceversa non è garantito.
+\end_layout
+
+\begin_layout Section
+Teorema di Weierstrass per le funzioni continue.
+ Enunciato ed applicazioni (dare controesempi togliendo le ipotesi del teorema)
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $f:[a,b]\subseteq\mathbb{R\to\mathbb{R}}$
+\end_inset
+
+,
+ continua in 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+,
+ allora 
+\begin_inset Formula $f$
+\end_inset
+
+ ammette minimo e massimo.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Esempio di applicazione:
+ Una funzione continua in un intervallo chiuso e limitato raggiunge sempre il suo valore massimo e minimo (Esistenza degli estremi globali)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Controesempi:
+\end_layout
+
+\begin_layout Standard
+Intervallo non chiuso:
+ 
+\begin_inset Formula $f(x)=x$
+\end_inset
+
+,
+ 
+\begin_inset Formula $D_{f}=(0,1)$
+\end_inset
+
+,
+ la funzione non ammette nè minimo nè massimo,
+ gli estremi non sono compresi.
+\end_layout
+
+\begin_layout Standard
+Intervallo non limitato:
+ 
+\begin_inset Formula $f(x)=x$
+\end_inset
+
+,
+ 
+\begin_inset Formula $D_{f}=\mathbb{R}$
+\end_inset
+
+,
+ la funzione non ammette nè minimo nè massimo,
+ intervallo non limitato.
+\end_layout
+
+\begin_layout Standard
+Funzione non continua:
+ 
+\begin_inset Formula $f(x)=\begin{cases}
+x & x\in(0,1)\\
+2 & x=0
+\end{cases}$
+\end_inset
+
+ 
+\begin_inset Formula $D_{f}=[0,1)$
+\end_inset
+
+,
+ estremi non garantiti,
+ la funzione non è continua
+\end_layout
+
+\begin_layout Section
+Definizione di massimo e minimo relativo (o locale) e assoluto.
+ Enunciare e dimostrare il teorema di Fermat
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ e sia 
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ è un max relativo se 
+\begin_inset Formula $\exists U_{x_{0}}$
+\end_inset
+
+ tale che 
+\begin_inset Formula $f(x_{0})\geq f(x)$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in U_{x_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ e un max assoluto se 
+\begin_inset Formula $f(x_{0})\geq f(x)$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in I$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ è un min relativo se 
+\begin_inset Formula $\exists U_{x_{0}}$
+\end_inset
+
+ tale che 
+\begin_inset Formula $f(x_{0})\leq f(x)$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in U_{x_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ e un min assoluto se 
+\begin_inset Formula $f(x_{0})\leq f(x)$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in I$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Enunciato Teorema di Fermat:
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ e sia 
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+ un punto interno ad 
+\begin_inset Formula $I$
+\end_inset
+
+,
+ se 
+\begin_inset Formula $f$
+\end_inset
+
+ è derivabile e 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ è pto di max o min allora 
+\begin_inset Formula $f'(x_{0})=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dimostrazione Teorema di Fermat:
+\begin_inset Newline newline
+\end_inset
+
+Supponiamo che 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ sia punto di minimo locale.
+ Allora esiste 
+\begin_inset Formula $\delta_{1}>0$
+\end_inset
+
+ tale che 
+\begin_inset Formula $f(x_{0})\leq f(x)$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in(x_{0}-\delta_{1},x_{0}+\delta_{1})\cap A$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Siccome 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ è interno,
+ allora esiste 
+\begin_inset Formula $\delta_{2}>0$
+\end_inset
+
+ tale che 
+\begin_inset Formula $(x_{0}-\delta_{2},\,x_{0}+\delta_{2})\subseteq A$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Sia 
+\begin_inset Formula $\delta=min(\delta_{1},\delta_{2})$
+\end_inset
+
+.
+ Consideriamo il rapporto incrementale 
+\noun on
+(derivata).
+ 
+\noun default
+Esso è 
+\begin_inset Formula $\geq0$
+\end_inset
+
+ per ogni 
+\begin_inset Formula $x\in(x_{0},\,x_{0}+\delta)$
+\end_inset
+
+ e quindi,
+ per il teorema di permanenza del segno si ha 
+\begin_inset Formula $f_{+}'(x_{0})=\underset{x\to x_{0}^{+}}{lim}\frac{f(x)-f(x_{0})}{x-x_{0}}\geq0$
+\end_inset
+
+.
+ D'altra parte il rapporto incrementale stesso è 
+\begin_inset Formula $\leq0$
+\end_inset
+
+ per ogni 
+\begin_inset Formula $x\in(x_{0}-\delta,\,x_{0})$
+\end_inset
+
+ e quindi per il teorema di permanenza del segno si ha 
+\begin_inset Formula $f_{-}'(x_{0})=\underset{x\to x_{o}^{-}}{lim}\frac{f(x)-f(x_{0})}{x-x_{0}}\leq0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Siccome 
+\begin_inset Formula $f$
+\end_inset
+
+ è derivabile in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ abbiamo che 
+\begin_inset Formula $f'(x_{0})=f_{-}'(x_{0})=f_{+}'(x_{0})$
+\end_inset
+
+,
+ combinando le 2 disuguaglianze precedenti concludiamo che 
+\begin_inset Formula $f'(x_{0})=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+(Il caso in cui 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ sia punto di massimo locale si mostra analogamente)
+\end_layout
+
+\begin_layout Section
+Monotonia e derivata prima.
+ Dimostrare il legame tra i due concetti
+\end_layout
+
+\begin_layout Standard
+Data 
+\begin_inset Formula $f:[a,b]\to\mathbb{R}$
+\end_inset
+
+,
+ continua in 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ e derivabile in 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f$
+\end_inset
+
+ crescente 
+\begin_inset Formula $\forall x\in(a,b)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $f'(x)\geq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f$
+\end_inset
+
+ decrescente 
+\begin_inset Formula $\forall x\in(a,b)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $f'(x)\leq0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f'(x)>0$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in(a,b)$
+\end_inset
+
+,
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ strettamente crescente
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f'(x)<0$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in(a,b)$
+\end_inset
+
+,
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ strettamente decrescente
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Enunciato:
+ Sia 
+\begin_inset Formula $f:[a,b]\to\mathbb{R}$
+\end_inset
+
+ continua in 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ e derivabile in 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+.
+ Se 
+\begin_inset Formula $f'(x)\geq0$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in(a,b)$
+\end_inset
+
+,
+ allora 
+\begin_inset Formula $f$
+\end_inset
+
+ è crescente su 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Dimostrazione:
+\begin_inset Newline newline
+\end_inset
+
+Poichè 
+\begin_inset Formula $f$
+\end_inset
+
+ continua in 
+\begin_inset Formula $[x_{1},x_{2}]$
+\end_inset
+
+ e derivabile in 
+\begin_inset Formula $(x_{1},x_{2})$
+\end_inset
+
+,
+ per il teorema di Lagrange,
+ esiste 
+\begin_inset Formula $c\in(x_{1},x_{2})$
+\end_inset
+
+ tale che:
+ 
+\begin_inset Formula $f(x_{2})-f(x_{1})=f'(c)(x_{2}-x_{1})$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Poichè 
+\begin_inset Formula $f'(c)\geq0$
+\end_inset
+
+ e 
+\begin_inset Formula $x_{2}-x_{1}\geq0$
+\end_inset
+
+,
+ segue 
+\begin_inset Formula $f(x_{2})-f(x_{1})\geq0$
+\end_inset
+
+ cioè 
+\begin_inset Formula $f(x_{2})\geq f(x_{1})$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Quindi 
+\begin_inset Formula $f$
+\end_inset
+
+ è crescente in 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Enunciare e dimostrare il Teorema di Lagrange (o del valor medio).
+ Fornire applicazioni fisiche e matematiche
+\end_layout
+
+\begin_layout Standard
+Enunciato:
+ Sia 
+\begin_inset Formula $f:[a,b]\to\mathbb{R}$
+\end_inset
+
+ continua in 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ e derivabile in 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+,
+ allora 
+\begin_inset Formula $\exists c\in(a,b)$
+\end_inset
+
+ tale che 
+\begin_inset Formula $f'(c)=\frac{f(b)-f(a)}{b-a}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dimostrazione:
+\end_layout
+
+\begin_layout Standard
+Considero la funzione:
+ 
+\begin_inset Formula $g(x)=f(x)-[f(a)+\frac{f(b)-f(a)}{b-a}x-a]$
+\end_inset
+
+,
+ continua e derivabile negli stessi intervalli di 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Calcolo la derivata:
+ 
+\begin_inset Formula $g'(x)=f'(x)\frac{f(b)-f(a)}{b-a}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Da 
+\begin_inset Formula $g'(c)=0$
+\end_inset
+
+ segue 
+\begin_inset Formula $f'(c)=\frac{f(b)-f(a)}{b-a}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Esempi di applicazione:
+\end_layout
+
+\begin_layout Itemize
+Monotonia del segno
+\end_layout
+
+\begin_layout Itemize
+Unicità degli zeri
+\end_layout
+
+\begin_layout Section
+Definizione di o-piccolo.
+ Esempi ed applicazioni per trovare il carattere di una serie
+\end_layout
+
+\begin_layout Standard
+Siano 
+\begin_inset Formula $f,g$
+\end_inset
+
+ funzioni definite in un intorno di 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Si dice che 
+\begin_inset Formula $f(x)=o(g(x))$
+\end_inset
+
+ per 
+\begin_inset Formula $x\to x_{0}$
+\end_inset
+
+ se 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}\frac{f(x)}{g(x)}=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset Formula $f$
+\end_inset
+
+ è infinitesima di ordine superiore a rispetto a 
+\begin_inset Formula $g$
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Applicazione per le serie:
+ Dal criterio del confronto,
+ se 
+\begin_inset Formula $a_{n}=o(b_{n})$
+\end_inset
+
+ allora:
+\end_layout
+
+\begin_layout Standard
+se 
+\begin_inset Formula $\sum b_{n}$
+\end_inset
+
+ converge 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ converge
+\end_layout
+
+\begin_layout Standard
+se 
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+ diverge 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ diverge
+\end_layout
+
+\begin_layout Section
+Definizione di serie convergente e assolutamente convergente.
+ Legame tra i due concetti con esempi
+\end_layout
+
+\begin_layout Standard
+Una serie 
+\begin_inset Formula $\stackrel[n=0]{+\infty}{\sum}a_{n}$
+\end_inset
+
+ si dice convergente se 
+\begin_inset Formula $\exists l\in\mathbb{R}:\underset{n\to+\infty}{lim}a_{n}=l$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Una serie 
+\begin_inset Formula $\stackrel[n=0]{+\infty}{\sum}a_{n}$
+\end_inset
+
+ si dice assolutamente convergente se la serie 
+\begin_inset Formula $\stackrel[n=0]{+\infty}{\sum}|a_{n}|$
+\end_inset
+
+ converge.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Esempio:
+ 
+\begin_inset Formula $\stackrel[n=0]{+\infty}{\sum}-\frac{1}{2^{n}}$
+\end_inset
+
+,
+ applico il criterio dell'assoluta convergenza:
+ 
+\begin_inset Formula $\stackrel[n=0]{+\infty}{\sum}|-\frac{1}{2^{n}}|$
+\end_inset
+
+,
+ dove 
+\begin_inset Formula $\sum\frac{1}{2^{n}}$
+\end_inset
+
+ è una serie geometrica convergente,
+ allora 
+\begin_inset Formula $\stackrel[n=0]{+\infty}{\sum}-\frac{1}{2^{n}}$
+\end_inset
+
+ è assolutamente (semplicemente) convergente.
+\end_layout
+
+\begin_layout Section
+Definizione di derivata seconda e suo uso per trovare concavità e convessità di funzioni 
+\begin_inset Formula $\mathbb{C}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $f$
+\end_inset
+
+ una funzione derivabile in un intervallo 
+\begin_inset Formula $I$
+\end_inset
+
+,
+ se a sua volta 
+\begin_inset Formula $f'$
+\end_inset
+
+ è derivabile su 
+\begin_inset Formula $I$
+\end_inset
+
+ allora 
+\begin_inset Formula $f$
+\end_inset
+
+ è derivabile 2 volte e 
+\begin_inset Formula $f''$
+\end_inset
+
+ si dice derivata seconda di 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Concavità e convessità:
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ di classe 
+\begin_inset Formula $\mathbb{C}^{2}(I)$
+\end_inset
+
+ allora:
+\end_layout
+
+\begin_layout Itemize
+se 
+\begin_inset Formula $f''(x)>0$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in I$
+\end_inset
+
+ allora 
+\begin_inset Formula $f$
+\end_inset
+
+ è convessa in 
+\begin_inset Formula $I$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+se 
+\begin_inset Formula $f''(x)<0$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in I$
+\end_inset
+
+ allora 
+\begin_inset Formula $f$
+\end_inset
+
+ è concava in 
+\begin_inset Formula $I$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+se 
+\begin_inset Formula $f''(x_{0})=0$
+\end_inset
+
+ allora 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ è un punto di flesso
+\end_layout
+
+\begin_layout Section
+Massimi e minimi locali e derivata prima.
+ Definizioni e legame per funzioni 
+\begin_inset Formula $\mathbb{C}^{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Dimostrare il teorema fondamentale del calcolo integrale
+\end_layout
+
+\begin_layout Section
+Metodo di integrazione per parti e per sostituzione.
+ Fare esempi significativi
+\end_layout
+
+\begin_layout Section
+Definizione di integrale improprio.
+ Criteri di integrabilità.
+ Enunciare almeno un criterio e fare esempi
+\end_layout
+
+\begin_layout Section
+Enunciare il teorema di Cauchy per un’equazione differenziale del primo ordine.
+ Fare un esempio in cui manca un’ipotesi
+\end_layout
+
+\begin_layout Section
+Equazioni differenziali lineari del secondo ordine a coefficienti costanti.
+ Definizioni principali e discussione dei tre casi del discriminante
+\end_layout
+
+\begin_layout Section
+Definizione di funzione continua in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ Usando l’
+\begin_inset Formula $\epsilon-\delta$
+\end_inset
+
+ dimostrare che se f è continua in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ allora 
+\begin_inset Formula $|f(x)|$
+\end_inset
+
+ è continua in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Enunciare due criteri per la convergenza assoluta di una serie con esempi
+\end_layout
+
+\begin_layout Section
+Dimostrare che se 
+\begin_inset Formula $f$
+\end_inset
+
+ è dispari e continua in 
+\begin_inset Formula $0$
+\end_inset
+
+ allora 
+\begin_inset Formula $f(0)=0$
+\end_inset
+
+.
+ Verificare se è vero per funzioni pari e portare controesempi se falso
+\end_layout
+
+\begin_layout Section
+Dimostrare il teorema sui limiti di una funzione composta
+\end_layout
+
+\begin_layout Section
+Dimostrare il teorema della media integrale per una funzione continua
+\end_layout
+
+\begin_layout Section
+Definizione di sottosuccessione.
+ Dimostrare che ogni successione limitata in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ ammette una sottosuccessione convergente
+\end_layout
+
+\begin_layout Section
+Dimostrare il teorema ponte in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Dare almeno un esempio di applicazione del teorema ponte in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Dimostrare il teorema di Bolzano-Weierstrass in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Dimostrare il teorema di unicità del limite in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Definizione di funzione invertibile.
+ Collegamento tra monotonia e invertibilità.
+ Esempi
+\end_layout
+
+\begin_layout Section
+Dimostrare che ogni successione monotona e limitata ammette limite
+\end_layout
+
+\begin_layout Section
+Dimostrare che prodotto di funzione infinitesima per funzione definitivamente limitata è infinitesimo
+\end_layout
+
+\begin_layout Section
+Enunciare il principio d’induzione e dare esempi di applicazione
+\end_layout
+
+\begin_layout Section
+Mostrare il legame tra convergenza assoluta di una serie e integrale improprio
+\end_layout
+
+\begin_layout Section
+Definizione di punto di flesso e collegamento con la derivata seconda per funzioni 
+\begin_inset Formula $\mathbb{C}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Definizione di insieme compatto (sequenziale) in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ Esempio di insieme limitato non compatto con spiegazione dell’ipotesi mancante
+\end_layout
+
+\begin_layout Section
+È vero che ogni successione limitata in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ è convergente?
+ Dimostrare o dare controesempi e formulare l’affermazione corretta
+\end_layout
+
+\begin_layout Section
+Definizione di retta tangente al grafico di una funzione derivabile.
+ Esempio di funzione continua in un punto che non ammette retta tangente
+\end_layout
+
+\begin_layout Section
+Sia 
+\begin_inset Formula $D$
+\end_inset
+
+ aperto in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ e 
+\begin_inset Formula $x_{0}\in D$
+\end_inset
+
+.
+ Se f è derivabile in 
+\begin_inset Formula $D\{x_{0}\}$
+\end_inset
+
+ e 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f'(x)$
+\end_inset
+
+ non esiste,
+ possiamo concludere che 
+\begin_inset Formula $f’(x_{0})$
+\end_inset
+
+ non esiste?
+ Giustificare
+\end_layout
+
+\end_body
+\end_document
