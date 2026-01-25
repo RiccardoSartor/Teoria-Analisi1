@@ -3388,6 +3388,66 @@ Ma questa non è una condizione sufficiente,
 Dimostrare il teorema sui limiti di una funzione composta
 \end_layout
 
+\begin_layout Standard
+Teorema:
+ Siano 
+\begin_inset Formula $f:A\subseteq\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $g:B\subseteq\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ tali che:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\underset{x\to x_{0}}{lim}g(x)=l$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $l\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ continua in 
+\begin_inset Formula $l$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Allora vale:
+ 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(g(x))=\underset{x\to x_{0}}{lim}f(l)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dimostrazione:
+\end_layout
+
+\begin_layout Standard
+(Non vale la pena ricordare tutta la dimostrazione)
+\end_layout
+
 \begin_layout Section
 Dimostrare il teorema della media integrale per una funzione continua
 \end_layout
@@ -3409,12 +3469,174 @@ Dimostrare il teorema ponte in
 
 \end_layout
 
+\begin_layout Standard
+Enunciato:
+ 
+\end_layout
+
+\begin_layout Standard
+Siano 
+\begin_inset Formula $f,g,h:I\subseteq\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ pto di accumulazione per 
+\begin_inset Formula $I$
+\end_inset
+
+,
+ e siano 
+\begin_inset Formula $f(x)\leq g(x)\leq h(x)$
+\end_inset
+
+ definitivamente per 
+\begin_inset Formula $x\to x_{0}$
+\end_inset
+
+ allora se esiste e coincide 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=\underset{x\to x_{0}}{lim}h(x)=l\in\mathbb{R}$
+\end_inset
+
+ esiste ed è coincidente 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}h(x)=l$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dimostrazione:
+\begin_inset Newline newline
+\end_inset
+
+Dalla definizione di limite possiamo concludere che se:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $|f(x)-l|<\epsilon\Rightarrow l-\epsilon<f(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $|h(x)-l|<\epsilon\Rightarrow h(x)<l+\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Allora unendo queste condizione all'ipotesi iniziale (
+\begin_inset Formula $f(x)\leq g(x)\leq h(x)$
+\end_inset
+
+) allora otteniamo che 
+\begin_inset Formula $l-\epsilon<f(x)\leq g(x)\leq h(x)<l+\epsilon$
+\end_inset
+
+ da cui possiamo ricavare che 
+\begin_inset Formula $l-\epsilon\leq g(x)\leq l+\epsilon$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Per cui è verificato che 
+\begin_inset Formula $|g(x)-l|<\epsilon$
+\end_inset
+
+ ovvero 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}g(x)=l$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 Dare almeno un esempio di applicazione del teorema ponte in 
 \begin_inset Formula $\mathbb{R}$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(x)=xsin(\frac{1}{x})$
+\end_inset
+
+,
+ chiramente definita in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ e pto di acumulazione 
+\begin_inset Formula $x_{0}=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Sappiamo che 
+\begin_inset Formula $xsin(\frac{1}{x})\leq|1|$
+\end_inset
+
+ da cui ricaviamo:
+ 
+\begin_inset Formula $-|x|\leq sin(\frac{1}{x})\leq|x|$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Perciò:
+ 
+\begin_inset Formula $f(x)=-|x|$
+\end_inset
+
+,
+ 
+\begin_inset Formula $g(x)=sin(\frac{1}{x})$
+\end_inset
+
+,
+ 
+\begin_inset Formula $h(x)=|x|$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Calcolo i due limiti:
+ 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=\underset{x\to x_{0}}{lim}-|x|=0$
+\end_inset
+
+ e 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}h(x)=\underset{x\to x_{0}}{lim}|x|=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Posso quindi concludere che 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}g(x)=0$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -3425,6 +3647,60 @@ Dimostrare il teorema di Bolzano-Weierstrass in
 
 \end_layout
 
+\begin_layout Standard
+Enunciato:
+ Sia 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ una successione limitata in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+,
+ allora 
+\begin_inset Formula $\exists a_{n_{k}}$
+\end_inset
+
+ sottosuccessione di 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ convergente.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dimostrazione:
+\begin_inset Newline newline
+\end_inset
+
+Per definizione dato che 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ è limitata 
+\begin_inset Formula $\exists\underset{n\to\infty}{lim}\text{sup(\ensuremath{a_{n}})}=l\in\mathbb{R}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Quindi per definizione 
+\begin_inset Formula $a_{n_{k}}\to l$
+\end_inset
+
+ per 
+\begin_inset Formula $k\to+\infty$
+\end_inset
+
+ che è una successione convergente.
+\end_layout
+
 \begin_layout Section
 Dimostrare il teorema di unicità del limite in 
 \begin_inset Formula $\mathbb{R}$
@@ -3433,22 +3709,544 @@ Dimostrare il teorema di unicità del limite in
 
 \end_layout
 
+\begin_layout Standard
+Enunciato:
+ Sia 
+\begin_inset Formula $f:I\to\mathbb{R}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ di accumulazione per 
+\begin_inset Formula $I$
+\end_inset
+
+,
+ se 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=l$
+\end_inset
+
+ e 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=m$
+\end_inset
+
+ allora 
+\begin_inset Formula $l=m$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dimostrazione:
+\begin_inset Newline newline
+\end_inset
+
+È facile concludere che 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)-l=0$
+\end_inset
+
+ e 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)-m=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Quindi 
+\begin_inset Formula $-|l-m|\leq(f(x)-l)-(f(x)-m)\leq|l-m|$
+\end_inset
+
+,
+ per cui 
+\begin_inset Formula $(f(x)-l)-(f(x)-m)=l-m$
+\end_inset
+
+ per cui 
+\begin_inset Formula $0-0=l-m$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Possiamo concludere quindi che 
+\begin_inset Formula $l-m=0$
+\end_inset
+
+ e quindi 
+\begin_inset Formula $l=m$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 Definizione di funzione invertibile.
  Collegamento tra monotonia e invertibilità.
  Esempi
 \end_layout
 
+\begin_layout Standard
+Una funzione 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ è definibile invertibile solo se 
+\begin_inset Formula $\forall y\in B$
+\end_inset
+
+ corrisponde solo un 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ tale che 
+\begin_inset Formula $f(x)=y$
+\end_inset
+
+,
+ in questo caso di dice che 
+\begin_inset Formula $f$
+\end_inset
+
+ è una funzione invertibile e la sua inversa si indica con 
+\begin_inset Formula $f^{-1}:B\to A$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+(Quindi 
+\begin_inset Formula $f$
+\end_inset
+
+ è invertibile solo se è biettiva)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Se una funzione è monotona in tutto il suo dominio allora è invertibile.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Esempi:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(x)=x+1$
+\end_inset
+
+,
+ monotona crescente,
+ invertibile.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(x)=-x+1$
+\end_inset
+
+,
+ monotona decrescente,
+ invertibile
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(x)=x^{2}$
+\end_inset
+
+,
+ non biettiva,
+ non monotona,
+ quindi sicuramente non invertibile.
+\end_layout
+
 \begin_layout Section
-Dimostrare che ogni successione monotona e limitata ammette limite
+Dimostrare che ogni successione monotona e limitata ammette limite 
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ una successione monotona crescente limitata superiormente.
+\begin_inset Newline newline
+\end_inset
+
+Allora sicuramente 
+\begin_inset Formula $\exists l=$
+\end_inset
+
+sup(
+\begin_inset Formula $\{a_{n}:n\in\mathbb{N}\}$
+\end_inset
+
+).
+\begin_inset Newline newline
+\end_inset
+
+Per definizione 
+\begin_inset Formula $\exists N$
+\end_inset
+
+ tale che 
+\begin_inset Formula $l-\epsilon<a_{N}\leq l$
+\end_inset
+
+ 
+\begin_inset Formula $\forall\epsilon>0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Da cui si ottiene che 
+\begin_inset Formula $a_{n}\to l$
+\end_inset
+
+ per 
+\begin_inset Formula $n\to+\infty$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+La dimostrazione è analoga per una successione monotona decrescente e limitata.
 \end_layout
 
 \begin_layout Section
 Dimostrare che prodotto di funzione infinitesima per funzione definitivamente limitata è infinitesimo
 \end_layout
 
+\begin_layout Standard
+Enunciato:
+\begin_inset Newline newline
+\end_inset
+
+Siano 
+\begin_inset Formula $f,g:A\subset\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+,
+ tali che per 
+\begin_inset Formula $x\to x_{0}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f(x)$
+\end_inset
+
+ sia infintesima,
+ ovvero 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $g(x)$
+\end_inset
+
+ sia definitivamente limitata cioè:
+ 
+\begin_inset Formula $\exists M>0,$
+\end_inset
+
+ 
+\begin_inset Formula $\exists\delta_{0}>0$
+\end_inset
+
+ tali che 
+\begin_inset Formula $|g(x)|\leq M$
+\end_inset
+
+ per 
+\begin_inset Formula $|x-x_{0}|<\delta_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Allora 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)*g(x)=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dimostrazione:
+\begin_inset Newline newline
+\end_inset
+
+Sia 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ infinitesima per 
+\begin_inset Formula $x\to x_{0}$
+\end_inset
+
+ quindi 
+\begin_inset Formula $f(x)\to0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Sia 
+\begin_inset Formula $g(x)$
+\end_inset
+
+ definitivamente limitata:
+ 
+\begin_inset Formula $\exists M>0$
+\end_inset
+
+ tale che 
+\begin_inset Formula $g(x)\leq M$
+\end_inset
+
+ per 
+\begin_inset Formula $x\to x_{0}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Allora 
+\begin_inset Formula $|f(x)*g(x)|=|f(x)|*|g(x)|\leq M*|f(x)|$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dato che 
+\begin_inset Formula $f(x)\to0$
+\end_inset
+
+,
+ allora 
+\begin_inset Formula $M*|f(x)|\to0$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Per il teorema del confronto segue che:
+ 
+\begin_inset Formula $f(x)*g(x)=0$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 Enunciare il principio d’induzione e dare esempi di applicazione
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $P(n)$
+\end_inset
+
+ una proposizione dipendente da 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+,
+ se valgono:
+\end_layout
+
+\begin_layout Enumerate
+Caso base:
+ 
+\begin_inset Formula $P(1)$
+\end_inset
+
+ è vera
+\end_layout
+
+\begin_layout Enumerate
+Passo induttivo:
+ 
+\begin_inset Formula $P(n+1)$
+\end_inset
+
+ è vera
+\end_layout
+
+\begin_layout Standard
+Allora 
+\begin_inset Formula $P(n)$
+\end_inset
+
+ è vera 
+\begin_inset Formula $\forall n\in\mathbb{N}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Esempio:
+\begin_inset Newline newline
+\end_inset
+
+Devo dimostrare che:
+ 
+\begin_inset Formula $1+2+...+n=\frac{n(n+1)}{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+1.
+ Caso base (
+\begin_inset Formula $n=1$
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(1)=\frac{1(1+1)}{2}=1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+2.
+ Passo induttivo (
+\begin_inset Formula $n=n+1$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(n+1)=\frac{(n+1)((n+1)+1)}{2}=\frac{(n+1)(n+2)}{2}=\frac{n(n+1)}{2}+(n+1)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Quindi 
+\begin_inset Formula $\frac{n(n+1)}{2}$
+\end_inset
+
+ è vera 
+\begin_inset Formula $\forall n\in\mathbb{N}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Discutere il problema di Cauchy per un'equazione differenziale del I ordine a variabili separabili
+\end_layout
+
+\begin_layout Standard
+Problema di Cauchy:
+ 
+\begin_inset Formula $\begin{cases}
+y'(x)=f(x)*g(x)\\
+y(x_{0})=y_{0}
+\end{cases}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+1.
+ Risolvo l'eq differenziale come 
+\begin_inset Formula $\int\frac{1}{g(y)}dy=\int f(x)dx$
+\end_inset
+
+ ottenendo una cosa come:
+ 
+\begin_inset Formula $G(y)=F(x)+c$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+2.
+ Sostituendo nel sistema originale quanto trovato e imponendo la condizione iniziale 
+\begin_inset Formula $y(x_{0})=y_{0}$
+\end_inset
+
+ trovo il valore (unico) di 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+NB.
+ Se 
+\begin_inset Formula $g(y_{0})=0$
+\end_inset
+
+ allora 
+\begin_inset Formula $y(x)=y_{0}$
+\end_inset
+
+ è soluzione costante e l'unicità non è garantita.
 \end_layout
 
 \begin_layout Section
