@@ -3642,20 +3642,7 @@ Caso 2:
 \end_inset
 
  non è monotona,
- per il teorema di Bolzano-Weierstrass da ogni successione reale si può estrarre una sottosuccessione monotona,
- la quale per definizione converge.
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-In ogni caso una successione 
-\begin_inset Formula $a_{n}$
-\end_inset
-
- ammette una sottosuccessione convergente.
+ per il teorema di Bolzano-Weierstrass 
 \end_layout
 
 \begin_layout Section

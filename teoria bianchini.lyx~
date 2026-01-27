@@ -152,7 +152,7 @@ Una serie
 \begin_inset Formula $\stackrel[n=1]{\infty}{\sum}a_{n}$
 \end_inset
 
- si dice divergente se la successione delle somme parziali 
+ si dice indeterminata se la successione delle somme parziali 
 \begin_inset Formula $s_{n}=\stackrel[k=1]{n}{\sum}a_{k}$
 \end_inset
 
@@ -916,6 +916,10 @@ se
 \begin_inset Formula $W(x_{0})\neq0\Rightarrow W(x)\neq0$
 \end_inset
 
+ 
+\begin_inset Formula $\forall x\in I$
+\end_inset
+
 
 \end_layout
 
@@ -1265,10 +1269,23 @@ Dimostrare una forma (a piacere) del teorema di Hopital
 
 \begin_layout Standard
 Siano 
-\begin_inset Formula $f,g:(a,b)\to\mathbb{R}$
+\begin_inset Formula $f,g:I\to\mathbb{R}$
 \end_inset
 
- deriabili con 
+ 
+\begin_inset Formula $f,g$
+\end_inset
+
+ deriabili in 
+\begin_inset Formula $I$
+\end_inset
+
+ e 
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+,
+ siano 
 \begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=\underset{x\to x_{0}}{lim}g(x)=0$
 \end_inset
 
@@ -1521,7 +1538,7 @@ Sia
 \begin_inset Formula $x_{0},$
 \end_inset
 
-se questo vale per tutti i punti del dominio di 
+ se questo vale per tutti i punti del dominio di 
 \begin_inset Formula $f$
 \end_inset
 
@@ -4253,9 +4270,163 @@ NB.
 Mostrare il legame tra convergenza assoluta di una serie e integrale improprio
 \end_layout
 
+\begin_layout Standard
+Criterio integrale:
+\begin_inset Newline newline
+\end_inset
+
+Sia 
+\begin_inset Formula $f:[1,+\infty)\to\mathbb{R},$
+\end_inset
+
+ 
+\begin_inset Formula $f(x)\geq0$
+\end_inset
+
+ continua e decrescente
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\stackrel[n=1]{+\infty}{\sum}f(n)$
+\end_inset
+
+ converge 
+\begin_inset Formula $\iff\int_{1}^{+\infty}f(x)dx$
+\end_inset
+
+ converge
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Convergenza assoluta:
+\begin_inset Newline newline
+\end_inset
+
+Sia 
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+ una serie a termini di segno variabile,
+ se 
+\begin_inset Formula $\exists f:[1,+\infty)\to\mathbb{R},$
+\end_inset
+
+ 
+\begin_inset Formula $f(x)\geq0$
+\end_inset
+
+ continua e decrescente tale che 
+\begin_inset Formula $|a_{n}|=f(n)$
+\end_inset
+
+,
+ allora
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\stackrel[n=1]{+\infty}{\sum}|a_{n}|$
+\end_inset
+
+ converge 
+\begin_inset Formula $\iff\int_{1}^{+\infty}f(x)dx$
+\end_inset
+
+ converge
+\end_layout
+
 \begin_layout Section
 Definizione di punto di flesso e collegamento con la derivata seconda per funzioni 
 \begin_inset Formula $\mathbb{C}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Definizione pto di flesso:
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $f:A\subseteq\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ e 
+\begin_inset Formula $x_{0}\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ è detto punto di flesso se 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ cambia la sua concavita in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Collegamento con derivata seconda:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f''(x)>0$
+\end_inset
+
+ allora 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ è convessa
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f''(x)<0$
+\end_inset
+
+ allora 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ è concava
+\end_layout
+
+\begin_layout Standard
+se 
+\begin_inset Formula $f''(x_{0})=0$
+\end_inset
+
+ e 
+\begin_inset Formula $f''(x)$
+\end_inset
+
+ cambia il suo segno in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ allora questo punto di dice:
+ 
+\begin_inset Quotes fld
+\end_inset
+
+di flesso
+\begin_inset Quotes frd
 \end_inset
 
 
@@ -4270,6 +4441,68 @@ Definizione di insieme compatto (sequenziale) in
  Esempio di insieme limitato non compatto con spiegazione dell’ipotesi mancante
 \end_layout
 
+\begin_layout Standard
+Definizione:
+\end_layout
+
+\begin_layout Standard
+Un insieme 
+\begin_inset Formula $K\subset\mathbb{R}$
+\end_inset
+
+ si dice compatto se è chiuso,
+ limitato e ogni successione 
+\begin_inset Formula $a_{n}\subset K$
+\end_inset
+
+ ammette una sottosuccessione convergente il cui limite appartiene a 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Esempio insieme non compatto:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K=(0,1)$
+\end_inset
+
+,
+ 
+\begin_inset Formula $K$
+\end_inset
+
+ è limitato ma non è chiuso,
+ quindi non è compatto
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{n}=\frac{1}{n}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\underset{n\to0}{lim}\frac{1}{n}=0$
+\end_inset
+
+ ma dato che 
+\begin_inset Formula $0\notin(0,1)$
+\end_inset
+
+ possiamo definire 
+\begin_inset Formula $K$
+\end_inset
+
+ non compatto.
+\end_layout
+
 \begin_layout Section
 È vero che ogni successione limitata in 
 \begin_inset Formula $\mathbb{R}$
@@ -4279,9 +4512,132 @@ Definizione di insieme compatto (sequenziale) in
  Dimostrare o dare controesempi e formulare l’affermazione corretta
 \end_layout
 
+\begin_layout Standard
+No,
+ non tutte le successioni limitate sono convergenti.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Formulazione corretta:
+ È vero che ogni successione limitata ammette almeno una sottosuccessione convergente.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Controesempio:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{n}=(-1)^{n}$
+\end_inset
+
+,
+ è limitata in 
+\begin_inset Formula $-1\leq a_{n}\leq1$
+\end_inset
+
+ ma non è convergente.
+\end_layout
+
 \begin_layout Section
 Definizione di retta tangente al grafico di una funzione derivabile.
  Esempio di funzione continua in un punto che non ammette retta tangente
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $f$
+\end_inset
+
+ derivabile in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+,
+ la retta tangente al grafico nel punto 
+\begin_inset Formula $(x_{0},f(x_{0}))$
+\end_inset
+
+ è la retta di equazione 
+\begin_inset Formula $y=f(x_{0})+f'(x)(x-x_{0})$
+\end_inset
+
+,
+ questa retta chiaramente esiste solo se esiste la derivata di 
+\begin_inset Formula $f$
+\end_inset
+
+ nel punto 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Funzione con pto di non derivabilità:
+\end_layout
+
+\begin_layout Standard
+Ci sono 2 punti di non derivabilità:
+ punti angolosi e punti cuspidali,
+ i primi hanno il limite destro e sinistro del punto non derivabile con 
+\begin_inset Formula $l\in\mathbb{R}$
+\end_inset
+
+ mentre i punti cuspidali hanno limite destro e sinistro a 
+\begin_inset Formula $\pm\infty$
+\end_inset
+
+ di segno opposto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(x)=|x|$
+\end_inset
+
+ presenta un punto di non derivabilità per 
+\begin_inset Formula $x=0$
+\end_inset
+
+,
+ infatti 
+\begin_inset Formula $f'(x)=\begin{cases}
+-1 & \text{se }x<0\\
+1 & \text{se }x>0
+\end{cases}$
+\end_inset
+
+,
+ e quindi 
+\begin_inset Formula $\underset{x\to0^{-}}{lim}=-1$
+\end_inset
+
+ e 
+\begin_inset Formula $\underset{x\to0^{+}}{lim}=1$
+\end_inset
+
+,
+ dato che i due limiti non coincidono non esiste la derivata di 
+\begin_inset Formula $f$
+\end_inset
+
+ in 
+\begin_inset Formula $x_{0}=0$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -4299,7 +4655,7 @@ Sia
 
 .
  Se f è derivabile in 
-\begin_inset Formula $D\{x_{0}\}$
+\begin_inset Formula $D\backslash\{x_{0}\}$
 \end_inset
 
  e 
@@ -4313,6 +4669,96 @@ Sia
 
  non esiste?
  Giustificare
+\end_layout
+
+\begin_layout Standard
+NB.
+ Il fatto che la domanda dica che 
+\begin_inset Formula $f$
+\end_inset
+
+ è derivabile in tutti i punti di 
+\begin_inset Formula $D$
+\end_inset
+
+ tranne 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ (
+\begin_inset Formula $D\backslash\{x_{0}\}$
+\end_inset
+
+) non vuol dire che effettivamente in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ non lo sia,
+ ma che è provato che 
+\begin_inset Formula $f$
+\end_inset
+
+ è derivabile 
+\begin_inset Formula $\forall x\in D\backslash\{x_{0}\}$
+\end_inset
+
+,
+ bisogna verificare se effettivamente 
+\begin_inset Formula $f$
+\end_inset
+
+ è o non è derivabile in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Risposta:
+ Non possiamo concludere che 
+\begin_inset Formula $f'(x_{0})$
+\end_inset
+
+ non esiste dal momento che esiste il teorema opposto ma questo non ha il viceversa:
+\end_layout
+
+\begin_layout Standard
+Se 
+\begin_inset Formula $\exists\underset{x\to x_{0}}{lim}f'(x)=l\Rightarrow f'(x_{0})$
+\end_inset
+
+ esiste e vale priorio 
+\begin_inset Formula $l$
+\end_inset
+
+.
+ Ma se il limite non esiste non possiamo concludere nulla su 
+\begin_inset Formula $f'(x_{0})$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Quotes fld
+\end_inset
+
+La derivata in un punto dipende solo dal comportamenteo della funzione in quel punto,
+ non dal limite della derivate attorno
+\begin_inset Quotes frd
+\end_inset
+
+
 \end_layout
 
 \end_body
