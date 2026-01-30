@@ -169,14 +169,10 @@ Definizione di successione convergente,
  divergente ed indeterminata
 \end_layout
 
-\begin_layout Subsection*
-Successione convergente
-\end_layout
-
 \begin_layout Standard
 Una successione si dice convergente se:
  
-\begin_inset Formula $\underset{n\to+\infty}{lim}a_{n}=l\in\mathbb{N}$
+\begin_inset Formula $\underset{k\to+\infty}{lim}a_{k}=l\in\mathbb{N}$
 \end_inset
 
 .
@@ -185,11 +181,11 @@ Una successione si dice convergente se:
 
 Una successione si dice divergente se:
  
-\begin_inset Formula $\underset{n\to+\infty}{lim}a_{n}=\pm\infty$
+\begin_inset Formula $\underset{k\to+\infty}{lim}a_{k}=\pm\infty$
 \end_inset
 
  oppure 
-\begin_inset Formula $\nexists\underset{n\to+\infty}{lim}a_{n}$
+\begin_inset Formula $\nexists\underset{k\to+\infty}{lim}a_{k}$
 \end_inset
 
 
@@ -501,7 +497,7 @@ Trovo una primitiva
 \begin_layout Enumerate
 Integro:
  
-\begin_inset Formula $y(x)=e^{-A(x)}*\int e^{A(x)}*f(x)dx\ +ce^{-A(x)}$
+\begin_inset Formula $y(x)=e^{-A(x)}*\int e^{A(x)}*b(x)dx\ +ce^{-A(x)}$
 \end_inset
 
 
@@ -3065,7 +3061,11 @@ Definizione di funzione continua in
 \begin_inset Formula $\epsilon-\delta$
 \end_inset
 
- dimostrare che se f è continua in 
+ dimostrare che se 
+\begin_inset Formula $f$
+\end_inset
+
+ è continua in 
 \begin_inset Formula $x_{0}$
 \end_inset
 
@@ -3946,40 +3946,48 @@ Dimostrazione:
 \begin_inset Newline newline
 \end_inset
 
-È facile concludere che 
-\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)-l=0$
+Dalla scrittura 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=l$
 \end_inset
 
  e 
-\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)-m=0$
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=m$
+\end_inset
+
+ segue che 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}(f(x)-l)=0$
+\end_inset
+
+ e che 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}(f(x)-m)=0$
 \end_inset
 
 .
 \begin_inset Newline newline
 \end_inset
 
-Quindi 
-\begin_inset Formula $-|l-m|\leq(f(x)-l)-(f(x)-m)\leq|l-m|$
+Sappiamo a priori essere sempre vero che:
+ 
+\begin_inset Formula $(f(x)-l)-(f(x)-m)=(f(x)-l)-(f(x)-m)$
 \end_inset
 
-,
- per cui 
-\begin_inset Formula $(f(x)-l)-(f(x)-m)=l-m$
-\end_inset
-
- per cui 
-\begin_inset Formula $0-0=l-m$
+ e quindi che 
+\begin_inset Formula $(f(x)-l)-(f(x)-m)=-l+m$
 \end_inset
 
 
 \begin_inset Newline newline
 \end_inset
 
-Possiamo concludere quindi che 
-\begin_inset Formula $l-m=0$
+Per 
+\begin_inset Formula $x\to x_{0}$
 \end_inset
 
- e quindi 
+ però otteniamo che 
+\begin_inset Formula $0-0=m-l$
+\end_inset
+
+ per cui 
 \begin_inset Formula $l=m$
 \end_inset
 

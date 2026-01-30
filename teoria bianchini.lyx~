@@ -169,14 +169,10 @@ Definizione di successione convergente,
  divergente ed indeterminata
 \end_layout
 
-\begin_layout Subsection*
-Successione convergente
-\end_layout
-
 \begin_layout Standard
 Una successione si dice convergente se:
  
-\begin_inset Formula $\underset{n\to+\infty}{lim}a_{n}=l\in\mathbb{N}$
+\begin_inset Formula $\underset{k\to+\infty}{lim}a_{k}=l\in\mathbb{N}$
 \end_inset
 
 .
@@ -185,11 +181,11 @@ Una successione si dice convergente se:
 
 Una successione si dice divergente se:
  
-\begin_inset Formula $\underset{n\to+\infty}{lim}a_{n}=\pm\infty$
+\begin_inset Formula $\underset{k\to+\infty}{lim}a_{k}=\pm\infty$
 \end_inset
 
  oppure 
-\begin_inset Formula $\nexists\underset{n\to+\infty}{lim}a_{n}$
+\begin_inset Formula $\nexists\underset{k\to+\infty}{lim}a_{k}$
 \end_inset
 
 
@@ -501,7 +497,7 @@ Trovo una primitiva
 \begin_layout Enumerate
 Integro:
  
-\begin_inset Formula $y(x)=e^{-A(x)}*\int e^{A(x)}*f(x)dx\ +ce^{-A(x)}$
+\begin_inset Formula $y(x)=e^{-A(x)}*\int e^{A(x)}*b(x)dx\ +ce^{-A(x)}$
 \end_inset
 
 
@@ -3469,6 +3465,95 @@ Dimostrazione:
 Dimostrare il teorema della media integrale per una funzione continua
 \end_layout
 
+\begin_layout Standard
+Teorema:
+ Sia 
+\begin_inset Formula $f:[a,b]\to\mathbb{R}$
+\end_inset
+
+,
+ allora 
+\begin_inset Formula $\exists c\in(a,b):\int_{a}^{b}f(x)dx=f(c)(b-a)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dimostrazione:
+\end_layout
+
+\begin_layout Standard
+Dato che 
+\begin_inset Formula $f$
+\end_inset
+
+ è continua in un insieme limitato ammette minimo e massimo (
+\noun on
+Weierstrass
+\noun default
+) e quindi 
+\begin_inset Formula $m=\underset{[a,b]}{\text{min}}f$
+\end_inset
+
+,
+ 
+\begin_inset Formula $M=\underset{[a,b]}{\text{max}}f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+E quindi 
+\begin_inset Formula $m\leq f(x)\leq M$
+\end_inset
+
+,
+ integriamo tutti tre i membri:
+ 
+\begin_inset Formula $m(b-a)\leq\int_{a}^{b}f(x)dx\leq M(b-a)\Rightarrow m\leq\frac{1}{b-a}\int_{a}^{b}f(x)dx\leq M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dato che la funzione assume tutti i valori intermedi tra 
+\begin_inset Formula $a$
+\end_inset
+
+ e 
+\begin_inset Formula $b$
+\end_inset
+
+ (
+\noun on
+Valori Intermedi
+\noun default
+) allora 
+\begin_inset Formula $\exists c\in(a,b):f(c)=$
+\end_inset
+
+
+\begin_inset Formula $\frac{1}{b-a}\int_{a}^{b}f(x)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Possiamo riscriverlo come 
+\begin_inset Formula $\int_{a}^{b}f(x)dx=f(c)(b-a)$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 Definizione di sottosuccessione.
  Dimostrare che ogni successione limitata in 
@@ -3476,6 +3561,97 @@ Definizione di sottosuccessione.
 \end_inset
 
  ammette una sottosuccessione convergente
+\end_layout
+
+\begin_layout Standard
+Definizione:
+ Sia 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ una successione reale,
+ una sottosuccessione è una successione del tipo 
+\begin_inset Formula $a_{n_{k}}$
+\end_inset
+
+ con 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Teorema:
+ Sia 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ una successione limitata in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+,
+ allora esiste almeno una sottosuccessione 
+\begin_inset Formula $a_{n_{k}}$
+\end_inset
+
+ con 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+ tale che 
+\begin_inset Formula $a_{n_{k}}$
+\end_inset
+
+ sia convergente.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Dimostrazione:
+ Sia 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ una successione limitata.
+\end_layout
+
+\begin_layout Standard
+Caso 1:
+ Se 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ ammette successione monotona,
+ allora per definizione le successioni monotone limitate convergono quindi lo fa anche la sottosuccessione
+\end_layout
+
+\begin_layout Standard
+Caso 2:
+ Se 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ non è monotona,
+ per il teorema di Bolzano-Weierstrass da ogni successione reale si può estrarre una sottosuccessione monotona,
+ la quale per definizione converge.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+In ogni caso una successione 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ ammette una sottosuccessione convergente.
 \end_layout
 
 \begin_layout Section
@@ -3766,40 +3942,48 @@ Dimostrazione:
 \begin_inset Newline newline
 \end_inset
 
-È facile concludere che 
-\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)-l=0$
+Dalla scrittura 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=l$
 \end_inset
 
  e 
-\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)-m=0$
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=m$
+\end_inset
+
+ segue che 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}(f(x)-l)=0$
+\end_inset
+
+ e che 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}(f(x)-m)=0$
 \end_inset
 
 .
 \begin_inset Newline newline
 \end_inset
 
-Quindi 
-\begin_inset Formula $-|l-m|\leq(f(x)-l)-(f(x)-m)\leq|l-m|$
+Sappiamo a priori essere sempre vero che:
+ 
+\begin_inset Formula $(f(x)-l)-(f(x)-m)=(f(x)-l)-(f(x)-m)$
 \end_inset
 
-,
- per cui 
-\begin_inset Formula $(f(x)-l)-(f(x)-m)=l-m$
-\end_inset
-
- per cui 
-\begin_inset Formula $0-0=l-m$
+ e quindi che 
+\begin_inset Formula $(f(x)-l)-(f(x)-m)=-l+m$
 \end_inset
 
 
 \begin_inset Newline newline
 \end_inset
 
-Possiamo concludere quindi che 
-\begin_inset Formula $l-m=0$
+Per 
+\begin_inset Formula $x\to x_{0}$
 \end_inset
 
- e quindi 
+ però otteniamo che 
+\begin_inset Formula $0-0=m-l$
+\end_inset
+
+ per cui 
 \begin_inset Formula $l=m$
 \end_inset
 
