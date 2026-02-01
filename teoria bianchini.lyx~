@@ -3061,7 +3061,11 @@ Definizione di funzione continua in
 \begin_inset Formula $\epsilon-\delta$
 \end_inset
 
- dimostrare che se f è continua in 
+ dimostrare che se 
+\begin_inset Formula $f$
+\end_inset
+
+ è continua in 
 \begin_inset Formula $x_{0}$
 \end_inset
 
@@ -3228,7 +3232,7 @@ Esempio:
 \begin_inset Formula $\stackrel[n=1]{+\infty}{\sum}\frac{1}{n^{2}}$
 \end_inset
 
- e dato che quest'ultima converge per le serie armoniche,
+ e dato che quest'ultima converge (p-serie),
  allora la serie di partenza converge assolutamente e semplicemente.
 \begin_inset Newline newline
 \end_inset
@@ -3246,7 +3250,7 @@ Siano
 \end_inset
 
  definitivamente e supponiamo che 
-\begin_inset Formula $\underset{x\to+\infty}{lim}\sqrt[n]{|a_{n}|}=l$
+\begin_inset Formula $\underset{n\to+\infty}{lim}\sqrt[n]{|a_{n}|}=l$
 \end_inset
 
 .
@@ -3309,6 +3313,62 @@ Esempio:
 \end_inset
 
  è definitivamente convergente
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Criterio del confronto:
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+ una serie tale che esiste una serie a termini positivi 
+\begin_inset Formula $\sum b_{n}$
+\end_inset
+
+ con 
+\begin_inset Formula $|a_{n}|\leq b_{n}$
+\end_inset
+
+ definitivamente,
+ se 
+\begin_inset Formula $\sum b_{n}$
+\end_inset
+
+ converge allora 
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+ converge assolutamente.
+\begin_inset Newline newline
+\end_inset
+
+Esempio:
+ 
+\begin_inset Formula $\stackrel[n=1]{\infty}{\sum}\frac{(-1)^{n}}{n^{2}}$
+\end_inset
+
+ è una serie tale che 
+\begin_inset Formula $\exists\stackrel[n=1]{\infty}{\sum}\frac{1}{n^{2}}$
+\end_inset
+
+ convergente (p-serie),
+ e dato che 
+\begin_inset Formula $\frac{(-1)^{n}}{n^{2}}\leq\frac{1}{n^{2}}$
+\end_inset
+
+ definitivamente,
+ allora possiamo dire che 
+\begin_inset Formula $\sum\frac{(-1)^{n}}{n^{2}}$
+\end_inset
+
+ converge assoltamente.
 \end_layout
 
 \begin_layout Section
@@ -3570,15 +3630,23 @@ Definizione:
 \end_inset
 
  una successione reale,
- una sottosuccessione è una successione del tipo 
+ si dice sottosuccessione di 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ ogni successione del tipo 
 \begin_inset Formula $a_{n_{k}}$
 \end_inset
 
- con 
+ dove 
+\begin_inset Formula $n_{k}$
+\end_inset
+
+ è una successione strettamente crescente con 
 \begin_inset Formula $k\in\mathbb{N}$
 \end_inset
 
-.
+
 \begin_inset Newline newline
 \end_inset
 
@@ -3781,7 +3849,7 @@ Dare almeno un esempio di applicazione del teorema ponte in
 \end_inset
 
 Sappiamo che 
-\begin_inset Formula $xsin(\frac{1}{x})\leq|1|$
+\begin_inset Formula $|xsin(\frac{1}{x})|\leq1$
 \end_inset
 
  da cui ricaviamo:
@@ -3842,24 +3910,11 @@ Dimostrare il teorema di Bolzano-Weierstrass in
 
 \begin_layout Standard
 Enunciato:
- Sia 
-\begin_inset Formula $a_{n}$
-\end_inset
-
- una successione limitata in 
+ Ogni successione limitata in 
 \begin_inset Formula $\mathbb{R}$
 \end_inset
 
-,
- allora 
-\begin_inset Formula $\exists a_{n_{k}}$
-\end_inset
-
- sottosuccessione di 
-\begin_inset Formula $a_{n}$
-\end_inset
-
- convergente.
+ ammette una sottosuccessione convergente.
 \begin_inset Newline newline
 \end_inset
 
@@ -3883,15 +3938,19 @@ Per definizione dato che
 \begin_inset Newline newline
 \end_inset
 
-Quindi per definizione 
+Esiste quindi 
 \begin_inset Formula $a_{n_{k}}\to l$
 \end_inset
 
- per 
-\begin_inset Formula $k\to+\infty$
+ dove 
+\begin_inset Formula $a_{n_{k}}$
 \end_inset
 
- che è una successione convergente.
+ è sottosuccessione convergente di 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -4038,7 +4097,7 @@ Una funzione
 \begin_inset Newline newline
 \end_inset
 
-Se una funzione è monotona in tutto il suo dominio allora è invertibile.
+Se una funzione reale è strettamente monotona in tutto il suo dominio allora è invertibile.
 \begin_inset Newline newline
 \end_inset
 
@@ -4398,23 +4457,20 @@ Discutere il problema di Cauchy per un'equazione differenziale del I ordine a va
 Problema di Cauchy:
  
 \begin_inset Formula $\begin{cases}
-y'(x)=f(x)*g(x)\\
+y'(x)=f(x)*y(x)\\
 y(x_{0})=y_{0}
 \end{cases}$
 \end_inset
 
-
+ (I ordine,
+ variabili separabili e lineare)
 \begin_inset Newline newline
 \end_inset
 
 1.
- Risolvo l'eq differenziale come 
-\begin_inset Formula $\int\frac{1}{g(y)}dy=\int f(x)dx$
-\end_inset
-
- ottenendo una cosa come:
+ Risolvo l'eq differenziale come:
  
-\begin_inset Formula $G(y)=F(x)+c$
+\begin_inset Formula $\frac{dx}{dy}=f(x)*y(x)\Rightarrow\int\frac{1}{y(x)}dy=\int f(x)dx+c\Rightarrow log(y(x))=\int f(x)dx+c\Rightarrow y(x)=ce^{\int f(x)dx}$
 \end_inset
 
 
@@ -4435,19 +4491,6 @@ y(x_{0})=y_{0}
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
-
-NB.
- Se 
-\begin_inset Formula $g(y_{0})=0$
-\end_inset
-
- allora 
-\begin_inset Formula $y(x)=y_{0}$
-\end_inset
-
- è soluzione costante e l'unicità non è garantita.
 \end_layout
 
 \begin_layout Section
@@ -4673,7 +4716,7 @@ Esempio insieme non compatto:
 
 ,
  
-\begin_inset Formula $\underset{n\to0}{lim}\frac{1}{n}=0$
+\begin_inset Formula $\underset{n\to+\infty}{lim}\frac{1}{n}=0$
 \end_inset
 
  ma dato che 
@@ -4750,7 +4793,7 @@ Sia
 \end_inset
 
  è la retta di equazione 
-\begin_inset Formula $y=f(x_{0})+f'(x)(x-x_{0})$
+\begin_inset Formula $y=f(x_{0})+f(x_{0})(x-x_{0})$
 \end_inset
 
 ,
@@ -4774,54 +4817,74 @@ Funzione con pto di non derivabilità:
 \end_layout
 
 \begin_layout Standard
-Ci sono 2 punti di non derivabilità:
- punti angolosi e punti cuspidali,
- i primi hanno il limite destro e sinistro del punto non derivabile con 
-\begin_inset Formula $l\in\mathbb{R}$
+Sono 3 i casi in cui una funzione continua non ammette la derivata in un punto 
+\begin_inset Formula $x_{0}$
 \end_inset
 
- mentre i punti cuspidali hanno limite destro e sinistro a 
-\begin_inset Formula $\pm\infty$
+:
+\end_layout
+
+\begin_layout Enumerate
+Punto angoloso:
+ i limiti delle derivate destra e sinistra ammettono limite finito uguale ma con segno opposto
+\end_layout
+
+\begin_layout Enumerate
+Punto cuspidale:
+ i limiti delle derivate destra e sinistra hanno valore infinito con segno opposto
+\end_layout
+
+\begin_layout Enumerate
+Derivata infinita:
+ i limiti delle deriate destra e sinistra hanno valore infinito coincidente
+\begin_inset Newline newline
 \end_inset
 
- di segno opposto.
+
+\end_layout
+
+\begin_layout Standard
+Esempio:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $f(x)=|x|$
 \end_inset
 
- presenta un punto di non derivabilità per 
-\begin_inset Formula $x=0$
+ con 
+\begin_inset Formula $x_{0}=0$
 \end_inset
 
 ,
- infatti 
-\begin_inset Formula $f'(x)=\begin{cases}
--1 & \text{se }x<0\\
-1 & \text{se }x>0
+ riscrivo la funzione come:
+ 
+\begin_inset Formula $f(x)=\begin{cases}
+-x & \text{se }x<0\\
+x & \text{se }x\geq0
 \end{cases}$
 \end_inset
 
 ,
- e quindi 
-\begin_inset Formula $\underset{x\to0^{-}}{lim}=-1$
-\end_inset
-
- e 
-\begin_inset Formula $\underset{x\to0^{+}}{lim}=1$
+ calcolando le derivate destra e sinistra:
+ 
+\begin_inset Formula $\underset{x\to x_{0}^{-}}{lim}[-x]'=-1$
 \end_inset
 
 ,
- dato che i due limiti non coincidono non esiste la derivata di 
-\begin_inset Formula $f$
+ e 
+\begin_inset Formula $\underset{x\to x_{0}^{+}}{lim}[x]'=1$
 \end_inset
 
- in 
+ notiamo che hanno lo stesso valore ma con segno opposto,
+ concludiamo allora che in 
 \begin_inset Formula $x_{0}=0$
 \end_inset
 
-.
+ su 
+\begin_inset Formula $f(x)=|x|$
+\end_inset
+
+ è presente un punto angoloso.
 \end_layout
 
 \begin_layout Section
