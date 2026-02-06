@@ -3786,7 +3786,7 @@ Sia
 \end_layout
 
 \begin_layout Standard
-Il limite per funzioni è equivalente al limite lungo tutte le successioni he convergono a 
+Il limite per funzioni è equivalente al limite lungo tutte le successioni che convergono a 
 \begin_inset Formula $x_{0}$
 \end_inset
 
@@ -3794,7 +3794,7 @@ Il limite per funzioni è equivalente al limite lungo tutte le successioni he co
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=L\iff\forall(x_{n})\subset I$
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=l\iff\forall(x_{n})\subset I$
 \end_inset
 
 ,
@@ -3803,7 +3803,7 @@ Il limite per funzioni è equivalente al limite lungo tutte le successioni he co
 \end_inset
 
  
-\begin_inset Formula $x_{n}\neq x_{0}\Rightarrow f(x_{n})\to L$
+\begin_inset Formula $x_{n}\neq x_{0}\Rightarrow f(x_{n})\to l$
 \end_inset
 
 
@@ -3819,11 +3819,11 @@ Dimostrazione:
 
 \begin_layout Standard
 Pongo 
-\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=L\iff\forall\epsilon>0$
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=l\iff\forall\epsilon>0$
 \end_inset
 
  
-\begin_inset Formula $\exists\delta>0:0<|x-x_{0}|<\delta\Rightarrow|f(x)-L|<\epsilon$
+\begin_inset Formula $\exists\delta>0:0<|x-x_{0}|<\delta\Rightarrow|f(x)-l|<\epsilon$
 \end_inset
 
 
@@ -3868,11 +3868,11 @@ Dato che
 
 \begin_layout Standard
 Di conseguenza si ha 
-\begin_inset Formula $|f(x_{n})-L|<\epsilon$
+\begin_inset Formula $|f(x_{n})-l|<\epsilon$
 \end_inset
 
  per 
-\begin_inset Formula $n\geq N\Rightarrow f(x_{n})\to L$
+\begin_inset Formula $n\geq N\Rightarrow f(x_{n})\to l$
 \end_inset
 
 .

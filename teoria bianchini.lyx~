@@ -286,11 +286,6 @@ Teorema degli zeri
 \begin_inset Formula $[a,b]$
 \end_inset
 
-,
- derivabile su 
-\begin_inset Formula $(a,b)$
-\end_inset
-
  e 
 \begin_inset Formula $f(a)*f(b)<0$
 \end_inset
@@ -3791,7 +3786,7 @@ Sia
 \end_layout
 
 \begin_layout Standard
-Il limite per funzioni è equivalente al limite lungo tutte le successioni he convergono a 
+Il limite per funzioni è equivalente al limite lungo tutte le successioni che convergono a 
 \begin_inset Formula $x_{0}$
 \end_inset
 
