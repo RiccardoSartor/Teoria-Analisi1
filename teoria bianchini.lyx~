@@ -139,9 +139,9 @@ Una serie
 \begin_inset Formula $s_{n}=\stackrel[k=1]{n}{\sum}a_{k}$
 \end_inset
 
- non ammette limite finito,
+ ammette limite solo all'infinito,
  cioè 
-\begin_inset Formula $\underset{n\to+\infty}{lim}a_{n}=\pm\infty$
+\begin_inset Formula $\underset{n\to+\infty}{lim}s_{n}=\pm\infty$
 \end_inset
 
 
@@ -158,10 +158,14 @@ Una serie
 
  non ammette limite finito,
  cioè 
-\begin_inset Formula $\nexists\underset{n\to+\infty}{lim}a_{n}=s\in\mathbb{R}$
+\begin_inset Formula $\nexists\underset{n\to+\infty}{lim}s_{n}=s\in\mathbb{R}$
 \end_inset
 
+ (ad esempio 
+\begin_inset Formula $\frac{\infty}{\infty},+\infty-\infty,\frac{0}{0},\frac{\infty}{0}$
+\end_inset
 
+...)
 \end_layout
 
 \begin_layout Section
@@ -172,7 +176,7 @@ Definizione di successione convergente,
 \begin_layout Standard
 Una successione si dice convergente se:
  
-\begin_inset Formula $\underset{k\to+\infty}{lim}a_{k}=l\in\mathbb{N}$
+\begin_inset Formula $\underset{k\to+\infty}{lim}a_{k}=l\in\mathbb{R}$
 \end_inset
 
 .
@@ -184,20 +188,16 @@ Una successione si dice divergente se:
 \begin_inset Formula $\underset{k\to+\infty}{lim}a_{k}=\pm\infty$
 \end_inset
 
- oppure 
-\begin_inset Formula $\nexists\underset{k\to+\infty}{lim}a_{k}$
-\end_inset
-
 
 \begin_inset Newline newline
 \end_inset
 
-Una successione si dice indeterminata se il limite presenta una forma indeterminata come:
+Una successione si dice indeterminata se:
  
-\begin_inset Formula $\frac{0}{0};\frac{\infty}{\infty};0*\infty;+\infty-\infty$
+\begin_inset Formula $\nexists\underset{k\to+\infty}{lim}a_{k}$
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Section
@@ -209,7 +209,7 @@ Sia
 \begin_inset Formula $f:[a,b]\to\mathbb{R},$
 \end_inset
 
-limitata.
+ limitata.
 \begin_inset Newline newline
 \end_inset
 
@@ -2310,11 +2310,7 @@ Una serie
 \begin_inset Formula $\stackrel[n=0]{+\infty}{\sum}a_{n}$
 \end_inset
 
- si dice convergente se 
-\begin_inset Formula $\exists l\in\mathbb{R}:\underset{n\to+\infty}{lim}a_{n}=l$
-\end_inset
-
-.
+ si dice convergente se la successione delle somme parziali ammette limite finito
 \begin_inset Newline newline
 \end_inset
 
@@ -2789,7 +2785,7 @@ l'intervallo è illimitato:
 \begin_inset Formula $f:[a,+\infty)\to\mathbb{R},$
 \end_inset
 
-continua
+ continua
 \begin_inset Newline newline
 \end_inset
 
@@ -3483,18 +3479,18 @@ Teorema:
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $l\in A$
+\begin_inset Formula $\underset{y\to l}{lim}f(y)=L$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $f$
+\begin_inset Formula $g(x)\in B$
 \end_inset
 
- continua in 
-\begin_inset Formula $l$
+ per 
+\begin_inset Formula $x\to x_{0}$
 \end_inset
 
 
@@ -3503,7 +3499,7 @@ Teorema:
 \begin_layout Standard
 Allora vale:
  
-\begin_inset Formula $\underset{x\to x_{0}}{lim}f(g(x))=\underset{x\to x_{0}}{lim}f(l)$
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(g(x))=L$
 \end_inset
 
 .
@@ -3518,7 +3514,50 @@ Dimostrazione:
 \end_layout
 
 \begin_layout Standard
-(Non vale la pena ricordare tutta la dimostrazione)
+Dato 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}g(x)=l$
+\end_inset
+
+ si ha che 
+\begin_inset Formula $\forall\epsilon>0$
+\end_inset
+
+ 
+\begin_inset Formula $\exists\delta_{1}>0$
+\end_inset
+
+,
+ 
+\begin_inset Formula $|x-x_{0}|<\delta_{1}\Rightarrow|g(x)-l|<\epsilon$
+\end_inset
+
+ e da 
+\begin_inset Formula $\underset{y\to l}{lim}f(y)=L$
+\end_inset
+
+ si ha che 
+\begin_inset Formula $\exists\delta_{2}>0,$
+\end_inset
+
+ 
+\begin_inset Formula $|y-l|<\delta_{2}\Rightarrow|f(y)-L|<\epsilon$
+\end_inset
+
+ per cui si ottiene che 
+\begin_inset Formula $\forall\epsilon>0$
+\end_inset
+
+ 
+\begin_inset Formula $|x-x_{0}|<\delta_{2}\Rightarrow|f(g(x))-L|<\epsilon$
+\end_inset
+
+ che significa proprio:
+ 
+\begin_inset Formula $\underset{x\to x_{0}}{lim}f(g(x))=L$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Section
@@ -4901,7 +4940,11 @@ Sia
 \end_inset
 
 .
- Se f è derivabile in 
+ Se 
+\begin_inset Formula $f$
+\end_inset
+
+ è derivabile in 
 \begin_inset Formula $D\backslash\{x_{0}\}$
 \end_inset
 
