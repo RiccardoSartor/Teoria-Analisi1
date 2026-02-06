@@ -286,11 +286,6 @@ Teorema degli zeri
 \begin_inset Formula $[a,b]$
 \end_inset
 
-,
- derivabile su 
-\begin_inset Formula $(a,b)$
-\end_inset
-
  e 
 \begin_inset Formula $f(a)*f(b)<0$
 \end_inset
@@ -301,7 +296,7 @@ Teorema degli zeri
 \end_inset
 
  tale che 
-\begin_inset Formula $f'(c)=0$
+\begin_inset Formula $f(c)=0$
 \end_inset
 
 .
@@ -3835,54 +3830,52 @@ Pongo
 \end_layout
 
 \begin_layout Standard
-Se non esistesse 
-\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=L$
+Sia 
+\begin_inset Formula $(x_{n})\subset I$
 \end_inset
 
-,
- allora esisterebbe 
-\begin_inset Formula $\epsilon_{0}>0$
+ una successione tale che:
+ 
+\begin_inset Formula $x_{n}\to x_{0},$
 \end_inset
 
- atale che ogni 
-\begin_inset Formula $\delta>0$
+ 
+\begin_inset Formula $x_{n}\neq x_{0}$
 \end_inset
 
- c'è 
-\begin_inset Formula $x$
-\end_inset
 
- con 
-\begin_inset Formula $0<|x-x_{0}|<\delta$
-\end_inset
-
- tale che 
-\begin_inset Formula $|f(x)-L|>\epsilon_{0}$
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
-Scegliendo 
-\begin_inset Formula $\delta=\frac{1}{n}$
+Dato che 
+\begin_inset Formula $x_{n}\to x_{0}$
 \end_inset
 
- si costruisce 
-\begin_inset Formula $(x_{n})\to x_{0}$
+ 
+\begin_inset Formula $\exists N$
 \end_inset
 
- con 
-\begin_inset Formula $|f(x_{n})-L|\geq\epsilon_{0}$
+ tale che per 
+\begin_inset Formula $n\geq N$
 \end_inset
 
-,
- cioè nessuna sottosuccessione converge a 
-\begin_inset Formula $L$
+ sia 
+\begin_inset Formula $|x_{n}-x_{0}|<\delta$
 \end_inset
 
-,
- assurdo.
+ 
+\end_layout
+
+\begin_layout Standard
+Di conseguenza si ha 
+\begin_inset Formula $|f(x_{n})-L|<\epsilon$
+\end_inset
+
+ per 
+\begin_inset Formula $n\geq N\Rightarrow f(x_{n})\to L$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -3894,69 +3887,47 @@ Dare almeno un esempio di applicazione del teorema ponte in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $f(x)=xsin(\frac{1}{x})$
+\begin_inset Formula $\underset{x\to0}{lim}\frac{sinx}{x}$
 \end_inset
 
 ,
- chiramente definita in 
-\begin_inset Formula $\mathbb{R}$
+ sia 
+\begin_inset Formula $x_{n}\subset\mathbb{R}$
 \end_inset
 
- e pto di acumulazione 
-\begin_inset Formula $x_{0}=0$
-\end_inset
-
-.
-\begin_inset Newline newline
-\end_inset
-
-Sappiamo che 
-\begin_inset Formula $|xsin(\frac{1}{x})|\leq1$
-\end_inset
-
- da cui ricaviamo:
- 
-\begin_inset Formula $-|x|\leq sin(\frac{1}{x})\leq|x|$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-Perciò:
- 
-\begin_inset Formula $f(x)=-|x|$
-\end_inset
-
-,
- 
-\begin_inset Formula $g(x)=sin(\frac{1}{x})$
-\end_inset
-
-,
- 
-\begin_inset Formula $h(x)=|x|$
-\end_inset
-
-.
-\begin_inset Newline newline
-\end_inset
-
-Calcolo i due limiti:
- 
-\begin_inset Formula $\underset{x\to x_{0}}{lim}f(x)=\underset{x\to x_{0}}{lim}-|x|=0$
+ con 
+\begin_inset Formula $x_{n}\to0$
 \end_inset
 
  e 
-\begin_inset Formula $\underset{x\to x_{0}}{lim}h(x)=\underset{x\to x_{0}}{lim}|x|=0$
+\begin_inset Formula $x_{n}\neq0$
 \end_inset
 
 
 \begin_inset Newline newline
 \end_inset
 
-Posso quindi concludere che 
-\begin_inset Formula $\underset{x\to x_{0}}{lim}g(x)=0$
+Allora 
+\begin_inset Formula $f(x_{n})=\frac{sinx_{n}}{x_{n}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dalle proprietà dei limiti per successioni 
+\begin_inset Formula $\underset{x\to0}{lim}\frac{sinx_{n}}{x_{n}}=1$
+\end_inset
+
+,
+ tutte le successioni ci danno limite 
+\begin_inset Formula $=1$
+\end_inset
+
+,
+ perciò possiamo concludere che:
+ 
+\begin_inset Formula $\underset{x\to0}{lim}\frac{sinx}{x}=\underset{x\to0}{lim}\frac{sinx_{n}}{x_{n}}=1$
 \end_inset
 
 .
@@ -4211,7 +4182,7 @@ Sia
 \begin_inset Newline newline
 \end_inset
 
-Allora sicuramente 
+Allora 
 \begin_inset Formula $\exists l=$
 \end_inset
 
@@ -4224,7 +4195,7 @@ sup(
 \end_inset
 
 Per definizione 
-\begin_inset Formula $\exists N$
+\begin_inset Formula $\exists N\in\mathbb{N}$
 \end_inset
 
  tale che 
@@ -4235,27 +4206,24 @@ Per definizione
 \begin_inset Formula $\forall\epsilon>0$
 \end_inset
 
-.
-\begin_inset Newline newline
+ e dato che 
+\begin_inset Formula $n\geq N$
 \end_inset
 
-Da cui si ottiene che 
-\begin_inset Formula $a_{n}\to l$
+ allora 
+\begin_inset Formula $a_{n}\geq a_{N}$
 \end_inset
 
- per 
-\begin_inset Formula $n\to+\infty$
+ da cui:
+ 
+\begin_inset Formula $l-\epsilon<a_{N}\leq a_{n}\leq l<l+\epsilon$
 \end_inset
 
-.
-\begin_inset Newline newline
+ da cui si ricava che 
+\begin_inset Formula $l-\epsilon<a_{n}<l+\epsilon$
 \end_inset
 
-
-\begin_inset Newline newline
-\end_inset
-
-La dimostrazione è analoga per una successione monotona decrescente e limitata.
+ che è proprio la definizione di limite.
 \end_layout
 
 \begin_layout Section
