@@ -3959,28 +3959,32 @@ Dimostrazione:
 \begin_inset Newline newline
 \end_inset
 
-Per definizione dato che 
+Consideriamo 
 \begin_inset Formula $a_{n}$
 \end_inset
 
- è limitata 
-\begin_inset Formula $\exists\underset{n\to\infty}{lim}\text{sup(\ensuremath{a_{n}})}=l\in\mathbb{R}$
+ una successione reale limitata,
+ quindi con infiniti termini compresi tra 
+\begin_inset Formula $[a,b]$
 \end_inset
 
-.
-\begin_inset Newline newline
+,
+ dividendo a metà l'intervallo 
+\begin_inset Formula $m=\frac{a+b}{2}$
 \end_inset
 
-Esiste quindi 
-\begin_inset Formula $a_{n_{k}}\to l$
+ ottengo almeno un intervallo tra i due con infiniti termini,
+ continuando lo stesso procedimento per induzione l'intervallo si restringerà sempre di piú verso un valore 
+\begin_inset Formula $l$
 \end_inset
 
- dove 
+ e quindi per il teorema dei carabinieri,
+ possiamo dire che la sottosuccessione 
 \begin_inset Formula $a_{n_{k}}$
 \end_inset
 
- è sottosuccessione convergente di 
-\begin_inset Formula $a_{n}$
+ (ovvero l'intervallo che è stato ristretto) converge necessariamente a 
+\begin_inset Formula $l$
 \end_inset
 
 .
