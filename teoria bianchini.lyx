@@ -2148,7 +2148,7 @@ Dimostrazione:
 \begin_layout Standard
 Considero la funzione:
  
-\begin_inset Formula $g(x)=f(x)-[f(a)+\frac{f(b)-f(a)}{b-a}x-a]$
+\begin_inset Formula $g(x)=f(x)-[f(a)+\frac{f(b)-f(a)}{b-a}(x-a)]$
 \end_inset
 
 ,

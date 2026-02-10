@@ -2148,7 +2148,7 @@ Dimostrazione:
 \begin_layout Standard
 Considero la funzione:
  
-\begin_inset Formula $g(x)=f(x)-[f(a)+\frac{f(b)-f(a)}{b-a}x-a]$
+\begin_inset Formula $g(x)=f(x)-[f(a)+\frac{f(b)-f(a)}{b-a}(x-a)s]$
 \end_inset
 
 ,
@@ -4269,22 +4269,18 @@ Siano
 
  sia definitivamente limitata cioè:
  
-\begin_inset Formula $\exists M>0,$
+\begin_inset Formula $\exists M>0$
 \end_inset
 
- 
-\begin_inset Formula $\exists\delta_{0}>0$
-\end_inset
-
- tali che 
-\begin_inset Formula $|g(x)|\leq M$
+ tale che 
+\begin_inset Formula $g(x)\leq M$
 \end_inset
 
  per 
-\begin_inset Formula $|x-x_{0}|<\delta_{0}$
+\begin_inset Formula $x\to x_{0}$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
